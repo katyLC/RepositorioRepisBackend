@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>RespositorioREPIS</id>
+    <version>1.0.0</version>
+    <authors>RespositorioREPIS</authors>
+    <owners>RespositorioREPIS</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.2">
+        <dependency id="Microsoft.AspNetCore.Cors" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Design" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Tools" version="2.2.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp2.2/appsettings.Development.json" buildAction="Content" />
+      <files include="any/netcoreapp2.2/appsettings.json" buildAction="Content" />
+      <files include="any/netcoreapp2.2/Properties/launchSettings.json" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\bin\Debug\netcoreapp2.2\RespositorioREPIS.runtimeconfig.json" target="lib\netcoreapp2.2\RespositorioREPIS.runtimeconfig.json" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\bin\Debug\netcoreapp2.2\RespositorioREPIS.dll" target="lib\netcoreapp2.2\RespositorioREPIS.dll" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\appsettings.Development.json" target="content\appsettings.Development.json" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\appsettings.Development.json" target="contentFiles\any\netcoreapp2.2\appsettings.Development.json" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\appsettings.json" target="content\appsettings.json" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\appsettings.json" target="contentFiles\any\netcoreapp2.2\appsettings.json" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\Properties\launchSettings.json" target="content\Properties\launchSettings.json" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\Properties\launchSettings.json" target="contentFiles\any\netcoreapp2.2\Properties\launchSettings.json" />
+  </files>
+</package>

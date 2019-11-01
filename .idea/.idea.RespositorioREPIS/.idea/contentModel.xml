@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\tzoph\.Rider2019.2\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\tzoph\.Rider2019.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\tzoph\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\tzoph\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RespositorioREPIS.2094678688.00" t="ExcludeRecursive" />
+    <e p="C:\Users\tzoph\RiderProjects\RespositorioREPIS" t="IncludeRecursive">
+      <e p="Api" t="Include">
+        <e p="AlumnoController.cs" t="Include" />
+        <e p="CicloController.cs" t="Include" />
+        <e p="ListarPerfilProyecto.cs" t="Include" />
+        <e p="ValuesController.cs" t="Include" />
+      </e>
+      <e p="appsettings.Development.json" t="Include" />
+      <e p="appsettings.json" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Data" t="Include">
+        <e p="AppContext.cs" t="Include" />
+        <e p="CicloRepositorio.cs" t="Include" />
+        <e p="ListarPerfilRepositorio.cs" t="Include" />
+      </e>
+      <e p="Domain" t="Include">
+        <e p="Entities" t="Include">
+          <e p="Administrador.cs" t="Include" />
+          <e p="Alumno.cs" t="Include" />
+          <e p="AspNetRoleClaims.cs" t="Include" />
+          <e p="AspNetRoles.cs" t="Include" />
+          <e p="AspNetUserClaims.cs" t="Include" />
+          <e p="AspNetUserLogins.cs" t="Include" />
+          <e p="AspNetUserRoles.cs" t="Include" />
+          <e p="AspNetUsers.cs" t="Include" />
+          <e p="AspNetUserTokens.cs" t="Include" />
+          <e p="Autor.cs" t="Include" />
+          <e p="Ciclo.cs" t="Include" />
+          <e p="Curso.cs" t="Include" />
+          <e p="Estado.cs" t="Include" />
+          <e p="Keyword.cs" t="Include" />
+          <e p="Paper.cs" t="Include" />
+          <e p="PaperAdicional.cs" t="Include" />
+          <e p="Perfil.cs" t="Include" />
+          <e p="Profesor.cs" t="Include" />
+          <e p="Proyecto.cs" t="Include" />
+          <e p="ProyectoAutor.cs" t="Include" />
+          <e p="ProyectoKeyword.cs" t="Include" />
+          <e p="Solicitud.cs" t="Include" />
+          <e p="Usuario.cs" t="Include" />
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="IAlumnoRepositorio.cs" t="Include" />
+          <e p="ICicloRepositorio.cs" t="Include" />
+          <e p="IListarPerfilProyectoRepositorio.cs" t="Include" />
+          <e p="IProyectoListarRepositorio.cs" t="Include" />
+        </e>
+        <e p="UseCases" t="Include">
+          <e p="Alumno" t="Include">
+            <e p="IRegistrarAlumno.cs" t="Include" />
+            <e p="RegistrarAlumno.cs" t="Include" />
+          </e>
+          <e p="Ciclo" t="Include">
+            <e p="CicloListar.cs" t="Include" />
+            <e p="ICicloListar.cs" t="Include" />
+          </e>
+          <e p="PerfilProyecto" t="Include">
+            <e p="IListarPerfilProyecto.cs" t="Include" />
+            <e p="ListarPerfilProyecto.cs" t="Include" />
+          </e>
+          <e p="Proyecto" t="Include">
+            <e p="IProyectoListar.cs" t="Include" />
+            <e p="ProyectoListar.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp2.2" t="Include">
+            <e p="RespositorioREPIS.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="launchSettings.json" t="Include" />
+      </e>
+      <e p="RespositorioREPIS.csproj" t="IncludeRecursive" />
+      <e p="RespositorioREPIS.sln" t="IncludeFlat" />
+      <e p="Startup.cs" t="Include" />
+    </e>
+  </component>
+</project>
