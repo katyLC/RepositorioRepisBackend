@@ -20,7 +20,7 @@ namespace RespositorioREPIS.Controllers
         }
 
         [HttpGet]
-        public IList<Ciclo> Listar()
+        public IList<CicloDTO> Listar()
         {
             return _cicloListar.Listar();
         }

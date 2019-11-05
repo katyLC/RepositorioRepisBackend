@@ -5,7 +5,7 @@ using RespositorioREPIS.Domain.Repositories;
 
 namespace RespositorioREPIS.Domain.Entities
 {
-    public partial class Ciclo 
+    public partial class Ciclo
     {
         public Ciclo()
         {
@@ -13,14 +13,15 @@ namespace RespositorioREPIS.Domain.Entities
             Curso = new HashSet<Curso>();
         }
 
-        public Ciclo(int idCiclo, string cicloDescripcion, ICollection<AlumnoRepositorio> alumno, ICollection<Curso> curso)
+        public Ciclo(int idCiclo, string cicloDescripcion, ICollection<AlumnoRepositorio> alumno,
+            ICollection<Curso> curso)
         {
             IdCiclo = idCiclo;
             CicloDescripcion = cicloDescripcion;
             Alumno = alumno;
             Curso = curso;
         }
-        
+
         public Ciclo(int idCiclo, string cicloDescripcion)
         {
             IdCiclo = idCiclo;
@@ -32,8 +33,5 @@ namespace RespositorioREPIS.Domain.Entities
 
         public virtual ICollection<AlumnoRepositorio> Alumno { get; set; }
         public virtual ICollection<Curso> Curso { get; set; }
-
-
-       
     }
 }

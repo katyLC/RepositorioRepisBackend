@@ -6,11 +6,11 @@ using RespositorioREPIS.Domain.UseCases.PerfilProyecto;
 
 namespace RespositorioREPIS.Data
 {
-    public class ListarPerfilRepositorio : IListarPerfilProyecto, IListarPerfilProyectoRepositorio
+    public class PerfilRepositorio : IListarPerfilProyecto, IPerfilesRepositorio
     {
         private readonly AppContext _appContext;
 
-        public ListarPerfilRepositorio(AppContext appContext)
+        public PerfilRepositorio(AppContext appContext)
         {
             _appContext = appContext;
         }

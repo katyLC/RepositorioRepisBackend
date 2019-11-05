@@ -1,6 +1,5 @@
-﻿﻿using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using Microsoft.EntityFrameworkCore;
 using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.Repositories;
 
@@ -15,9 +14,16 @@ namespace RespositorioREPIS.Data
             _appContext = appContext;
         }
 
-        public IList<Ciclo> Listar()
+        public List<CicloDTO> Listar()
         {
-            return _appContext.Ciclo.ToList();
+            List<CicloDTO> ciclos = (from c in _appContext.Ciclo
+                    select new CicloDTO()
+                    {
+                        IdCiclo = c.IdCiclo,
+                        CicloDescripcion = c.CicloDescripcion
+                    }
+                ).ToList();
+            return ciclos;
         }
     }
 }

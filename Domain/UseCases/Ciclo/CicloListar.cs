@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
+using RespositorioREPIS.Data;
 using RespositorioREPIS.Domain.Repositories;
 
 namespace RespositorioREPIS.Domain.UseCases.Ciclo
@@ -13,7 +14,7 @@ namespace RespositorioREPIS.Domain.UseCases.Ciclo
             _cicloRepository = repository;
         }
         
-        public IList<Entities.Ciclo> Listar()
+        public IList<CicloDTO> Listar()
         {
             return _cicloRepository.Listar();
         }

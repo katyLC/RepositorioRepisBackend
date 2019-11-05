@@ -14,6 +14,7 @@
         <dependency id="Microsoft.EntityFrameworkCore.Design" version="2.2.0" exclude="Build,Analyzers" />
         <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="2.2.0" exclude="Build,Analyzers" />
         <dependency id="Microsoft.EntityFrameworkCore.Tools" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="System.Linq" version="4.3.0" exclude="Build,Analyzers" />
       </group>
     </dependencies>
     <contentFiles>

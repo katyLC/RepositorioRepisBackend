@@ -8,12 +8,12 @@ namespace RespositorioREPIS.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ListarPerfilProyecto : Controller
+    public class PerfilesController : Controller
     {
         // GET
         private readonly IListarPerfilProyecto _listarPerfilProyecto;
 
-        public ListarPerfilProyecto(IListarPerfilProyecto listarPerfilProyecto)
+        public PerfilesController(IListarPerfilProyecto listarPerfilProyecto)
         {
             _listarPerfilProyecto = listarPerfilProyecto;
         }

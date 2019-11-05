@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using RespositorioREPIS.Domain.UseCases.PerfilProyecto;
-using ListarPerfilProyecto = RespositorioREPIS.Controllers.ListarPerfilProyecto;
+//using ListarPerfilProyecto = RespositorioREPIS.Controllers.Perfiles;
 
 namespace RespositorioREPIS.Domain.Entities
 {

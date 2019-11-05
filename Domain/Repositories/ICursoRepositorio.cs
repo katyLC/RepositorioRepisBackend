@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
 using RespositorioREPIS.Data;
-using RespositorioREPIS.Domain.Entities;
 
 namespace RespositorioREPIS.Domain.Repositories
 {
-    public interface ICicloRepositorio
+    public interface ICursoRepositorio
     {
-        List<CicloDTO> Listar ();
+        List<CursoDTO> ListarCurso(int id);
     }
 }

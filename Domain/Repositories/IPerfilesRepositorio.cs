@@ -4,7 +4,7 @@ using RespositorioREPIS.Domain.Entities;
 
 namespace RespositorioREPIS.Domain.Repositories
 {
-    public interface IListarPerfilProyectoRepositorio
+    public interface IPerfilesRepositorio
     {
         IList<Perfil> ListarPerfil();
     }
