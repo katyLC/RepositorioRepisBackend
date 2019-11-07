@@ -1,5 +1,5 @@
 ﻿using RespositorioREPIS.Domain.Repositories;
- 
+
 
 namespace RespositorioREPIS.Domain.UseCases.Alumno
 {
@@ -15,10 +15,9 @@ namespace RespositorioREPIS.Domain.UseCases.Alumno
         public void Registrar(string alumnoNombre, string alummoApellidos,
             string alumnoCodigoUniversitario,
             int idCiclo)
-
         {
-            
-            _alumnoRepositorio.Create(new Entities.AlumnoRepositorio( alumnoNombre, alummoApellidos, alumnoCodigoUniversitario, idCiclo));
+            _alumnoRepositorio.Create(new Entities.Alumno(alumnoNombre, alummoApellidos, alumnoCodigoUniversitario,
+                idCiclo));
         }
     }
 }

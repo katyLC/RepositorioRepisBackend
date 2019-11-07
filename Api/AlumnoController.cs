@@ -13,12 +13,13 @@ namespace RespositorioREPIS.Controllers
         {
             _registrarAlumno = registrarAlumno;
         }
-        
+
         public void RegistrarAlumno([FromBody] AlumnoComand comand)
         {
-            _registrarAlumno.Registrar( comand.AlumnoNombre, comand.AlumnoApellidos, comand.AlumnoCodigoUniversitario, comand.IdCiclo);
+            _registrarAlumno.Registrar(comand.AlumnoNombre, comand.AlumnoApellidos, comand.AlumnoCodigoUniversitario,
+                comand.IdCiclo);
         }
-        
+
         public class AlumnoComand
         {
             public int IdAlumno { get; set; }
@@ -27,6 +28,5 @@ namespace RespositorioREPIS.Controllers
             public string AlumnoCodigoUniversitario { get; set; }
             public int IdCiclo { get; set; }
         }
-       
     }
 }

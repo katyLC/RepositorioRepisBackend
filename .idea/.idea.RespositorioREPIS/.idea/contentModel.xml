@@ -10,6 +10,8 @@
         <e p="AlumnoController.cs" t="Include" />
         <e p="CicloController.cs" t="Include" />
         <e p="CursoController.cs" t="Include" />
+        <e p="ListarProyectoController.cs" t="Include" />
+        <e p="PalabrasClavesController.cs" t="Include" />
         <e p="PerfilesController.cs" t="Include" />
         <e p="ValuesController.cs" t="Include" />
       </e>
@@ -21,11 +23,15 @@
         <e p="DTO" t="Include">
           <e p="CicloDTO.cs" t="Include" />
           <e p="CursoDTO.cs" t="Include" />
+          <e p="ListarProyectoDTO.cs" t="Include" />
+          <e p="PalabrasClavesDTO.cs" t="Include" />
         </e>
         <e p="Repositorio" t="Include">
           <e p="CicloRepositorio.cs" t="Include" />
           <e p="CursoRepositorio.cs" t="Include" />
+          <e p="PalabarasClavesRepositorio.cs" t="Include" />
           <e p="PerfilRepositorio.cs" t="Include" />
+          <e p="ProyectoRepositorio.cs" t="Include" />
         </e>
       </e>
       <e p="Domain" t="Include">
@@ -58,8 +64,9 @@
           <e p="IAlumnoRepositorio.cs" t="Include" />
           <e p="ICicloRepositorio.cs" t="Include" />
           <e p="ICursoRepositorio.cs" t="Include" />
+          <e p="IPalabrasClavesRepositorio.cs" t="Include" />
           <e p="IPerfilesRepositorio.cs" t="Include" />
-          <e p="IProyectoListarRepositorio.cs" t="Include" />
+          <e p="IProyectoRepositorio.cs" t="Include" />
         </e>
         <e p="UseCases" t="Include">
           <e p="Alumno" t="Include">
@@ -74,13 +81,17 @@
             <e p="Curso.cs" t="Include" />
             <e p="ICurso.cs" t="Include" />
           </e>
+          <e p="PalabrasClaves" t="Include">
+            <e p="IPalabrasClaves.cs" t="Include" />
+            <e p="PalabrasClaves.cs" t="Include" />
+          </e>
           <e p="Perfil" t="Include">
             <e p="IListarPerfilProyecto.cs" t="Include" />
             <e p="PerfilListar.cs" t="Include" />
           </e>
           <e p="Proyecto" t="Include">
-            <e p="IProyectoListar.cs" t="Include" />
-            <e p="ProyectoListar.cs" t="Include" />
+            <e p="IProyecto.cs" t="Include" />
+            <e p="Proyecto.cs" t="Include" />
           </e>
         </e>
       </e>

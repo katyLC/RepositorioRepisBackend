@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using RespositorioREPIS.Data;
 using RespositorioREPIS.Domain.UseCases.Curso;
@@ -20,7 +21,7 @@ namespace RespositorioREPIS.Controllers
 
         // GET: api/curso/5
         [HttpGet("{id}")]
-        public IList<CursoDTO> ListarCurso(int id)
+        public async Task<IList<CursoDTO>> ListarCurso(int id)
         {
             return _curso.ListarCurso(id);
         }

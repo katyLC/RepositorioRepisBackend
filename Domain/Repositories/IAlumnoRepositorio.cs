@@ -5,7 +5,7 @@ namespace RespositorioREPIS.Domain.Repositories
 {
     public interface IAlumnoRepositorio
     {
-        void Create(AlumnoRepositorio alumnoRepositorio);
+        void Create(Alumno alumno);
 
     }
 }

@@ -9,11 +9,11 @@ namespace RespositorioREPIS.Domain.Entities
     {
         public Ciclo()
         {
-            Alumno = new HashSet<AlumnoRepositorio>();
+            Alumno = new HashSet<Alumno>();
             Curso = new HashSet<Curso>();
         }
 
-        public Ciclo(int idCiclo, string cicloDescripcion, ICollection<AlumnoRepositorio> alumno,
+        public Ciclo(int idCiclo, string cicloDescripcion, ICollection<Alumno> alumno,
             ICollection<Curso> curso)
         {
             IdCiclo = idCiclo;
@@ -31,7 +31,7 @@ namespace RespositorioREPIS.Domain.Entities
         public int IdCiclo { get; set; }
         public string CicloDescripcion { get; set; }
 
-        public virtual ICollection<AlumnoRepositorio> Alumno { get; set; }
+        public virtual ICollection<Alumno> Alumno { get; set; }
         public virtual ICollection<Curso> Curso { get; set; }
     }
 }

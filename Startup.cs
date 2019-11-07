@@ -18,9 +18,12 @@ using RespositorioREPIS.Domain.Repositories;
 using RespositorioREPIS.Domain.UseCases.Alumno;
 using RespositorioREPIS.Domain.UseCases.Ciclo;
 using RespositorioREPIS.Domain.UseCases.Curso;
+using RespositorioREPIS.Domain.UseCases.PalabrasClaves;
 using RespositorioREPIS.Domain.UseCases.PerfilProyecto;
+using RespositorioREPIS.Domain.UseCases.Proyecto;
 using AppContext = RespositorioREPIS.Data.AppContext;
 using Curso = RespositorioREPIS.Domain.Entities.Curso;
+using Proyecto = RespositorioREPIS.Domain.Entities.Proyecto;
 
 namespace RespositorioREPIS
 {
@@ -61,13 +64,17 @@ namespace RespositorioREPIS
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddTransient<IRegistrarAlumno, RegistrarAlumno>();
-            services.AddTransient<IAlumnoRepositorio, AlumnoRepositorio>();
+            services.AddTransient<IAlumnoRepositorio, Alumno>();
             services.AddTransient<ICicloListar, CicloListar>();
             services.AddTransient<ICicloRepositorio, CicloRepositorio>();
             services.AddTransient<IListarPerfilProyecto, PerfilListar>();
             services.AddTransient<IPerfilesRepositorio, PerfilRepositorio>();
             services.AddTransient<ICurso, Domain.UseCases.Curso.Curso>();
             services.AddTransient<ICursoRepositorio, CursoRepositorio>();
+            services.AddTransient<IPalabrasClaves, PalabrasClaves>();
+            services.AddTransient<IPalabrasClavesRepositorio, PalabarasClavesRepositorio>();
+            services.AddTransient<IProyecto, Domain.UseCases.Proyecto.Proyecto>();
+            services.AddTransient<IProyectoRepositorio, ProyectoRepositortio>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

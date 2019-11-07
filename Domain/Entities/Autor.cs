@@ -14,7 +14,7 @@ namespace RespositorioREPIS.Domain.Entities
         public int? IdAlumno { get; set; }
         public string AutorNombreApellido { get; set; }
 
-        public virtual AlumnoRepositorio IdAlumnoRepositorioNavigation { get; set; }
+        public virtual Alumno IdAlumnoRepositorioNavigation { get; set; }
         public virtual ICollection<ProyectoAutor> ProyectoAutor { get; set; }
     }
 }

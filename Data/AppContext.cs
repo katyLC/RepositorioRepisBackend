@@ -17,7 +17,7 @@ namespace RespositorioREPIS.Data
         }
 
         public virtual DbSet<Administrador> Administrador { get; set; }
-        public virtual DbSet<AlumnoRepositorio> Alumno { get; set; }
+        public virtual DbSet<Alumno> Alumno { get; set; }
         public virtual DbSet<AspNetRoleClaims> AspNetRoleClaims { get; set; }
         public virtual DbSet<AspNetRoles> AspNetRoles { get; set; }
         public virtual DbSet<AspNetUserClaims> AspNetUserClaims { get; set; }
@@ -74,7 +74,7 @@ namespace RespositorioREPIS.Data
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<AlumnoRepositorio>(entity =>
+            modelBuilder.Entity<Alumno>(entity =>
             {
                 entity.HasKey(e => e.IdAlumno)
                     .HasName("PK__Alumno__6D77A7F113B770B2");
@@ -254,11 +254,11 @@ namespace RespositorioREPIS.Data
 
                 entity.Property(e => e.IdPerfil).HasColumnName("id_perfil");
 
-/*                entity.HasOne(d => d.IdCicloNavigation)
+                entity.HasOne(d => d.IdCicloNavigation)
                     .WithMany(p => p.Curso)
                     .HasForeignKey(d => d.IdCiclo)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Curso__id_ciclo__75A278F5");*/
+                    .HasConstraintName("FK__Curso__id_ciclo__75A278F5");
 
                 entity.HasOne(d => d.IdPerfilNavigation)
                     .WithMany(p => p.Curso)

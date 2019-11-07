@@ -1,29 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using AppContext = RespositorioREPIS.Data.AppContext;
-
 using RespositorioREPIS.Domain.Repositories;
 
 namespace RespositorioREPIS.Domain.Entities
 {
-    public partial class AlumnoRepositorio:  IAlumnoRepositorio
+    public partial class Alumno : IAlumnoRepositorio
     {
         private readonly AppContext _appContext;
 
-        public AlumnoRepositorio(AppContext appContext)
+        public Alumno(AppContext appContext)
         {
             _appContext = appContext;
         }
 
 
-        public AlumnoRepositorio()
+        public Alumno()
         {
             Autor = new HashSet<Autor>();
         }
 
-        public AlumnoRepositorio( string alumnoNombre, string alumnoApellidos, string alumnoCodigoUniversitario, int idCiclo)
+        public Alumno(string alumnoNombre, string alumnoApellidos, string alumnoCodigoUniversitario, int idCiclo)
         {
-          
             AlumnoNombre = alumnoNombre;
             AlumnoApellidos = alumnoApellidos;
             AlumnoCodigoUniversitario = alumnoCodigoUniversitario;
@@ -38,25 +36,24 @@ namespace RespositorioREPIS.Domain.Entities
 
         public virtual Ciclo IdCicloNavigation { get; set; }
         public virtual ICollection<Autor> Autor { get; set; }
-        
-         
-        public void Create(AlumnoRepositorio alumnoRepositorio)
+
+
+        public void Create(Alumno alumno)
         {
-            _appContext.Alumno.Add(AlumnoRepositorio.FromAlumno(alumnoRepositorio));
-            
+            _appContext.Alumno.Add(Alumno.FromAlumno(alumno));
+
             _appContext.SaveChanges();
         }
 
-        public static AlumnoRepositorio FromAlumno(AlumnoRepositorio alumnoRepositorio)
+        public static Alumno FromAlumno(Alumno alumno)
         {
-            return new AlumnoRepositorio()
+            return new Alumno()
             {
-                IdAlumno = alumnoRepositorio.IdAlumno,
-                AlumnoNombre = alumnoRepositorio.AlumnoNombre,
-                AlumnoApellidos = alumnoRepositorio.AlumnoApellidos,
-                AlumnoCodigoUniversitario = alumnoRepositorio.AlumnoCodigoUniversitario,
-                IdCiclo = alumnoRepositorio.IdCiclo
-                
+                IdAlumno = alumno.IdAlumno,
+                AlumnoNombre = alumno.AlumnoNombre,
+                AlumnoApellidos = alumno.AlumnoApellidos,
+                AlumnoCodigoUniversitario = alumno.AlumnoCodigoUniversitario,
+                IdCiclo = alumno.IdCiclo
             };
         }
     }
