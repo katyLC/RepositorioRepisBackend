@@ -1,0 +1,537 @@
+﻿POST http://localhost:5000/api/paper/
+Content-Type: application/json
+
+{
+  "PaperResumen": "Muchos problemas",
+  "PaperIntroduccion": "Mas problemas"
+}
+
+###
+
+POST http://localhost:5000/api/paper/
+Content-Type: application/json
+
+{
+  "PaperResumen": "Muchos problemas",
+  "PaperIntroduccion": "Mas problemas"
+}
+
+<> 2019-11-11T094006.500.html
+
+###
+
+POST http://localhost:5000/api/paper/
+Content-Type: application/json
+
+{
+  "PaperResumen": "Muchos problemas",
+  "PaperIntroduccion": "Mas problemas"
+}
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+[
+  {
+    "IdProyecto": 21,
+    "IdKeyword": 4
+  },
+  {
+    "IdProyecto": 21,
+    "IdKeyword": 3
+  }
+]
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+[
+  {
+    "IdProyecto": 21,
+    "IdKeyword": 5
+  },
+  {
+    "IdProyecto": 21,
+    "IdKeyword": 6
+  }
+]
+
+<> 2019-11-11T034036.500.html
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+{
+  "IdProyecto": 21,
+  "IdKeyword": 10
+}
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+{
+  "IdProyecto": 21,
+  "IdKeyword": 4
+}
+
+<> 2019-11-11T033242.200.json
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+{
+  "IdProyecto": 21,
+  "IdKeyword": 4
+}
+
+<> 2019-11-11T032549.200.json
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+{
+  "IdProyecto": 21,
+  "IdKeyword": 10
+}
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+{
+  "IdProyecto": 21,
+  "IdKeyword": 10
+}
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+{
+  "IdProyecto": 21,
+  "IdKeyword": 4
+}
+
+<> 2019-11-11T032021.200.json
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+{
+  "IdProyecto": 21,
+  "IdKeyword": 4
+}
+
+<> 2019-11-11T032002.201.json
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+{
+  "IdProyecto": 21,
+  "IdKeyword": 4
+}
+
+<> 2019-11-11T031915.201.json
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+{
+  "IdProyecto": 21,
+  "IdKeyword": 10
+}
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+{
+  "IdProyecto": 21,
+  "IdKeyword": 10
+}
+//  {
+//    "IdProyecto": 21,
+//    "IdKeyword": 4
+//  }
+//]
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+{
+  "IdProyecto": 21,
+  "IdKeyword": 10
+}
+//  {
+//    "IdProyecto": 21,
+//    "IdKeyword": 4
+//  }
+//]
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+{
+  "IdProyecto": 21,
+  "IdKeyword": 10
+}
+//  {
+//    "IdProyecto": 21,
+//    "IdKeyword": 4
+//  }
+//]
+
+<> 2019-11-11T075454.400.json
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+[
+  {
+    "IdProyecto": 21,
+    "IdKeyword": 1
+  },
+  {
+    "IdProyecto": 21,
+    "IdKeyword": 4
+  }
+]
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+[
+  {
+    "IdProyecto": 21,
+    "IdKeyword": 1
+  },
+  {
+    "IdProyecto": 21,
+    "IdKeyword": 4
+  }
+]
+
+<> 2019-11-11T054525.400.json
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+[
+  {
+    "IdProyecto": 21,
+    "IdKeyword": 1
+  },
+  {
+    "IdProyecto": 21,
+    "IdKeyword": 4
+  }
+]
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
+  "ProyectoTema": "Aplicaciones Móviles concurrentes",
+  "ProyectoGithubUrl": "a",
+  "ProyectoDocumentoUrl": "a",
+  "ProyectoPortadaUrl": "a",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 4
+}
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
+  "ProyectoTema": "Aplicaciones Móviles concurrentes",
+  "ProyectoGithubUrl": "a",
+  "ProyectoDocumentoUrl": "a",
+  "ProyectoPortadaUrl": "a",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 1
+}
+
+<> 2019-11-11T043609.500.html
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
+  "ProyectoTema": "Aplicaciones Móviles concurrentes",
+  "ProyectoGithubUrl": "a",
+  "ProyectoDocumentoUrl": "a",
+  "ProyectoPortadaUrl": "a",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 1
+}
+
+<> 2019-11-11T043303.500.html
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
+  "ProyectoTema": "Aplicaciones Móviles concurrentes",
+  "ProyectoGithubUrl": "a",
+  "ProyectoDocumentoUrl": "a",
+  "ProyectoPortadaUrl": "a",
+  "IdCurso": 4,
+  "IdEstado": 1
+}
+
+<> 2019-11-11T042942.500.html
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
+  "ProyectoTema": "Aplicaciones Móviles concurrentes",
+  "ProyectoGithubUrl": " ",
+  "ProyectoDocumentoUrl": " ",
+  "ProyectoPortadaUrl": " ",
+  "IdCurso": 4,
+  "IdEstado": 1
+}
+
+<> 2019-11-11T042930.500.html
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
+  "ProyectoTema": "Aplicaciones Móviles concurrentes",
+  "ProyectoGithubUrl": "",
+  "ProyectoDocumentoUrl": "",
+  "ProyectoPortadaUrl": "",
+  "IdCurso": 4,
+  "IdEstado": 1
+}
+
+<> 2019-11-11T042805.500.html
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
+  "ProyectoTema": "Aplicaciones Móviles concurrentes",
+  "ProyectoGithubUrl": "",
+  "ProyectoDocumentoUrl": "",
+  "ProyectoPortadaUrl": "",
+  "IdCurso": 4,
+  "IdEstado": 1
+}
+
+<> 2019-11-11T042608.500.html
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
+  "ProyectoTema": "Aplicaciones Móviles concurrentes",
+  "ProyectoGithubUrl": "",
+  "ProyectoDocumentoUrl": "",
+  "ProyectoPortadaUrl": "",
+  "IdCurso": 4,
+  "IdEstado": 1
+}
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
+  "ProyectoTema": "Aplicaciones Móviles concurrentes",
+  "ProyectoGithubUrl": "",
+  "ProyectoDocumentoUrl": "",
+  "ProyectoPortadaUrl": "",
+  "IdCurso": 4,
+  "IdEstado": 1
+}
+
+###
+
+GET http://localhost:5000/api/perfil
+
+<> 2019-11-11T035633.200.json
+
+###
+
+POST http://localhost:5000/api/alumno/
+Content-Type: application/json
+
+{
+  "AlumnoNombre": "Christopherrr",
+  "AlumnoApellidos": "Cuyooo",
+  "AlumnoCodigoUniversitario": "2014049413",
+  "IdCiclo": 1
+}
+
+###
+
+GET http://localhost:5000/api/curso/6
+
+<> 2019-11-11T023612.200.json
+
+###
+
+GET http://localhost:5000/api/curso/6
+
+<> 2019-11-11T023536.200.json
+
+###
+
+GET http://localhost:5000/api/curso/6
+
+<> 2019-11-11T023526.200.json
+
+###
+
+GET http://localhost:5000/api/curso/6
+
+<> 2019-11-11T023439.200.json
+
+###
+
+GET http://localhost:5000/api/perfil
+
+<> 2019-11-11T015822.200.json
+
+###
+
+GET http://localhost:5000/api/proyecto
+
+<> 2019-11-11T013727.200.json
+
+###
+
+GET http://localhost:5000/api/proyecto
+
+<> 2019-11-11T012314.200.json
+
+###
+
+GET http://localhost:5000/api/curso/6
+
+<> 2019-11-11T011008.200.json
+
+###
+
+GET http://localhost:5000/api/curso/2
+
+<> 2019-11-11T010933.200.json
+
+###
+
+GET http://localhost:5000/api/curso/4
+
+<> 2019-11-11T010914.200.json
+
+###
+
+GET http://localhost:5000/api/curso/5
+
+<> 2019-11-11T010906.200.json
+
+###
+
+GET http://localhost:5000/api/curso
+
+###
+
+GET http://localhost:5000/api/perfil
+
+<> 2019-11-11T010806.200.json
+
+###
+
+GET http://localhost:5000/api/ciclo
+
+<> 2019-11-11T010800.200.json
+
+###
+
+GET http://localhost:5000/api/curso
+
+###
+
+GET http://localhost:5000/api/perfil
+
+<> 2019-11-11T010650.200.json
+
+###
+
+GET http://localhost:5000/api/perfiles
+
+###
+
+GET http://localhost:5000/api/perfiles
+
+###
+
+GET http://localhost:5000/api/perfiles
+
+<> 2019-11-11T010520.200.json
+
+###
+

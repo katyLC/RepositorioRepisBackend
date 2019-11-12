@@ -1,17 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using RespositorioREPIS.Data;
+﻿using System.Collections.Generic;
 using RespositorioREPIS.Domain.Entities;
 
 namespace RespositorioREPIS.Domain.Repositories
 {
     public interface IProyectoRepositorio
     {
-        List<ListarProyectoDTO> ListarProyecto();
+        List<ProyectoEntity> ListarProyecto();
 
-        void RegistrarProyecto(Proyecto proyecto);
+        void RegistrarProyecto(ProyectoEntity proyecto);
 
-        IList<Proyecto> detalleProyecto();
-        
+        IList<ProyectoEntity> detalleProyecto();
     }
 }

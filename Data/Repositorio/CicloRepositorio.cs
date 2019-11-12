@@ -3,7 +3,7 @@ using System.Linq;
 using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.Repositories;
 
-namespace RespositorioREPIS.Data
+namespace RespositorioREPIS.Data.Repositorio
 {
     public class CicloRepositorio : ICicloRepositorio
     {
@@ -14,10 +14,10 @@ namespace RespositorioREPIS.Data
             _appContext = appContext;
         }
 
-        public List<CicloDTO> Listar()
+        public List<CicloEntity> Listar()
         {
-            List<CicloDTO> ciclos = (from c in _appContext.Ciclo
-                    select new CicloDTO()
+            var ciclos = (from c in _appContext.Ciclo
+                    select new CicloEntity()
                     {
                         IdCiclo = c.IdCiclo,
                         CicloDescripcion = c.CicloDescripcion

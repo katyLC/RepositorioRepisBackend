@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using RespositorioREPIS.Data;
+using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.UseCases.PalabrasClaves;
 
-namespace RespositorioREPIS.Controllers
+namespace RespositorioREPIS.Api
 {
     
     [Route("api/[controller]")]
@@ -19,7 +20,7 @@ namespace RespositorioREPIS.Controllers
         }
 
         [HttpGet]
-        public IList<PalabrasClavesDTO> ListarPalabrasClaves()
+        public IList<KeywordEntity> ListarPalabrasClaves()
         {
             return _palabrasClaves.ListarPalabrasClaves();
         }

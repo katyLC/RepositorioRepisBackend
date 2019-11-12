@@ -2,38 +2,105 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7419a13-ea0a-40d4-83bc-32797096f6d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Api/ListarProyectoController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api/PalabrasClavesController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/DTO/ListarProyectoDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/DTO/PalabrasClavesDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Repositorio/PalabarasClavesRepositorio.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Repositorio/ProyectoRepositorio.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Repositories/IPalabrasClavesRepositorio.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/UseCases/PalabrasClaves/IPalabrasClaves.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/UseCases/PalabrasClaves/PalabrasClaves.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/UseCases/Proyecto/Proyecto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Api/PaperController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Api/PerfilController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Api/ProyectokeywordController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Repositorio/AlumnoRepositorio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Repositorio/PaperRepositorio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Repositorio/ProyectoKeywordRepositorio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/Entities/AlumnoEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/Entities/PaperEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/Entities/PerfilEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/Entities/ProyectoKeywordEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/Repositories/IPaperRepositorio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/Repositories/IProyectoKeywordRepositorio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/UseCases/Paper/IPaperUseCase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/UseCases/Paper/PaperUseCase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/UseCases/Proyecto/IProyectoUseCase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/UseCases/Proyecto/ProyectoUseCase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/UseCases/ProyectoKeyword/IProyectoKeywordUseCase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/UseCases/ProyectoKeyword/ProyectoKeywordUseCase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/Validators/ProyectoKeywordValidation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources/ff388095-b3fe-4eb6-8782-31fc8add62a7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources/ff388095-b3fe-4eb6-8782-31fc8add62a7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources/ff388095-b3fe-4eb6-8782-31fc8add62a7/storage_v2/_src_/database/db_repositorio_upt.ruQwxQ/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources/ff388095-b3fe-4eb6-8782-31fc8add62a7/storage_v2/_src_/database/db_repositorio_upt.ruQwxQ/schema/dbo.sYMBAA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/AlumnoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/AlumnoController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/CicloController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/CicloController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/CursoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/CursoController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/ListarProyectoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/ProyectoController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/PalabrasClavesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/PalabrasClavesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/PerfilesController.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/AppContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/AppContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Entities/Alumno.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/Alumno.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Entities/Autor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/Autor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Entities/Ciclo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/Ciclo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Entities/Proyecto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/Proyecto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DTO/CicloDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/CicloEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DTO/CursoDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/CursoEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DTO/ListarProyectoDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/ProyectoEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DTO/PalabrasClavesDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Entities/KeywordEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Repositorio/CicloRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repositorio/CicloRepositorio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Repositorio/CursoRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repositorio/CursoRepositorio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Repositorio/PalabarasClavesRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repositorio/PalabarasClavesRepositorio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Repositorio/PerfilRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repositorio/PerfilRepositorio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Repositorio/ProyectoRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repositorio/ProyectoRepositorio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/Administrador.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Administrador.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/Alumno.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Alumno.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/AspNetRoleClaims.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/AspNetRoleClaims.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/AspNetRoles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/AspNetRoles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/AspNetUserClaims.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/AspNetUserClaims.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/AspNetUserLogins.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/AspNetUserLogins.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/AspNetUserRoles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/AspNetUserRoles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/AspNetUserTokens.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/AspNetUserTokens.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/AspNetUsers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/AspNetUsers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/Autor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Autor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/Ciclo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Ciclo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/Curso.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Curso.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/Estado.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Estado.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/Keyword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Keyword.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/Paper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Paper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/PaperAdicional.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/PaperAdicional.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/Perfil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Perfil.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/Profesor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Profesor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/Proyecto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Proyecto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/ProyectoAutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/ProyectoAutor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/ProyectoKeyword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/ProyectoKeyword.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/Solicitud.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Solicitud.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Entities/Usuario.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Usuario.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/Repositories/IAlumnoRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Repositories/IAlumnoRepositorio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Repositories/IProyectoListarRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Repositories/IProyectoRepositorio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Repositories/ICicloRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Repositories/ICicloRepositorio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Repositories/ICursoRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Repositories/ICursoRepositorio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Repositories/IPalabrasClavesRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Repositories/IPalabrasClavesRepositorio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Repositories/IPerfilesRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Repositories/IPerfilRepositorio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Repositories/IProyectoRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Repositories/IProyectoRepositorio.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/UseCases/Alumno/RegistrarAlumno.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/Alumno/RegistrarAlumno.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Proyecto/IProyectoListar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/Proyecto/IProyecto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Proyecto/ProyectoListar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Ciclo/CicloListar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/Ciclo/CicloUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Ciclo/ICicloListar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/Ciclo/ICicloUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Curso/Curso.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/Curso/CursoUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Curso/ICurso.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/Curso/ICursoUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/UseCases/PalabrasClaves/IPalabrasClaves.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/PalabrasClaves/IPalabrasClaves.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/UseCases/PalabrasClaves/PalabrasClaves.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/PalabrasClaves/PalabrasClaves.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Perfil/IListarPerfilProyecto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/Perfil/IPerfilUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Perfil/PerfilListar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/Perfil/PerfilUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Proyecto/IProyecto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Proyecto/Proyecto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RespositorioREPIS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RespositorioREPIS.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/RespositorioREPIS.1.0.0.nupkg" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/RespositorioREPIS.1.0.0.nupkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/RespositorioREPIS.1.0.0.nuspec" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/RespositorioREPIS.1.0.0.nuspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,29 +122,29 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Microsoft SQL Server - @DESKTOP-E9OH8QH" type="feb32156:DbDataSourceImpl" />
+        <item name="RepositorioREPIS" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Microsoft SQL Server - @DESKTOP-E9OH8QH" type="feb32156:DbDataSourceImpl" />
+        <item name="RepositorioREPIS" type="feb32156:DbDataSourceImpl" />
         <item name="db_repositorio_upt: database" type="ccb7ac2a:MsImplModel$Database" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Microsoft SQL Server - @DESKTOP-E9OH8QH" type="feb32156:DbDataSourceImpl" />
+        <item name="RepositorioREPIS" type="feb32156:DbDataSourceImpl" />
         <item name="db_repositorio_upt: database" type="ccb7ac2a:MsImplModel$Database" />
         <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Microsoft SQL Server - @DESKTOP-E9OH8QH" type="feb32156:DbDataSourceImpl" />
+        <item name="RepositorioREPIS" type="feb32156:DbDataSourceImpl" />
         <item name="db_repositorio_upt: database" type="ccb7ac2a:MsImplModel$Database" />
         <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Microsoft SQL Server - @DESKTOP-E9OH8QH" type="feb32156:DbDataSourceImpl" />
+        <item name="RepositorioREPIS" type="feb32156:DbDataSourceImpl" />
         <item name="master: database" type="ccb7ac2a:MsImplModel$Database" />
       </path>
     </expand>
@@ -87,124 +154,141 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Data/DTO/CicloDTO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DTO/ListarProyectoDTO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Perfil/IListarPerfilProyecto.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Perfil/PerfilListar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Entities/CicloEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Entities/ProyectoEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Perfil/IPerfilUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Perfil/PerfilUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/708129CF-4E54-4A2E-810D-663C40E72AFB/99/06b36b1c/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Entities/PerfilEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Repositories/IProyectoRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2D506C52-CF4B-4BDB-B896-80B6E2C92982/32/f9a55a07/EntityTypeBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Proyecto/Proyecto.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Proyecto/IProyecto.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/AspNetUserRoles.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/Profesor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/Alumno.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/ProyectoAutor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/AspNetUsers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Proyecto/ProyectoUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Proyecto/IProyectoUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetUserRoles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Profesor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Alumno.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/ProyectoAutor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetUsers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Api/CursoController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/AspNetUserTokens.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/AspNetUserLogins.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/Keyword.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/Estado.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/ProyectoKeyword.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/Administrador.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/Paper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/AspNetRoles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Api/ProyectokeywordController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetUserTokens.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/ProyectoKeyword/ProyectoKeywordUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetUserLogins.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/ProyectoKeyword/IProyectoKeywordUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Keyword.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Estado.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/ProyectoKeyword.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Administrador.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/Repositorio/ProyectoKeywordRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Paper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2D506C52-CF4B-4BDB-B896-80B6E2C92982/bf/7d40ab30/DbSet`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Repositories/IProyectoKeywordRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetRoles.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data/Repositorio/CicloRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/Autor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/Perfil.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/PaperAdicional.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/Usuario.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Autor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Perfil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/PaperAdicional.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Entities/ProyectoKeywordEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Usuario.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data/AppContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/Proyecto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Proyecto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data/Repositorio/CursoRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/AspNetRoleClaims.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/Solicitud.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/Curso.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/AspNetUserClaims.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Entities/Ciclo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetRoleClaims.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Solicitud.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Curso.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetUserClaims.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Ciclo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Repositories/IAlumnoRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Api/ListarProyectoController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Api/ProyectoController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Repositories/ICursoRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data/Repositorio/ProyectoRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Api/ValuesController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DTO/CursoDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Api/PaperController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Entities/CursoEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Entities/AlumnoEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/Repositorio/AlumnoRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Paper/PaperUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Paper/IPaperUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/UseCases/Alumno/RegistrarAlumno.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/UseCases/Alumno/IRegistrarAlumno.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Api/PerfilesController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Api/PerfilController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/Repositorio/PaperRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Api/AlumnoController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/Repositories/IPerfilesRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Repositories/IPaperRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Entities/PaperEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Repositories/IPerfilRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Api/PalabrasClavesController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4156DEFD-3D50-4A5F-A099-C2B49343A450/f5/d7b09e91/AppContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data/Repositorio/PerfilRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Curso/Curso.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Curso/ICurso.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Ciclo/CicloListar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Ciclo/ICicloListar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Curso/CursoUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Curso/ICursoUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Ciclo/CicloUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Ciclo/ICicloUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Repositories/ICicloRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Api/CicloController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data/Repositorio/PalabarasClavesRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DTO/PalabrasClavesDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Entities/KeywordEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Repositories/IPalabrasClavesRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/UseCases/PalabrasClaves/IPalabrasClaves.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/UseCases/PalabrasClaves/PalabrasClaves.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Validators/ProyectoKeywordValidation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Data/ListarPerfilRepositorio.cs" />
-        <option value="$PROJECT_DIR$/Data/CicloDTO.cs" />
-        <option value="$PROJECT_DIR$/Data/CicloRepositorio.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Ciclo/CicloListar.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Ciclo/ICicloListar.cs" />
-        <option value="$PROJECT_DIR$/Api/CicloController.cs" />
-        <option value="$PROJECT_DIR$/Api/Perfiles.cs" />
-        <option value="$PROJECT_DIR$/Domain/Entities/Perfil.cs" />
-        <option value="$PROJECT_DIR$/Domain/Repositories/ICurso.cs" />
-        <option value="$PROJECT_DIR$/Domain/Repositories/IPerfilesRepositorio.cs" />
-        <option value="$PROJECT_DIR$/Data/Repositorio/Perfiles.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Perfil/ListarPerfilProyecto.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Perfil/PerfilListar.cs" />
-        <option value="$PROJECT_DIR$/Data/Repositorio/PerfilRepositorio.cs" />
         <option value="$PROJECT_DIR$/Api/PerfilesController.cs" />
-        <option value="$PROJECT_DIR$/Api/Curso.cs" />
-        <option value="$PROJECT_DIR$/Domain/Entities/Curso.cs" />
-        <option value="$PROJECT_DIR$/Data/DTO/CursoDTO.cs" />
-        <option value="$PROJECT_DIR$/Data/Repositorio/CursoRepositorio.cs" />
-        <option value="$PROJECT_DIR$/Domain/Repositories/ICursoRepositorio.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Curso/ICurso.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Curso/Curso.cs" />
-        <option value="$PROJECT_DIR$/Data/DTO/PalabrasClaves.cs" />
-        <option value="$PROJECT_DIR$/Data/DTO/PalabrasClavesDTO.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/PalabrasClaves/IPalabrasClaves.cs" />
-        <option value="$PROJECT_DIR$/Domain/Repositories/IPalabrasClavesRepositorio.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/PalabrasClaves/PalabrasClaves.cs" />
-        <option value="$PROJECT_DIR$/Data/Repositorio/PalabarasClavesRepositorio.cs" />
-        <option value="$PROJECT_DIR$/Api/PalabrasClavesController.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/Ciclo.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/Perfil.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Ciclo/CicloUseCase.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Perfil/PerfilUseCase.cs" />
+        <option value="$PROJECT_DIR$/Domain/Entities/PerfilEntity.cs" />
+        <option value="$PROJECT_DIR$/Domain/Repositories/IPerfilRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Domain/Repositories/ICicloRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Ciclo/ICicloUseCase.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Perfil/IPerfilUseCase.cs" />
+        <option value="$PROJECT_DIR$/Data/Repositorio/CicloRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Data/Repositorio/PerfilRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Api/PerfilController.cs" />
         <option value="$PROJECT_DIR$/Api/CursoController.cs" />
-        <option value="$PROJECT_DIR$/Data/DTO/ListarProyecto.cs" />
-        <option value="$PROJECT_DIR$/Data/Repositorio/ListarProyecto.cs" />
-        <option value="$PROJECT_DIR$/Data/Repositorio/ListarProyectoRepositorio.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Proyecto/IProyectoListar.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Proyecto/ProyectoListar.cs" />
-        <option value="$PROJECT_DIR$/Api/ListarProyectoController.cs" />
-        <option value="$PROJECT_DIR$/Domain/Repositories/IAlumnoRepositorio.cs" />
-        <option value="$PROJECT_DIR$/Domain/Entities/Ciclo.cs" />
-        <option value="$PROJECT_DIR$/Domain/Entities/Autor.cs" />
-        <option value="$PROJECT_DIR$/Startup.cs" />
-        <option value="$PROJECT_DIR$/Data/AppContext.cs" />
-        <option value="$PROJECT_DIR$/Data/DTO/ListarProyectoDTO.cs" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Alumno/RegistrarAlumno.cs" />
-        <option value="$PROJECT_DIR$/Domain/Entities/Alumno.cs" />
-        <option value="$PROJECT_DIR$/Api/AlumnoController.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Proyecto/IProyecto.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Proyecto/Proyecto.cs" />
-        <option value="$PROJECT_DIR$/Domain/Repositories/IProyectoRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Curso/ICursoUseCase.cs" />
+        <option value="$PROJECT_DIR$/Domain/Entities/CursoEntity.cs" />
+        <option value="$PROJECT_DIR$/Data/Repositorio/CursoRepositorio.cs" />
         <option value="$PROJECT_DIR$/Data/Repositorio/ProyectoRepositorio.cs" />
-        <option value="$PROJECT_DIR$/Domain/Entities/Proyecto.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Proyecto/IProyecto.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ff388095-b3fe-4eb6-8782-31fc8add62a7/console_2.sql" />
+        <option value="$PROJECT_DIR$/Domain/Entities/ProyectoEntity.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Proyecto/ProyectoUseCaseUseCase.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Proyecto/IProyectoUseCase.cs" />
+        <option value="$PROJECT_DIR$/Api/ProyectoController.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/Proyecto.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Proyecto/ProyectoUseCase.cs" />
+        <option value="$PROJECT_DIR$/Domain/Repositories/IProyectoKeyword.cs" />
+        <option value="$PROJECT_DIR$/Data/Repositorio/ProyectoKeywordRepositorioRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/ProyectoKeyword/IProyectoKeywordUseCase.cs" />
+        <option value="$PROJECT_DIR$/Api/ProyectoKeywordController.cs" />
+        <option value="$PROJECT_DIR$/Domain/Entities/ProyectoKeywordEntity.cs" />
+        <option value="$PROJECT_DIR$/Domain/Validators/ProyectoKeywordValidator.cs" />
+        <option value="$PROJECT_DIR$/Data/Repositorio/ProyectoKeywordRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Domain/Repositories/IProyectoKeywordRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/ProyectoKeyword/ProyectoKeywordUseCase.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" />
+        <option value="$PROJECT_DIR$/Api/ProyectokeywordController.cs" />
+        <option value="$PROJECT_DIR$/Domain/Validators/ProyectoKeywordValidation.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" />
+        <option value="$PROJECT_DIR$/Data/AppContext.cs" />
+        <option value="$PROJECT_DIR$/Domain/Entities/Paper.cs" />
+        <option value="$PROJECT_DIR$/Domain/Repositories/IPaperRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/ProyectoKeyword.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/Paper.cs" />
+        <option value="$PROJECT_DIR$/Data/Repositorio/PaperRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Paper/IPaperUseCase.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Paper/PaperUseCase.cs" />
+        <option value="$PROJECT_DIR$/Api/PaperController.cs" />
+        <option value="$PROJECT_DIR$/Startup.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" />
+        <option value="$PROJECT_DIR$/Domain/Entities/PaperEntity.cs" />
       </list>
     </option>
   </component>
@@ -222,7 +306,275 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5000/api/paper/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;PaperResumen&quot;: &quot;Muchos problemas&quot;,&#10;  &quot;PaperIntroduccion&quot;: &quot;Mas problemas&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5000/api/proyectoKeyword/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[&#10;  {&#10;    &quot;IdProyecto&quot;: 21,&#10;    &quot;IdKeyword&quot;: 4&#10;  },&#10;  {&#10;    &quot;IdProyecto&quot;: 21,&#10;    &quot;IdKeyword&quot;: 3&#10;  }&#10;]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5000/api/proyectoKeyword/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[&#10;  {&#10;    &quot;IdProyecto&quot;: 21,&#10;    &quot;IdKeyword&quot;: 5&#10;  },&#10;  {&#10;    &quot;IdProyecto&quot;: 21,&#10;    &quot;IdKeyword&quot;: 6&#10;  }&#10;]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5000/api/proyectoKeyword/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;IdProyecto&quot;: 21,&#10;  &quot;IdKeyword&quot;: 4&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5000/api/proyectoKeyword/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;IdProyecto&quot;: 21,&#10;  &quot;IdKeyword&quot;: 10&#10;}&#10;//  {&#10;//    &quot;IdProyecto&quot;: 21,&#10;//    &quot;IdKeyword&quot;: 4&#10;//  }&#10;//]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5000/api/proyectoKeyword/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[&#10;  {&#10;    &quot;IdProyecto&quot;: 21,&#10;    &quot;IdKeyword&quot;: 1&#10;  },&#10;  {&#10;    &quot;IdProyecto&quot;: 21,&#10;    &quot;IdKeyword&quot;: 4&#10;  }&#10;]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5000/api/proyecto/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;ProyectoNombre&quot;: &quot;Aplicaciones Móviles concurrentes&quot;,&#10;  &quot;ProyectoTema&quot;: &quot;Aplicaciones Móviles concurrentes&quot;,&#10;  &quot;ProyectoGithubUrl&quot;: &quot;a&quot;,&#10;  &quot;ProyectoDocumentoUrl&quot;: &quot;a&quot;,&#10;  &quot;ProyectoPortadaUrl&quot;: &quot;a&quot;,&#10;  &quot;IdCurso&quot;: 4,&#10;  &quot;IdPaper&quot;: 1,&#10;  &quot;IdEstado&quot;: 4&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5000/api/proyecto/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;ProyectoNombre&quot;: &quot;Aplicaciones Móviles concurrentes&quot;,&#10;  &quot;ProyectoTema&quot;: &quot;Aplicaciones Móviles concurrentes&quot;,&#10;  &quot;ProyectoGithubUrl&quot;: &quot;a&quot;,&#10;  &quot;ProyectoDocumentoUrl&quot;: &quot;a&quot;,&#10;  &quot;ProyectoPortadaUrl&quot;: &quot;a&quot;,&#10;  &quot;IdCurso&quot;: 4,&#10;  &quot;IdPaper&quot;: 1,&#10;  &quot;IdEstado&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5000/api/proyecto/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;ProyectoNombre&quot;: &quot;Aplicaciones Móviles concurrentes&quot;,&#10;  &quot;ProyectoTema&quot;: &quot;Aplicaciones Móviles concurrentes&quot;,&#10;  &quot;ProyectoGithubUrl&quot;: &quot;a&quot;,&#10;  &quot;ProyectoDocumentoUrl&quot;: &quot;a&quot;,&#10;  &quot;ProyectoPortadaUrl&quot;: &quot;a&quot;,&#10;  &quot;IdCurso&quot;: 4,&#10;  &quot;IdEstado&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5000/api/proyecto/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;ProyectoNombre&quot;: &quot;Aplicaciones Móviles concurrentes&quot;,&#10;  &quot;ProyectoTema&quot;: &quot;Aplicaciones Móviles concurrentes&quot;,&#10;  &quot;ProyectoGithubUrl&quot;: &quot; &quot;,&#10;  &quot;ProyectoDocumentoUrl&quot;: &quot; &quot;,&#10;  &quot;ProyectoPortadaUrl&quot;: &quot; &quot;,&#10;  &quot;IdCurso&quot;: 4,&#10;  &quot;IdEstado&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5000/api/proyecto/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;ProyectoNombre&quot;: &quot;Aplicaciones Móviles concurrentes&quot;,&#10;  &quot;ProyectoTema&quot;: &quot;Aplicaciones Móviles concurrentes&quot;,&#10;  &quot;ProyectoGithubUrl&quot;: &quot;&quot;,&#10;  &quot;ProyectoDocumentoUrl&quot;: &quot;&quot;,&#10;  &quot;ProyectoPortadaUrl&quot;: &quot;&quot;,&#10;  &quot;IdCurso&quot;: 4,&#10;  &quot;IdEstado&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5000/api/perfil" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:5000/api/alumno/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;AlumnoNombre&quot;: &quot;Christopherrr&quot;,&#10;  &quot;AlumnoApellidos&quot;: &quot;Cuyooo&quot;,&#10;  &quot;AlumnoCodigoUniversitario&quot;: &quot;2014049413&quot;,&#10;  &quot;IdCiclo&quot;: 1&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5000/api/curso/6" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5000/api/proyecto" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5000/api/curso/2" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5000/api/curso/4" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5000/api/curso/5" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5000/api/curso" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5000/api/ciclo" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5000/api/perfiles" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:5000/api/ciclos" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -236,7 +588,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.RespositorioREPIS">
+  <component name="RunManager" selected="HTTP Request.rest-api_2#2">
+    <configuration name="rest-api#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_1#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_2#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" index="2">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api#6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" index="6">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api#7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" index="7">
+      <method v="2" />
+    </configuration>
     <configuration name="RespositorioREPIS" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/RespositorioREPIS.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v2.2" />
@@ -272,7 +639,41 @@
     <list>
       <item itemvalue=".NET Launch Settings Profile.RespositorioREPIS" />
       <item itemvalue=".NET Launch Settings Profile.RespositorioREPIS: IIS Express" />
+      <item itemvalue="HTTP Request.rest-api#1" />
+      <item itemvalue="HTTP Request.rest-api#6" />
+      <item itemvalue="HTTP Request.rest-api#7" />
+      <item itemvalue="HTTP Request.rest-api_1#1" />
+      <item itemvalue="HTTP Request.rest-api_2#2" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.rest-api_2#2" />
+        <item itemvalue="HTTP Request.rest-api_1#1" />
+        <item itemvalue="HTTP Request.rest-api#7" />
+        <item itemvalue="HTTP Request.rest-api#6" />
+        <item itemvalue="HTTP Request.rest-api#1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@8f1a1693" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@8f1a1693" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@6ef83a66" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -311,7 +712,14 @@
       <workItem from="1573087660259" duration="14330000" />
       <workItem from="1573115150646" duration="9344000" />
       <workItem from="1573151078948" duration="667000" />
-      <workItem from="1573156681071" duration="1048000" />
+      <workItem from="1573156681071" duration="3036000" />
+      <workItem from="1573322385248" duration="3292000" />
+      <workItem from="1573423167105" duration="14098000" />
+      <workItem from="1573441099457" duration="7116000" />
+      <workItem from="1573449313917" duration="19155000" />
+      <workItem from="1573484591853" duration="2292000" />
+      <workItem from="1573502110611" duration="4943000" />
+      <workItem from="1573524488712" duration="4480000" />
     </task>
     <servers />
   </component>

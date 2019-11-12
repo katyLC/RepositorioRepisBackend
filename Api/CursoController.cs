@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using RespositorioREPIS.Data;
+using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.UseCases.Curso;
 
 namespace RespositorioREPIS.Controllers
@@ -11,19 +11,20 @@ namespace RespositorioREPIS.Controllers
     [ApiController]
     public class CursoController : Controller
     {
-        private readonly ICurso _curso;
+        private readonly ICursoUseCase _cursoUseCase;
 
         // GET
-        public CursoController(ICurso curso)
+        public CursoController(ICursoUseCase cursoUseCase)
         {
-            _curso = curso;
+            _cursoUseCase = cursoUseCase;
         }
 
         // GET: api/curso/5
         [HttpGet("{id}")]
-        public async Task<IList<CursoDTO>> ListarCurso(int id)
+        public IList<CursoEntity> ListarCurso(int id)
         {
-            return _curso.ListarCurso(id);
+            return _cursoUseCase.ListarCurso(id);
         }
+
     }
 }

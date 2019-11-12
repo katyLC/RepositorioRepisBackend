@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using RespositorioREPIS.Data.DbModel;
 using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.Repositories;
-using RespositorioREPIS.Domain.UseCases.PerfilProyecto;
 
-namespace RespositorioREPIS.Data
+namespace RespositorioREPIS.Data.Repositorio
 {
-    public class PerfilRepositorio : IListarPerfilProyecto, IPerfilesRepositorio
+    public class PerfilRepositorio : IPerfilRepositorio
     {
         private readonly AppContext _appContext;
 
@@ -14,12 +14,18 @@ namespace RespositorioREPIS.Data
         {
             _appContext = appContext;
         }
-        
-        
-        
-        public IList<Perfil> ListarPerfil()
+
+        public List<PerfilEntity> Listar()
         {
-            return _appContext.Perfil.ToList();
+            var perfiles = (from p in _appContext.Perfil
+                    select new PerfilEntity()
+                    {
+                        IdPerfil = p.IdPerfil,
+                        PerfilDescripcion = p.PerfilDescripcion,
+                        PerfilColor = p.PerfilColor
+                    }
+                ).ToList();
+            return perfiles;
         }
     }
 }

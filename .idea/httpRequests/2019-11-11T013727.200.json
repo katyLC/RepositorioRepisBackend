@@ -1,0 +1,82 @@
+﻿[
+  {
+    "idProyecto": 6,
+    "proyectoNombre": "Implementación de un Data Warehouse",
+    "proyectoTema": null,
+    "proyectoGithubUrl": null,
+    "proyectoDocumentoUrl": null,
+    "proyectoPortadaUrl": null,
+    "idCurso": 0,
+    "idPaper": 0,
+    "idEstado": 0,
+    "curso": {
+      "idCurso": 7,
+      "cursoNombre": "Base de Datos II",
+      "perfil": {
+        "idPerfil": 2,
+        "perfilDescripcion": "Administrador de Base de Datos",
+        "perfilColor": "blue[500]"
+      }
+    }
+  },
+  {
+    "idProyecto": 7,
+    "proyectoNombre": "Implementación de una red para electrosur",
+    "proyectoTema": null,
+    "proyectoGithubUrl": null,
+    "proyectoDocumentoUrl": null,
+    "proyectoPortadaUrl": null,
+    "idCurso": 0,
+    "idPaper": 0,
+    "idEstado": 0,
+    "curso": {
+      "idCurso": 6,
+      "cursoNombre": "Redes y Comunicaciones de Datos II",
+      "perfil": {
+        "idPerfil": 3,
+        "perfilDescripcion": "Administrador de Redes, Telecomunicaciones e Infraestructura de TI",
+        "perfilColor": "amber[500]"
+      }
+    }
+  },
+  {
+    "idProyecto": 8,
+    "proyectoNombre": "Aplicación móvil con realidad aumentada",
+    "proyectoTema": null,
+    "proyectoGithubUrl": null,
+    "proyectoDocumentoUrl": null,
+    "proyectoPortadaUrl": null,
+    "idCurso": 0,
+    "idPaper": 0,
+    "idEstado": 0,
+    "curso": {
+      "idCurso": 4,
+      "cursoNombre": "Soluciones Móviles I",
+      "perfil": {
+        "idPerfil": 5,
+        "perfilDescripcion": "Desarrollo de Software",
+        "perfilColor": "green[500]"
+      }
+    }
+  },
+  {
+    "idProyecto": 11,
+    "proyectoNombre": "Gestión de Proyecto de Gimnasio aplicando la metodología RUP",
+    "proyectoTema": null,
+    "proyectoGithubUrl": null,
+    "proyectoDocumentoUrl": null,
+    "proyectoPortadaUrl": null,
+    "idCurso": 0,
+    "idPaper": 0,
+    "idEstado": 0,
+    "curso": {
+      "idCurso": 5,
+      "cursoNombre": "Ingeniería de Software",
+      "perfil": {
+        "idPerfil": 4,
+        "perfilDescripcion": "Gestor de Proyectos de SI",
+        "perfilColor": "blueGrey[500]"
+      }
+    }
+  }
+]

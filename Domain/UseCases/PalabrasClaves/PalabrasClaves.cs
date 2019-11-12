@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using RespositorioREPIS.Data;
+using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.Repositories;
 
 namespace RespositorioREPIS.Domain.UseCases.PalabrasClaves
@@ -14,7 +15,7 @@ namespace RespositorioREPIS.Domain.UseCases.PalabrasClaves
             _palabrasClavesRepositorio = palabrasClavesRepositorio;
         }
         
-        public IList<PalabrasClavesDTO> ListarPalabrasClaves()
+        public IList<KeywordEntity> ListarPalabrasClaves()
         {
             return _palabrasClavesRepositorio.ListarPalabrasClaves();
         }

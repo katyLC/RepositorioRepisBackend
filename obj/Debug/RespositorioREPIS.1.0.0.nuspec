@@ -9,6 +9,7 @@
     <description>Package Description</description>
     <dependencies>
       <group targetFramework=".NETCoreApp2.2">
+        <dependency id="FluentValidation.AspNetCore" version="8.5.1" exclude="Build,Analyzers" />
         <dependency id="Microsoft.AspNetCore.Cors" version="2.2.0" exclude="Build,Analyzers" />
         <dependency id="Microsoft.EntityFrameworkCore" version="2.2.0" exclude="Build,Analyzers" />
         <dependency id="Microsoft.EntityFrameworkCore.Design" version="2.2.0" exclude="Build,Analyzers" />

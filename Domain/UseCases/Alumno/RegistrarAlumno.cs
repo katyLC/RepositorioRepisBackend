@@ -1,4 +1,6 @@
-﻿using RespositorioREPIS.Domain.Repositories;
+﻿using RespositorioREPIS.Data;
+using RespositorioREPIS.Domain.Entities;
+using RespositorioREPIS.Domain.Repositories;
 
 
 namespace RespositorioREPIS.Domain.UseCases.Alumno
@@ -16,7 +18,7 @@ namespace RespositorioREPIS.Domain.UseCases.Alumno
             string alumnoCodigoUniversitario,
             int idCiclo)
         {
-            _alumnoRepositorio.Create(new Entities.Alumno(alumnoNombre, alummoApellidos, alumnoCodigoUniversitario,
+            _alumnoRepositorio.Create(new AlumnoEntity(alumnoNombre, alummoApellidos, alumnoCodigoUniversitario,
                 idCiclo));
         }
     }

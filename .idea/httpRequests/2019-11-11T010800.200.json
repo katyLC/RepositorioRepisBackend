@@ -1,0 +1,42 @@
+﻿[
+  {
+    "idCiclo": 1,
+    "cicloDescripcion": "I"
+  },
+  {
+    "idCiclo": 2,
+    "cicloDescripcion": "II"
+  },
+  {
+    "idCiclo": 3,
+    "cicloDescripcion": "III"
+  },
+  {
+    "idCiclo": 4,
+    "cicloDescripcion": "IV"
+  },
+  {
+    "idCiclo": 5,
+    "cicloDescripcion": "V"
+  },
+  {
+    "idCiclo": 6,
+    "cicloDescripcion": "VI"
+  },
+  {
+    "idCiclo": 7,
+    "cicloDescripcion": "VII"
+  },
+  {
+    "idCiclo": 8,
+    "cicloDescripcion": "VIII"
+  },
+  {
+    "idCiclo": 9,
+    "cicloDescripcion": "IX"
+  },
+  {
+    "idCiclo": 10,
+    "cicloDescripcion": "X"
+  }
+]

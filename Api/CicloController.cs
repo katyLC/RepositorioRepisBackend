@@ -6,23 +6,23 @@ using RespositorioREPIS.Data;
 using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.UseCases.Ciclo;
 
-namespace RespositorioREPIS.Controllers
+namespace RespositorioREPIS.Api
 {
     [Route("api/[controller]")]
     [ApiController]
     public class CicloController : Controller
     {
-        private readonly ICicloListar _cicloListar;
+        private readonly ICicloUseCase _cicloUseCase;
 
-        public CicloController(ICicloListar cicloListar)
+        public CicloController(ICicloUseCase cicloUseCase)
         {
-            _cicloListar = cicloListar;
+            _cicloUseCase = cicloUseCase;
         }
 
         [HttpGet]
-        public IList<CicloDTO> Listar()
+        public IList<CicloEntity> Listar()
         {
-            return _cicloListar.Listar();
+            return _cicloUseCase.Listar();
         }
     }
 }

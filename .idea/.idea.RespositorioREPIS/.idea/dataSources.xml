@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Microsoft SQL Server - @DESKTOP-E9OH8QH" uuid="ff388095-b3fe-4eb6-8782-31fc8add62a7">
+    <data-source source="LOCAL" name="RepositorioREPIS" uuid="ff388095-b3fe-4eb6-8782-31fc8add62a7">
       <driver-ref>sqlserver.ms</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>

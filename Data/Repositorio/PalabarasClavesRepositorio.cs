@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.Repositories;
 
-namespace RespositorioREPIS.Data
+namespace RespositorioREPIS.Data.Repositorio
 {
     public class PalabarasClavesRepositorio : IPalabrasClavesRepositorio
     {
@@ -13,10 +14,10 @@ namespace RespositorioREPIS.Data
             _appContext = appContext;
         }
         
-        public List<PalabrasClavesDTO> ListarPalabrasClaves()
+        public List<KeywordEntity> ListarPalabrasClaves()
         {
-            List<PalabrasClavesDTO> palabrasClaves = (from c in _appContext.Keyword
-                    select new PalabrasClavesDTO()
+            List<KeywordEntity> palabrasClaves = (from c in _appContext.Keyword
+                    select new KeywordEntity()
                     {
                         IdKeyword = c.IdKeyword,
                         KeywordDescripcion = c.KeywordDescripcion

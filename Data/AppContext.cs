@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using RespositorioREPIS.Data.DbModel;
 using RespositorioREPIS.Domain.Entities;
 
 namespace RespositorioREPIS.Data
@@ -31,7 +32,7 @@ namespace RespositorioREPIS.Data
         public virtual DbSet<Estado> Estado { get; set; }
         public virtual DbSet<Keyword> Keyword { get; set; }
         public virtual DbSet<Paper> Paper { get; set; }
-        public virtual DbSet<PaperAdicional> PaperAdicional { get; set; }
+//        public virtual DbSet<PaperAdicional> PaperAdicional { get; set; }
         public virtual DbSet<Perfil> Perfil { get; set; }
         public virtual DbSet<Profesor> Profesor { get; set; }
         public virtual DbSet<Proyecto> Proyecto { get; set; }
@@ -101,11 +102,11 @@ namespace RespositorioREPIS.Data
 
                 entity.Property(e => e.IdCiclo).HasColumnName("id_ciclo");
 
-/*                entity.HasOne(d => d.IdCicloNavigation)
+                entity.HasOne(d => d.IdCicloNavigation)
                     .WithMany(p => p.Alumno)
                     .HasForeignKey(d => d.IdCiclo)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Alumno__id_ciclo__4D5F7D71");*/
+                    .HasConstraintName("FK__Alumno__id_ciclo__4D5F7D71");
             });
 
             modelBuilder.Entity<AspNetRoleClaims>(entity =>
@@ -307,6 +308,12 @@ namespace RespositorioREPIS.Data
                     .HasColumnName("paper_resumen")
                     .HasMaxLength(250)
                     .IsUnicode(false);
+
+                entity.Property(e => e.PaperIntroduccion)
+                    .IsRequired()
+                    .HasColumnName("paper_introduccion")
+                    .HasMaxLength(250)
+                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<PaperAdicional>(entity =>
@@ -330,11 +337,11 @@ namespace RespositorioREPIS.Data
                     .HasMaxLength(250)
                     .IsUnicode(false);
 
-                entity.HasOne(d => d.IdPaperNavigation)
-                    .WithMany(p => p.PaperAdicional)
-                    .HasForeignKey(d => d.IdPaper)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__PaperAdic__id_pa__0C85DE4D");
+//                entity.HasOne(d => d.IdPaperNavigation)
+//                    .WithMany(p => p.PaperAdicional)
+//                    .HasForeignKey(d => d.IdPaper)
+//                    .OnDelete(DeleteBehavior.ClientSetNull)
+//                    .HasConstraintName("FK__PaperAdic__id_pa__0C85DE4D");
             });
 
             modelBuilder.Entity<Perfil>(entity =>
@@ -349,7 +356,7 @@ namespace RespositorioREPIS.Data
                     .HasColumnName("perfil_descripcion")
                     .HasMaxLength(250)
                     .IsUnicode(false);
-                
+
                 entity.Property(e => e.PerfilColor)
                     .HasColumnName("perfil_color")
                     .HasMaxLength(250)

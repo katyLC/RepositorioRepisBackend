@@ -3,6 +3,7 @@
   <component name="ContentModelStore">
     <e p="C:\Users\tzoph\.Rider2019.2\config\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\tzoph\.Rider2019.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\tzoph\.Rider2019.2\config\scratches" t="IncludeRecursive" />
     <e p="C:\Users\tzoph\.Rider2019.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\tzoph\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RespositorioREPIS.2094678688.00" t="ExcludeRecursive" />
     <e p="C:\Users\tzoph\RiderProjects\RespositorioREPIS" t="IncludeRecursive">
@@ -10,9 +11,11 @@
         <e p="AlumnoController.cs" t="Include" />
         <e p="CicloController.cs" t="Include" />
         <e p="CursoController.cs" t="Include" />
-        <e p="ListarProyectoController.cs" t="Include" />
         <e p="PalabrasClavesController.cs" t="Include" />
-        <e p="PerfilesController.cs" t="Include" />
+        <e p="PaperController.cs" t="Include" />
+        <e p="PerfilController.cs" t="Include" />
+        <e p="ProyectoController.cs" t="Include" />
+        <e p="ProyectoKeywordController.cs" t="Include" />
         <e p="ValuesController.cs" t="Include" />
       </e>
       <e p="appsettings.Development.json" t="Include" />
@@ -20,22 +23,7 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="Data" t="Include">
         <e p="AppContext.cs" t="Include" />
-        <e p="DTO" t="Include">
-          <e p="CicloDTO.cs" t="Include" />
-          <e p="CursoDTO.cs" t="Include" />
-          <e p="ListarProyectoDTO.cs" t="Include" />
-          <e p="PalabrasClavesDTO.cs" t="Include" />
-        </e>
-        <e p="Repositorio" t="Include">
-          <e p="CicloRepositorio.cs" t="Include" />
-          <e p="CursoRepositorio.cs" t="Include" />
-          <e p="PalabarasClavesRepositorio.cs" t="Include" />
-          <e p="PerfilRepositorio.cs" t="Include" />
-          <e p="ProyectoRepositorio.cs" t="Include" />
-        </e>
-      </e>
-      <e p="Domain" t="Include">
-        <e p="Entities" t="Include">
+        <e p="DbModel" t="Include">
           <e p="Administrador.cs" t="Include" />
           <e p="Alumno.cs" t="Include" />
           <e p="AspNetRoleClaims.cs" t="Include" />
@@ -60,12 +48,36 @@
           <e p="Solicitud.cs" t="Include" />
           <e p="Usuario.cs" t="Include" />
         </e>
+        <e p="Repositorio" t="Include">
+          <e p="AlumnoRepositorio.cs" t="Include" />
+          <e p="CicloRepositorio.cs" t="Include" />
+          <e p="CursoRepositorio.cs" t="Include" />
+          <e p="PalabarasClavesRepositorio.cs" t="Include" />
+          <e p="PaperRepositorio.cs" t="Include" />
+          <e p="PerfilRepositorio.cs" t="Include" />
+          <e p="ProyectoKeywordRepositorio.cs" t="Include" />
+          <e p="ProyectoRepositorio.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Domain" t="Include">
+        <e p="Entities" t="Include">
+          <e p="AlumnoEntity.cs" t="Include" />
+          <e p="CicloEntity.cs" t="Include" />
+          <e p="CursoEntity.cs" t="Include" />
+          <e p="KeywordEntity.cs" t="Include" />
+          <e p="PaperEntity.cs" t="Include" />
+          <e p="PerfilEntity.cs" t="Include" />
+          <e p="ProyectoEntity.cs" t="Include" />
+          <e p="ProyectoKeywordEntity.cs" t="Include" />
+        </e>
         <e p="Repositories" t="Include">
           <e p="IAlumnoRepositorio.cs" t="Include" />
           <e p="ICicloRepositorio.cs" t="Include" />
           <e p="ICursoRepositorio.cs" t="Include" />
           <e p="IPalabrasClavesRepositorio.cs" t="Include" />
-          <e p="IPerfilesRepositorio.cs" t="Include" />
+          <e p="IPaperRepositorio.cs" t="Include" />
+          <e p="IPerfilRepositorio.cs" t="Include" />
+          <e p="IProyectoKeywordRepositorio.cs" t="Include" />
           <e p="IProyectoRepositorio.cs" t="Include" />
         </e>
         <e p="UseCases" t="Include">
@@ -74,25 +86,36 @@
             <e p="RegistrarAlumno.cs" t="Include" />
           </e>
           <e p="Ciclo" t="Include">
-            <e p="CicloListar.cs" t="Include" />
-            <e p="ICicloListar.cs" t="Include" />
+            <e p="CicloUseCase.cs" t="Include" />
+            <e p="ICicloUseCase.cs" t="Include" />
           </e>
           <e p="Curso" t="Include">
-            <e p="Curso.cs" t="Include" />
-            <e p="ICurso.cs" t="Include" />
+            <e p="CursoUseCase.cs" t="Include" />
+            <e p="ICursoUseCase.cs" t="Include" />
           </e>
           <e p="PalabrasClaves" t="Include">
             <e p="IPalabrasClaves.cs" t="Include" />
             <e p="PalabrasClaves.cs" t="Include" />
           </e>
+          <e p="Paper" t="Include">
+            <e p="IPaperUseCase.cs" t="Include" />
+            <e p="PaperUseCase.cs" t="Include" />
+          </e>
           <e p="Perfil" t="Include">
-            <e p="IListarPerfilProyecto.cs" t="Include" />
-            <e p="PerfilListar.cs" t="Include" />
+            <e p="IPerfilUseCase.cs" t="Include" />
+            <e p="PerfilUseCase.cs" t="Include" />
           </e>
           <e p="Proyecto" t="Include">
-            <e p="IProyecto.cs" t="Include" />
-            <e p="Proyecto.cs" t="Include" />
+            <e p="IProyectoUseCase.cs" t="Include" />
+            <e p="ProyectoUseCase.cs" t="Include" />
           </e>
+          <e p="ProyectoKeyword" t="Include">
+            <e p="IProyectoKeywordUseCase.cs" t="Include" />
+            <e p="ProyectoKeywordUseCase.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Validators" t="Include">
+          <e p="ProyectoKeywordValidation.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive">

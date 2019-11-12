@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RespositorioREPIS.Domain.UseCases.Alumno;
 
-namespace RespositorioREPIS.Controllers
+namespace RespositorioREPIS.Api
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -14,10 +14,10 @@ namespace RespositorioREPIS.Controllers
             _registrarAlumno = registrarAlumno;
         }
 
-        public void RegistrarAlumno([FromBody] AlumnoComand comand)
+        public void RegistrarAlumno([FromBody] AlumnoComand alumno)
         {
-            _registrarAlumno.Registrar(comand.AlumnoNombre, comand.AlumnoApellidos, comand.AlumnoCodigoUniversitario,
-                comand.IdCiclo);
+            _registrarAlumno.Registrar(alumno.AlumnoNombre, alumno.AlumnoApellidos, alumno.AlumnoCodigoUniversitario,
+                alumno.IdCiclo);
         }
 
         public class AlumnoComand

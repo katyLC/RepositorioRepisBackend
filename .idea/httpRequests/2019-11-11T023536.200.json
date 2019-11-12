@@ -1,0 +1,11 @@
+﻿[
+  {
+    "idCurso": 5,
+    "cursoNombre": "Ingeniería de Software",
+    "perfil": {
+      "idPerfil": 4,
+      "perfilDescripcion": null,
+      "perfilColor": null
+    }
+  }
+]
