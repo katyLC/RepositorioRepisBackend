@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using RespositorioREPIS.Data.DbModel;
 using RespositorioREPIS.Domain.Entities;
 
 namespace RespositorioREPIS.Domain.Repositories
@@ -7,8 +9,12 @@ namespace RespositorioREPIS.Domain.Repositories
     {
         List<ProyectoEntity> ListarProyecto();
 
-        void RegistrarProyecto(ProyectoEntity proyecto);
+        Task RegistrarProyecto(Proyecto proyecto);
 
         IList<ProyectoEntity> detalleProyecto();
+
+        void ActualizarProyecto(Proyecto proyecto);
+
+        Task<Proyecto> BuscarProyectoPorId(int id);
     }
 }

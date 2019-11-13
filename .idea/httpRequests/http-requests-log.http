@@ -1,263 +1,25 @@
-﻿POST http://localhost:5000/api/paper/
+﻿GET http://localhost:5000/api/curso/1
 Content-Type: application/json
 
-{
-  "PaperResumen": "Muchos problemas",
-  "PaperIntroduccion": "Mas problemas"
-}
+<> 2019-11-13T032951.200.json
 
 ###
 
-POST http://localhost:5000/api/paper/
+GET http://localhost:5000/api/curso/
 Content-Type: application/json
-
-{
-  "PaperResumen": "Muchos problemas",
-  "PaperIntroduccion": "Mas problemas"
-}
-
-<> 2019-11-11T094006.500.html
 
 ###
 
-POST http://localhost:5000/api/paper/
+GET http://localhost:5000/api/curso/
 Content-Type: application/json
-
-{
-  "PaperResumen": "Muchos problemas",
-  "PaperIntroduccion": "Mas problemas"
-}
 
 ###
 
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-[
-  {
-    "IdProyecto": 21,
-    "IdKeyword": 4
-  },
-  {
-    "IdProyecto": 21,
-    "IdKeyword": 3
-  }
-]
+GET http://localhost:5000/api/cursos/
 
 ###
 
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-[
-  {
-    "IdProyecto": 21,
-    "IdKeyword": 5
-  },
-  {
-    "IdProyecto": 21,
-    "IdKeyword": 6
-  }
-]
-
-<> 2019-11-11T034036.500.html
-
-###
-
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-{
-  "IdProyecto": 21,
-  "IdKeyword": 10
-}
-
-###
-
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-{
-  "IdProyecto": 21,
-  "IdKeyword": 4
-}
-
-<> 2019-11-11T033242.200.json
-
-###
-
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-{
-  "IdProyecto": 21,
-  "IdKeyword": 4
-}
-
-<> 2019-11-11T032549.200.json
-
-###
-
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-{
-  "IdProyecto": 21,
-  "IdKeyword": 10
-}
-
-###
-
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-{
-  "IdProyecto": 21,
-  "IdKeyword": 10
-}
-
-###
-
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-{
-  "IdProyecto": 21,
-  "IdKeyword": 4
-}
-
-<> 2019-11-11T032021.200.json
-
-###
-
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-{
-  "IdProyecto": 21,
-  "IdKeyword": 4
-}
-
-<> 2019-11-11T032002.201.json
-
-###
-
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-{
-  "IdProyecto": 21,
-  "IdKeyword": 4
-}
-
-<> 2019-11-11T031915.201.json
-
-###
-
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-{
-  "IdProyecto": 21,
-  "IdKeyword": 10
-}
-
-###
-
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-{
-  "IdProyecto": 21,
-  "IdKeyword": 10
-}
-//  {
-//    "IdProyecto": 21,
-//    "IdKeyword": 4
-//  }
-//]
-
-###
-
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-{
-  "IdProyecto": 21,
-  "IdKeyword": 10
-}
-//  {
-//    "IdProyecto": 21,
-//    "IdKeyword": 4
-//  }
-//]
-
-###
-
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-{
-  "IdProyecto": 21,
-  "IdKeyword": 10
-}
-//  {
-//    "IdProyecto": 21,
-//    "IdKeyword": 4
-//  }
-//]
-
-<> 2019-11-11T075454.400.json
-
-###
-
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-[
-  {
-    "IdProyecto": 21,
-    "IdKeyword": 1
-  },
-  {
-    "IdProyecto": 21,
-    "IdKeyword": 4
-  }
-]
-
-###
-
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-[
-  {
-    "IdProyecto": 21,
-    "IdKeyword": 1
-  },
-  {
-    "IdProyecto": 21,
-    "IdKeyword": 4
-  }
-]
-
-<> 2019-11-11T054525.400.json
-
-###
-
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-[
-  {
-    "IdProyecto": 21,
-    "IdKeyword": 1
-  },
-  {
-    "IdProyecto": 21,
-    "IdKeyword": 4
-  }
-]
+GET http://localhost:5000/api/curso/
 
 ###
 
@@ -265,11 +27,865 @@ POST http://localhost:5000/api/proyecto/
 Content-Type: application/json
 
 {
-  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
-  "ProyectoTema": "Aplicaciones Móviles concurrentes",
-  "ProyectoGithubUrl": "a",
-  "ProyectoDocumentoUrl": "a",
-  "ProyectoPortadaUrl": "a",
+  "Proyecto": {
+    "ProyectoNombre": "Aplicaciones Móviles 14",
+    "ProyectoTema": "Aplicaciones Móviles 144",
+    "ProyectoGithubUrl": "Aplicaciones Móviles 14",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles 14",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles 14",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "Paper": {
+    "PaperResumen": "Hola 2",
+    "PaperIntroduccion": "Hola 2"
+  },
+  "ProyectoKeywords": [
+    {
+      "IdKeyword": 4,
+      "IdProyecto": 0
+    },
+    {
+      "IdKeyword": 3,
+      "IdProyecto": 0
+    }
+  ]
+}
+
+<> 2019-11-13T040819.200.json
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "Proyecto": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "Paper": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  },
+  "ProyectoKeywords": [
+    {
+      "IdKeyword": 4,
+      "IdProyecto": 21
+    }
+  ]
+}
+
+<> 2019-11-13T040450.200.json
+
+###
+
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+[
+  {
+    "IdKeyword": 5,
+    "IdProyecto": 21
+  }
+]
+
+<> 2019-11-13T040439.400.json
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "Proyecto": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "Paper": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  },
+  "ProyectoKeywords": [
+    {
+      "IdKeyword": 5,
+      "IdProyecto": 21
+    }
+  ]
+}
+
+<> 2019-11-13T040431.400.json
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "Proyecto": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "Paper": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  },
+  "ProyectoKeywords": [
+    {
+      "IdKeyword": 5,
+      "IdProyecto": 21
+    }
+  ]
+}
+
+<> 2019-11-13T034457.400.json
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "GuardarProyectoResource": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "PaperResource": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  },
+  "GuardarProyectoKeywordResources": [
+    {
+      "IdKeyword": 5,
+      "IdProyecto": 21
+    }
+  ]
+}
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "GuardarProyectoResource": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "PaperResource": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  },
+  "GuardarProyectoKeywordResources": [
+    {
+      "IdKeyword": 5,
+      "IdProyecto": 21
+    }
+  ]
+}
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "GuardarProyectoResource": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "PaperResource": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  },
+  "GuardarProyectoKeywordResources": [
+    {
+      "IdKeyword": 5,
+      "IdProyecto": 21
+    }
+  ]
+}
+
+<> 2019-11-13T031326.200.json
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "GuardarProyectoResource": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "PaperResource": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  },
+  "GuardarProyectoKeywordResources": [
+    {
+      "IdKeyword": 5,
+      "IdProyecto": 21
+    }
+  ]
+}
+
+<> 2019-11-13T031315.200.json
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "GuardarProyectoResource": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "PaperResource": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  },
+  "GuardarProyectoKeywordResources": [
+    {
+      "IdKeyword": 5,
+      "IdProyecto": 21
+    }
+  ]
+}
+
+<> 2019-11-13T031301.500.html
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "GuardarProyectoResource": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "PaperResource": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  },
+  "GuardarProyectoKeywordResources": [
+    {
+      "IdKeyword": 5,
+      "IdProyecto": 21
+    }
+  ]
+}
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "GuardarProyectoResource": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "PaperResource": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  },
+  "GuardarProyectoKeywordResources": [
+    {
+      "IdKeyword": 5,
+      "IdProyecto": 21
+    }
+  ]
+}
+
+<> 2019-11-13T023357.200.json
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "GuardarProyectoResource": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "PaperResource": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  },
+  "GuardarProyectoKeywordResources": [
+    {
+      "IdKeyword": 5,
+      "IdProyecto": 21
+    }
+  ]
+}
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "GuardarProyectoResource": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "PaperResource": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  },
+  "GuardarProyectoKeywordResources": [
+    {
+      "IdKeyword": 5,
+      "IdProyecto": 21
+    }
+  ]
+}
+
+<> 2019-11-13T022922.200.json
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "GuardarProyectoResource": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "GuardarPaperResource": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  },
+  "GuardarProyectoKeywordResource": [
+    {
+      "IdKeyword": 5,
+      "IdProyecto": 21
+    }
+  ]
+}
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "GuardarProyectoResource": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "GuardarPaperResource": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  },
+  "GuardarProyectoKeywordResource": [
+    {
+      "IdKeyword": 5,
+      "IdProyecto": 21
+    }
+  ]
+}
+
+<> 2019-11-13T022245.500.html
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "GuardarProyectoResource": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "GuardarPaperResource": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  },
+  "GuardarProyectoKeywordResource": [
+    {
+      "IdKeyword": 5,
+      "IdProyecto": 21
+    }
+  ]
+}
+
+<> 2019-11-13T022233.200.json
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "GuardarProyectoResource": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "GuardarPaperResource": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  }
+}
+
+<> 2019-11-13T015922.200.json
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "GuardarProyectoResource": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "GuardarPaperResource": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  }
+}
+
+<> 2019-11-13T015654.400.json
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "GuardarProyectoResource": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "GuardarPaperResource": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  }
+}
+
+<> 2019-11-13T015437.200.json
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "GuardarProyectoResource": {
+    "ProyectoNombre": "Aplicaciones Móviles",
+    "ProyectoTema": "Aplicaciones Móviles",
+    "ProyectoGithubUrl": "Aplicaciones Móviles",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 4
+  },
+  "GuardarPaperResource": {
+    "PaperResumen": "Hola",
+    "PaperIntroduccion": "Hola"
+  }
+}
+
+<> 2019-11-13T015237.500.html
+
+###
+
+PUT http://localhost:5000/api/proyecto/30
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles",
+  "ProyectoTema": "Aplicaciones Móviles",
+  "ProyectoGithubUrl": "Aplicaciones Móviles",
+  "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+  "ProyectoPortadaUrl": "Aplicaciones Móviles",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 4
+}
+
+<> 2019-11-13T013251.400.json
+
+###
+
+PUT http://localhost:5000/api/proyecto/28
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles",
+  "ProyectoTema": "Aplicaciones Móviles",
+  "ProyectoGithubUrl": "Aplicaciones Móviles",
+  "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+  "ProyectoPortadaUrl": "Aplicaciones Móviles",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 4
+}
+
+<> 2019-11-13T013235.200.json
+
+###
+
+PUT http://localhost:5000/api/proyecto/28
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles",
+  "ProyectoTema": "Aplicaciones Móviles",
+  "ProyectoGithubUrl": "Aplicaciones Móviles",
+  "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+  "ProyectoPortadaUrl": "Aplicaciones Móviles",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 4
+}
+
+<> 2019-11-13T012620.200.json
+
+###
+
+PUT http://localhost:5000/api/proyecto/28
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles",
+  "ProyectoTema": "Aplicaciones Móviles",
+  "ProyectoGithubUrl": "Aplicaciones Móviles",
+  "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+  "ProyectoPortadaUrl": "Aplicaciones Móviles",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 4
+}
+
+<> 2019-11-13T012536.200.json
+
+###
+
+PUT http://localhost:5000/api/proyecto/28
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles",
+  "ProyectoTema": "Aplicaciones Móviles",
+  "ProyectoGithubUrl": "Aplicaciones Móviles",
+  "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+  "ProyectoPortadaUrl": "Aplicaciones Móviles",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 4
+}
+
+<> 2019-11-13T011128.200.json
+
+###
+
+PUT http://localhost:5000/api/proyecto/28
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles",
+  "ProyectoTema": "Aplicaciones Móviles",
+  "ProyectoGithubUrl": "Aplicaciones Móviles",
+  "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+  "ProyectoPortadaUrl": "Aplicaciones Móviles",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 4
+}
+
+<> 2019-11-13T010743.200.json
+
+###
+
+PUT http://localhost:5000/api/proyecto/29
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles",
+  "ProyectoTema": "Aplicaciones Móviles",
+  "ProyectoGithubUrl": "Aplicaciones Móviles",
+  "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+  "ProyectoPortadaUrl": "Aplicaciones Móviles",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 4
+}
+
+<> 2019-11-13T010456.200.json
+
+###
+
+PUT http://localhost:5000/api/proyecto/30
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles",
+  "ProyectoTema": "Aplicaciones Móviles",
+  "ProyectoGithubUrl": "Aplicaciones Móviles",
+  "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+  "ProyectoPortadaUrl": "Aplicaciones Móviles",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 4
+}
+
+<> 2019-11-13T010444.400.json
+
+###
+
+PUT http://localhost:5000/api/proyecto/30
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles",
+  "ProyectoTema": "Aplicaciones Móviles",
+  "ProyectoGithubUrl": "Aplicaciones Móviles",
+  "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+  "ProyectoPortadaUrl": "Aplicaciones Móviles",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 4
+}
+
+<> 2019-11-13T010027.400.json
+
+###
+
+PUT http://localhost:5000/api/proyecto/30
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles",
+  "ProyectoTema": "Aplicaciones Móviles",
+  "ProyectoGithubUrl": "Aplicaciones Móviles",
+  "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+  "ProyectoPortadaUrl": "Aplicaciones Móviles",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 4
+}
+
+<> 2019-11-13T125344.400.json
+
+###
+
+PUT http://localhost:5000/api/proyecto/29
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles",
+  "ProyectoTema": "Aplicaciones Móviles",
+  "ProyectoGithubUrl": "Aplicaciones Móviles",
+  "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+  "ProyectoPortadaUrl": "Aplicaciones Móviles",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 4
+}
+
+<> 2019-11-13T125111.200.json
+
+###
+
+PUT http://localhost:5000/api/proyecto/29
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles",
+  "ProyectoTema": "Aplicaciones Móviles",
+  "ProyectoGithubUrl": "Aplicaciones Móviles",
+  "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+  "ProyectoPortadaUrl": "Aplicaciones Móviles",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 4
+}
+
+<> 2019-11-13T123313.200.json
+
+###
+
+PUT http://localhost:5000/api/proyecto/29
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles",
+  "ProyectoTema": "Aplicaciones Móviles",
+  "ProyectoGithubUrl": "Aplicaciones Móviles",
+  "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+  "ProyectoPortadaUrl": "Aplicaciones Móviles",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 4
+}
+
+<> 2019-11-13T122418.200.json
+
+###
+
+PUT http://localhost:5000/api/proyecto/29
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles",
+  "ProyectoTema": "Aplicaciones Móviles",
+  "ProyectoGithubUrl": "Aplicaciones Móviles",
+  "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+  "ProyectoPortadaUrl": "Aplicaciones Móviles",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 4
+}
+
+<> 2019-11-13T121729.200.json
+
+###
+
+PUT http://localhost:5000/api/proyecto/29
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles",
+  "ProyectoTema": "Aplicaciones Móviles",
+  "ProyectoGithubUrl": "Aplicaciones Móviles",
+  "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+  "ProyectoPortadaUrl": "Aplicaciones Móviles",
+  "IdCurso": 4,
+  "IdPaper": 1,
+  "IdEstado": 4
+}
+
+<> 2019-11-13T121347.200.json
+
+###
+
+POST http://localhost:5000/api/proyecto/29
+Content-Type: application/json
+
+{
+  "ProyectoNombre": "Aplicaciones Móviles",
+  "ProyectoTema": "Aplicaciones Móviles",
+  "ProyectoGithubUrl": "Aplicaciones Móviles",
+  "ProyectoDocumentoUrl": "Aplicaciones Móviles",
+  "ProyectoPortadaUrl": "Aplicaciones Móviles",
   "IdCurso": 4,
   "IdPaper": 1,
   "IdEstado": 4
@@ -277,261 +893,101 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:5000/api/proyecto/
+POST http://localhost:5000/api/paper/
 Content-Type: application/json
 
 {
-  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
-  "ProyectoTema": "Aplicaciones Móviles concurrentes",
-  "ProyectoGithubUrl": "a",
-  "ProyectoDocumentoUrl": "a",
-  "ProyectoPortadaUrl": "a",
-  "IdCurso": 4,
-  "IdPaper": 1,
-  "IdEstado": 1
+  "PaperResumen": "Hola",
+  "PaperIntroduccion": "Hola"
 }
 
-<> 2019-11-11T043609.500.html
+<> 2019-11-12T101936.200.json
 
 ###
 
-POST http://localhost:5000/api/proyecto/
+POST http://localhost:5000/api/paper/
 Content-Type: application/json
 
 {
-  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
-  "ProyectoTema": "Aplicaciones Móviles concurrentes",
-  "ProyectoGithubUrl": "a",
-  "ProyectoDocumentoUrl": "a",
-  "ProyectoPortadaUrl": "a",
-  "IdCurso": 4,
-  "IdPaper": 1,
-  "IdEstado": 1
+  "PaperResumen": "Hola",
+  "PaperIntroduccion": "Hola"
 }
 
-<> 2019-11-11T043303.500.html
+<> 2019-11-12T101550.200.json
 
 ###
 
-POST http://localhost:5000/api/proyecto/
+POST http://localhost:5000/api/proyectoKeyword/
+Content-Type: application/json
+
+[
+  {
+    "IdKeyword": 5,
+    "IdProyecto": 21
+  }
+]
+
+<> 2019-11-12T101546.400.json
+
+###
+
+POST http://localhost:5000/api/paper/
 Content-Type: application/json
 
 {
-  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
-  "ProyectoTema": "Aplicaciones Móviles concurrentes",
-  "ProyectoGithubUrl": "a",
-  "ProyectoDocumentoUrl": "a",
-  "ProyectoPortadaUrl": "a",
-  "IdCurso": 4,
-  "IdEstado": 1
+  "PaperResumen": "Hola",
+  "PaperIntroduccion": "Hola"
 }
 
-<> 2019-11-11T042942.500.html
+<> 2019-11-12T101502.200.json
 
 ###
 
-POST http://localhost:5000/api/proyecto/
+POST http://localhost:5000/api/paper/
 Content-Type: application/json
 
 {
-  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
-  "ProyectoTema": "Aplicaciones Móviles concurrentes",
-  "ProyectoGithubUrl": " ",
-  "ProyectoDocumentoUrl": " ",
-  "ProyectoPortadaUrl": " ",
-  "IdCurso": 4,
-  "IdEstado": 1
+  "PaperResumen": "Hola",
+  "PaperIntroduccion": "Hola"
 }
 
-<> 2019-11-11T042930.500.html
+<> 2019-11-12T095919.200.json
 
 ###
 
-POST http://localhost:5000/api/proyecto/
+POST http://localhost:5000/api/paper/
 Content-Type: application/json
 
 {
-  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
-  "ProyectoTema": "Aplicaciones Móviles concurrentes",
-  "ProyectoGithubUrl": "",
-  "ProyectoDocumentoUrl": "",
-  "ProyectoPortadaUrl": "",
-  "IdCurso": 4,
-  "IdEstado": 1
+  "PaperResumen": "Hola",
+  "PaperIntroduccion": "Hola"
 }
 
-<> 2019-11-11T042805.500.html
+<> 2019-11-12T095905.200.json
 
 ###
 
-POST http://localhost:5000/api/proyecto/
+POST http://localhost:5000/api/paper/
 Content-Type: application/json
 
 {
-  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
-  "ProyectoTema": "Aplicaciones Móviles concurrentes",
-  "ProyectoGithubUrl": "",
-  "ProyectoDocumentoUrl": "",
-  "ProyectoPortadaUrl": "",
-  "IdCurso": 4,
-  "IdEstado": 1
+  "PaperResumen": "Hola",
+  "PaperIntroduccion": "Hola"
 }
 
-<> 2019-11-11T042608.500.html
+<> 2019-11-12T095417.200.json
 
 ###
 
-POST http://localhost:5000/api/proyecto/
+POST http://localhost:5000/api/paper/
 Content-Type: application/json
 
 {
-  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
-  "ProyectoTema": "Aplicaciones Móviles concurrentes",
-  "ProyectoGithubUrl": "",
-  "ProyectoDocumentoUrl": "",
-  "ProyectoPortadaUrl": "",
-  "IdCurso": 4,
-  "IdEstado": 1
+  "PaperResumen": null,
+  "PaperIntroduccion": null
 }
 
-###
-
-POST http://localhost:5000/api/proyecto/
-Content-Type: application/json
-
-{
-  "ProyectoNombre": "Aplicaciones Móviles concurrentes",
-  "ProyectoTema": "Aplicaciones Móviles concurrentes",
-  "ProyectoGithubUrl": "",
-  "ProyectoDocumentoUrl": "",
-  "ProyectoPortadaUrl": "",
-  "IdCurso": 4,
-  "IdEstado": 1
-}
-
-###
-
-GET http://localhost:5000/api/perfil
-
-<> 2019-11-11T035633.200.json
-
-###
-
-POST http://localhost:5000/api/alumno/
-Content-Type: application/json
-
-{
-  "AlumnoNombre": "Christopherrr",
-  "AlumnoApellidos": "Cuyooo",
-  "AlumnoCodigoUniversitario": "2014049413",
-  "IdCiclo": 1
-}
-
-###
-
-GET http://localhost:5000/api/curso/6
-
-<> 2019-11-11T023612.200.json
-
-###
-
-GET http://localhost:5000/api/curso/6
-
-<> 2019-11-11T023536.200.json
-
-###
-
-GET http://localhost:5000/api/curso/6
-
-<> 2019-11-11T023526.200.json
-
-###
-
-GET http://localhost:5000/api/curso/6
-
-<> 2019-11-11T023439.200.json
-
-###
-
-GET http://localhost:5000/api/perfil
-
-<> 2019-11-11T015822.200.json
-
-###
-
-GET http://localhost:5000/api/proyecto
-
-<> 2019-11-11T013727.200.json
-
-###
-
-GET http://localhost:5000/api/proyecto
-
-<> 2019-11-11T012314.200.json
-
-###
-
-GET http://localhost:5000/api/curso/6
-
-<> 2019-11-11T011008.200.json
-
-###
-
-GET http://localhost:5000/api/curso/2
-
-<> 2019-11-11T010933.200.json
-
-###
-
-GET http://localhost:5000/api/curso/4
-
-<> 2019-11-11T010914.200.json
-
-###
-
-GET http://localhost:5000/api/curso/5
-
-<> 2019-11-11T010906.200.json
-
-###
-
-GET http://localhost:5000/api/curso
-
-###
-
-GET http://localhost:5000/api/perfil
-
-<> 2019-11-11T010806.200.json
-
-###
-
-GET http://localhost:5000/api/ciclo
-
-<> 2019-11-11T010800.200.json
-
-###
-
-GET http://localhost:5000/api/curso
-
-###
-
-GET http://localhost:5000/api/perfil
-
-<> 2019-11-11T010650.200.json
-
-###
-
-GET http://localhost:5000/api/perfiles
-
-###
-
-GET http://localhost:5000/api/perfiles
-
-###
-
-GET http://localhost:5000/api/perfiles
-
-<> 2019-11-11T010520.200.json
+<> 2019-11-12T095154.400.json
 
 ###
 

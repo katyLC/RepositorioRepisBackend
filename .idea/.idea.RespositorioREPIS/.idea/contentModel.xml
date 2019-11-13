@@ -8,14 +8,29 @@
     <e p="C:\Users\tzoph\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RespositorioREPIS.2094678688.00" t="ExcludeRecursive" />
     <e p="C:\Users\tzoph\RiderProjects\RespositorioREPIS" t="IncludeRecursive">
       <e p="Api" t="Include">
-        <e p="AlumnoController.cs" t="Include" />
-        <e p="CicloController.cs" t="Include" />
-        <e p="CursoController.cs" t="Include" />
-        <e p="PalabrasClavesController.cs" t="Include" />
-        <e p="PaperController.cs" t="Include" />
-        <e p="PerfilController.cs" t="Include" />
-        <e p="ProyectoController.cs" t="Include" />
-        <e p="ProyectoKeywordController.cs" t="Include" />
+        <e p="Controllers" t="Include">
+          <e p="AlumnoController.cs" t="Include" />
+          <e p="CicloController.cs" t="Include" />
+          <e p="CursoController.cs" t="Include" />
+          <e p="PalabrasClavesController.cs" t="Include" />
+          <e p="PaperController.cs" t="Include" />
+          <e p="PerfilController.cs" t="Include" />
+          <e p="ProyectoController.cs" t="Include" />
+          <e p="ProyectoKeywordController.cs" t="Include" />
+        </e>
+        <e p="Mapping" t="Include">
+          <e p="ModelToResourceProfile.cs" t="Include" />
+          <e p="ResourceToModelProfile.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="ErrorResource.cs" t="Include" />
+          <e p="GuardarPaperResource.cs" t="Include" />
+          <e p="GuardarProyectoKeywordResource.cs" t="Include" />
+          <e p="GuardarProyectoResource.cs" t="Include" />
+          <e p="PaperResource.cs" t="Include" />
+          <e p="ProyectoKeywordResource.cs" t="Include" />
+          <e p="ProyectoResource.cs" t="Include" />
+        </e>
         <e p="ValuesController.cs" t="Include" />
       </e>
       <e p="appsettings.Development.json" t="Include" />
@@ -80,6 +95,12 @@
           <e p="IProyectoKeywordRepositorio.cs" t="Include" />
           <e p="IProyectoRepositorio.cs" t="Include" />
         </e>
+        <e p="Responses" t="Include">
+          <e p="BaseResponse.cs" t="Include" />
+          <e p="PaperResponse.cs" t="Include" />
+          <e p="ProyectoKeywordResponse.cs" t="Include" />
+          <e p="ProyectoResponse.cs" t="Include" />
+        </e>
         <e p="UseCases" t="Include">
           <e p="Alumno" t="Include">
             <e p="IRegistrarAlumno.cs" t="Include" />
@@ -115,6 +136,7 @@
           </e>
         </e>
         <e p="Validators" t="Include">
+          <e p="ModelStateFilter.cs" t="Include" />
           <e p="ProyectoKeywordValidation.cs" t="Include" />
         </e>
       </e>

@@ -1,0 +1,11 @@
+﻿[
+  {
+    "idCurso": 3,
+    "cursoNombre": "Matemática",
+    "perfil": {
+      "idPerfil": 1,
+      "perfilDescripcion": "Cursos Generales",
+      "perfilColor": "grey[500]"
+    }
+  }
+]

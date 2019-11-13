@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿
 using System.Collections.Generic;
-using RespositorioREPIS.Data;
+using System.Threading.Tasks;
+using RespositorioREPIS.Data.DbModel;
 using RespositorioREPIS.Domain.Entities;
+using RespositorioREPIS.Domain.Responses;
 
 namespace RespositorioREPIS.Domain.UseCases.Proyecto
 {
@@ -9,9 +11,11 @@ namespace RespositorioREPIS.Domain.UseCases.Proyecto
     {
         IList<ProyectoEntity> ListarProyecto();
 
-        void RegistrarProyecto(string proyectoNombre, string proyectoTema, string proyectoGithubUrl,
-            string proyectoDocumentoUrl, string proyectoPortadaUrl, int idCurso, int idPaper, int idEstado);
+        Task<ProyectoResponse> RegistrarProyecto(Data.DbModel.Proyecto proyecto);
 
         IList<ProyectoEntity> detalleProyecto();
+
+        Task<ProyectoResponse> ActualizarProyecto(int id, Data.DbModel.Proyecto proyecto);
+
     }
 }

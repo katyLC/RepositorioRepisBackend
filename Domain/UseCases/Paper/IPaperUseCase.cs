@@ -1,7 +1,10 @@
-﻿namespace RespositorioREPIS.Domain.UseCases.Paper
+﻿using System.Threading.Tasks;
+using RespositorioREPIS.Domain.Responses;
+
+namespace RespositorioREPIS.Domain.UseCases.Paper
 {
     public interface IPaperUseCase
     {
-        void RegistrarPaper(string paperResumen, string paperIntroduccion);
+        Task<PaperResponse> RegistrarPaper(Data.DbModel.Paper paper);
     }
 }

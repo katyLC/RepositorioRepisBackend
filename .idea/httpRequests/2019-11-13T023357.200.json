@@ -1,0 +1,21 @@
+﻿{
+  "proyectoResource": {
+    "idProyecto": 37,
+    "proyectoNombre": "Aplicaciones Móviles",
+    "proyectoTema": "Aplicaciones Móviles",
+    "proyectoGithubUrl": "Aplicaciones Móviles",
+    "proyectoDocumentoUrl": "Aplicaciones Móviles",
+    "proyectoPortadaUrl": "Aplicaciones Móviles",
+    "idCurso": 4,
+    "idPaper": 20,
+    "idEstado": 4
+  },
+  "paperResource": {
+    "idPaper": 20,
+    "paperResumen": "Hola",
+    "paperIntroduccion": "Hola"
+  },
+  "proyectoKeywordResources": [
+    null
+  ]
+}

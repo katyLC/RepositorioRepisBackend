@@ -1,9 +1,10 @@
-﻿using RespositorioREPIS.Domain.Entities;
+﻿using System.Threading.Tasks;
+using RespositorioREPIS.Data.DbModel;
 
 namespace RespositorioREPIS.Domain.Repositories
 {
     public interface IPaperRepositorio
     {
-        void RegistrarPaperRepositorio(PaperEntity paper);
+        Task RegistrarPaperRepositorio(Paper paper);
     }
 }

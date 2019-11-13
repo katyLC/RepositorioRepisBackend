@@ -1,0 +1,6 @@
+﻿{
+  "success": false,
+  "messages": [
+    "Error al guardar los keywords del proyecto: Microsoft.EntityFrameworkCore.Relational"
+  ]
+}

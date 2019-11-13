@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using RespositorioREPIS.Data.DbModel;
@@ -16,9 +17,9 @@ namespace RespositorioREPIS.Data.Repositorio
             _appContext = appContext;
         }
 
-        public void RegistrarProyectoKeyword(ProyectoKeywordEntity proyectoKeyword)
+        public async Task RegistrarProyectoKeyword(ProyectoKeyword proyectoKeyword)
         {
-            _appContext.ProyectoKeyword.Add(ProyectoKeyword.FromProyectoKeyword(proyectoKeyword));
+            await _appContext.ProyectoKeyword.AddAsync(proyectoKeyword);
             _appContext.SaveChanges();
         }
     }

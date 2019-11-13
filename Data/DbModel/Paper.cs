@@ -18,14 +18,5 @@ namespace RespositorioREPIS.Data.DbModel
 
 //        public virtual ICollection<PaperAdicional> PaperAdicional { get; set; }
         public virtual ICollection<Proyecto> Proyecto { get; set; }
-
-        public static Paper FromPaper(PaperEntity paper)
-        {
-            return new Paper()
-            {
-                PaperResumen = paper.PaperResumen,
-                PaperIntroduccion = paper.PaperIntroduccion
-            };
-        }
     }
 }

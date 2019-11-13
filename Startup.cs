@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using AutoMapper;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
@@ -9,10 +10,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using RespositorioREPIS.Api;
 using RespositorioREPIS.Data;
+using RespositorioREPIS.Data.DbModel;
 using RespositorioREPIS.Data.Repositorio;
-using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.Repositories;
 using RespositorioREPIS.Domain.UseCases.Alumno;
 using RespositorioREPIS.Domain.UseCases.Ciclo;
@@ -43,6 +43,11 @@ namespace RespositorioREPIS
 //            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2).AddFluentValidation();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+//            services.AddMvc(options => { options.Filters.Add(new ModelStateFilter()); }).AddFluentValidation(options =>
+//            {
+//                options.RegisterValidatorsFromAssemblyContaining<Startup>();
+//            });
+
             services.Configure<MvcOptions>(options =>
             {
                 options.Filters.Add(new CorsAuthorizationFilterFactory(MyAllowSpecificOrigins));
@@ -59,6 +64,7 @@ namespace RespositorioREPIS
                             .DisallowCredentials();
                     });
             });
+
 
             services.AddDbContext<AppContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
@@ -79,7 +85,8 @@ namespace RespositorioREPIS
             services.AddTransient<IProyectoKeywordUseCase, ProyectoKeywordUseCase>();
             services.AddTransient<IPaperRepositorio, PaperRepositorio>();
             services.AddTransient<IPaperUseCase, PaperUseCase>();
-//            services.AddSingleton<IValidator<ProyectoKeywordCommand>, ProyectoKeywordValidation>();
+//            services.AddSingleton<IValidator<ProyectoKeyword>, ProyectoKeywordValidation>();
+
 
 //            services.Configure<ApiBehaviorOptions>(options =>
 //            {
@@ -97,6 +104,8 @@ namespace RespositorioREPIS
 //                    return new BadRequestObjectResult(result);
 //                };
 //            });
+
+            services.AddAutoMapper();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

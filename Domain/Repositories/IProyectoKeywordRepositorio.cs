@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using RespositorioREPIS.Domain.Entities;
+﻿using System.Threading.Tasks;
+using RespositorioREPIS.Data.DbModel;
 
 namespace RespositorioREPIS.Domain.Repositories
 {
     public interface IProyectoKeywordRepositorio
     {
-        void RegistrarProyectoKeyword(ProyectoKeywordEntity proyectoKeyword);
+        Task RegistrarProyectoKeyword(ProyectoKeyword proyectoKeyword);
     }
 }

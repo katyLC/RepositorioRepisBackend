@@ -1,4 +1,7 @@
-﻿namespace RespositorioREPIS.Domain.Entities
+﻿using System.Collections.Generic;
+using RespositorioREPIS.Data.DbModel;
+
+namespace RespositorioREPIS.Domain.Entities
 {
     public class ProyectoEntity
     {

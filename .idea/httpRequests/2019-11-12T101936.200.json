@@ -1,0 +1,8 @@
+﻿{
+  "mensaje": "Guardado satisfactoriamente",
+  "paperResource": {
+    "idPaper": 12,
+    "paperResumen": "Hola",
+    "paperIntroduccion": "Hola"
+  }
+}

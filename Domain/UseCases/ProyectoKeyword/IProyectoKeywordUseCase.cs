@@ -1,7 +1,10 @@
-﻿namespace RespositorioREPIS.Domain.UseCases.ProyectoKeyword
+﻿using System.Threading.Tasks;
+using RespositorioREPIS.Domain.Responses;
+
+namespace RespositorioREPIS.Domain.UseCases.ProyectoKeyword
 {
     public interface IProyectoKeywordUseCase
     {
-        void RegistrarProyectoKeyword(int idProyecto, int idKeyword);
+        Task<ProyectoKeywordResponse> RegistrarProyectoKeyword(Data.DbModel.ProyectoKeyword proyectoKeyword);
     }
 }

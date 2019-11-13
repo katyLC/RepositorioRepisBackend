@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using RespositorioREPIS.Data.DbModel;
 using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.Repositories;
@@ -44,15 +46,27 @@ namespace RespositorioREPIS.Data.Repositorio
             return proyectos;
         }
 
-        public void RegistrarProyecto(ProyectoEntity proyecto)
+        public async Task RegistrarProyecto(Proyecto proyecto)
         {
-            _appContext.Proyecto.Add(Proyecto.FromProyecto(proyecto));
+            await _appContext.Proyecto.AddAsync(proyecto);
             _appContext.SaveChanges();
         }
 
         public IList<ProyectoEntity> detalleProyecto()
         {
             throw new NotImplementedException();
+        }
+
+        public void ActualizarProyecto(Proyecto proyecto)
+        {
+            _appContext.Proyecto.Update(proyecto);
+            _appContext.SaveChanges();
+        }
+
+        public async Task<Proyecto> BuscarProyectoPorId(int id)
+        {
+            return await _appContext.Proyecto
+                .FirstOrDefaultAsync(p => p.IdProyecto == id);
         }
     }
 }

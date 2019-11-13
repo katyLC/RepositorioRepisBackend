@@ -9,13 +9,6 @@ namespace RespositorioREPIS.Data.DbModel
 {
     public partial class Proyecto 
     {
-        private readonly AppContext _appContext;
-
-        public Proyecto(AppContext appContext)
-        {
-            _appContext = appContext;
-        }
-
         public Proyecto()
         {
             ProyectoAutor = new HashSet<ProyectoAutor>();
@@ -50,20 +43,5 @@ namespace RespositorioREPIS.Data.DbModel
         public virtual ICollection<ProyectoKeyword> ProyectoKeyword { get; set; }
         public virtual ICollection<Solicitud> Solicitud { get; set; }
         
-        public static Proyecto FromProyecto(ProyectoEntity proyecto)
-        {
-            return new Proyecto()
-            {
-                IdProyecto = proyecto.IdProyecto,
-                ProyectoNombre = proyecto.ProyectoNombre,
-                ProyectoTema = proyecto.ProyectoTema,
-                ProyectoGithubUrl = proyecto.ProyectoGithubUrl,
-                ProyectoDocumentoUrl = proyecto.ProyectoDocumentoUrl,
-                ProyectoPortadaUrl = proyecto.ProyectoPortadaUrl,
-                IdCurso = proyecto.IdCurso,
-                IdPaper = proyecto.IdPaper,
-                IdEstado = proyecto.IdEstado
-            };
-        }
     }
 }

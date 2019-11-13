@@ -1,4 +1,5 @@
-﻿using RespositorioREPIS.Data.DbModel;
+﻿using System.Threading.Tasks;
+using RespositorioREPIS.Data.DbModel;
 using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.Repositories;
 
@@ -13,9 +14,9 @@ namespace RespositorioREPIS.Data.Repositorio
             _appContext = appContext;
         }
 
-        public void RegistrarPaperRepositorio(PaperEntity paper)
+        public async Task RegistrarPaperRepositorio(Paper paper)
         {
-            _appContext.Paper.Add(Paper.FromPaper(paper));
+            await _appContext.Paper.AddAsync(paper);
             _appContext.SaveChanges();
         }
     }

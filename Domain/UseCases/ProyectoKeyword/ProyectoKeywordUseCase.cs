@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Threading.Tasks;
 using FluentValidation.Results;
 using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.Repositories;
+using RespositorioREPIS.Domain.Responses;
 using RespositorioREPIS.Domain.Validators;
 
 namespace RespositorioREPIS.Domain.UseCases.ProyectoKeyword
@@ -15,9 +17,18 @@ namespace RespositorioREPIS.Domain.UseCases.ProyectoKeyword
             _proyectoKeywordRepositorio = proyectoKeywordRepositorio;
         }
 
-        public void RegistrarProyectoKeyword(int idProyecto, int idKeyword)
+        public async Task<ProyectoKeywordResponse> RegistrarProyectoKeyword(
+            Data.DbModel.ProyectoKeyword proyectoKeyword)
         {
-            _proyectoKeywordRepositorio.RegistrarProyectoKeyword(new ProyectoKeywordEntity(idProyecto, idKeyword));
+            try
+            {
+                await _proyectoKeywordRepositorio.RegistrarProyectoKeyword(proyectoKeyword);
+                return new ProyectoKeywordResponse(proyectoKeyword);
+            }
+            catch (Exception e)
+            {
+                return new ProyectoKeywordResponse($"Error al guardar los keywords del proyecto: {e.Source}");
+            }
         }
     }
 }
