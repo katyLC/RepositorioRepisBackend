@@ -1,4 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using RespositorioREPIS.Api.Resources;
+using RespositorioREPIS.Data.DbModel;
+using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.UseCases.Alumno;
 
 namespace RespositorioREPIS.Api.Controllers
@@ -7,18 +13,31 @@ namespace RespositorioREPIS.Api.Controllers
     [ApiController]
     public class AlumnoController : Controller
     {
-        private readonly IRegistrarAlumno _registrarAlumno;
+        private readonly IAlumnoUseCase _alumnoUseCase;
+        private readonly IMapper _mapper;
 
-        public AlumnoController(IRegistrarAlumno registrarAlumno)
+        public AlumnoController(IAlumnoUseCase alumnoUseCase, IMapper mapper )
         {
-            _registrarAlumno = registrarAlumno;
+            _alumnoUseCase = alumnoUseCase;
+            _mapper = mapper;
         }
 
+        [HttpGet("{id}")]
+        public async Task<AlumnoResource> ObtenerAlumnoID( int id)
+        {
+            var 
+            alumno = await _alumnoUseCase.ObtenerAlumnoID(id);
+            var resource = _mapper.Map<Alumno, AlumnoResource>(alumno);
+            return resource;
+        }
+        
         public void RegistrarAlumno([FromBody] AlumnoComand alumno)
         {
-            _registrarAlumno.Registrar(alumno.AlumnoNombre, alumno.AlumnoApellidos, alumno.AlumnoCodigoUniversitario,
+            _alumnoUseCase.Registrar(alumno.AlumnoNombre, alumno.AlumnoApellidos, alumno.AlumnoCodigoUniversitario,
                 alumno.IdCiclo);
+
         }
+
 
         public class AlumnoComand
         {

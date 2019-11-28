@@ -16,9 +16,9 @@ namespace RespositorioREPIS.Domain.UseCases.Proyecto
             _proyectoRepositorio = proyectoRepositorio;
         }
 
-        public IList<ProyectoEntity> ListarProyecto()
+        public async Task<IEnumerable<Data.DbModel.Proyecto>> ListarProyectos()
         {
-            return _proyectoRepositorio.ListarProyecto();
+            return await _proyectoRepositorio.ListarProyectos();
         }
 
         public async Task<ProyectoResponse> RegistrarProyecto(Data.DbModel.Proyecto proyecto)
@@ -66,6 +66,12 @@ namespace RespositorioREPIS.Domain.UseCases.Proyecto
             {
                 return new ProyectoResponse($"Error actualizando el proyecto: {e.Message}");
             }
+        }
+
+        public async Task<Data.DbModel.Proyecto> BuscarProyectoPorId(int id)
+        {
+            return await _proyectoRepositorio.BuscarProyectoPorId(id);
+//            return new ProyectoResponse(proyecto);
         }
     }
 }

@@ -36,9 +36,9 @@ namespace RespositorioREPIS.Data.DbModel
         public int IdPaper { get; set; }
         public int IdEstado { get; set; }
 
-        public virtual Curso IdCursoNavigation { get; set; }
-        public virtual Estado IdEstadoNavigation { get; set; }
-        public virtual Paper IdPaperNavigation { get; set; }
+        public virtual Curso Curso { get; set; }
+        public virtual Estado Estado { get; set; }
+        public virtual Paper Paper { get; set; }
         public virtual ICollection<ProyectoAutor> ProyectoAutor { get; set; }
         public virtual ICollection<ProyectoKeyword> ProyectoKeyword { get; set; }
         public virtual ICollection<Solicitud> Solicitud { get; set; }

@@ -23,6 +23,7 @@
           <e p="ResourceToModelProfile.cs" t="Include" />
         </e>
         <e p="Resources" t="Include">
+          <e p="AlumnoResource.cs" t="Include" />
           <e p="ErrorResource.cs" t="Include" />
           <e p="GuardarPaperResource.cs" t="Include" />
           <e p="GuardarProyectoKeywordResource.cs" t="Include" />
@@ -103,8 +104,8 @@
         </e>
         <e p="UseCases" t="Include">
           <e p="Alumno" t="Include">
-            <e p="IRegistrarAlumno.cs" t="Include" />
-            <e p="RegistrarAlumno.cs" t="Include" />
+            <e p="AlumnoUseCase.cs" t="Include" />
+            <e p="IAlumnoUseCase.cs" t="Include" />
           </e>
           <e p="Ciclo" t="Include">
             <e p="CicloUseCase.cs" t="Include" />

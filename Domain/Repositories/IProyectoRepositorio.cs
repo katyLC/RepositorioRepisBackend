@@ -7,7 +7,7 @@ namespace RespositorioREPIS.Domain.Repositories
 {
     public interface IProyectoRepositorio
     {
-        List<ProyectoEntity> ListarProyecto();
+        Task<IEnumerable<Proyecto>> ListarProyectos();
 
         Task RegistrarProyecto(Proyecto proyecto);
 

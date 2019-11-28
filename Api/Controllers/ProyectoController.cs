@@ -36,11 +36,23 @@ namespace RespositorioREPIS.Api.Controllers
 
         // GET
         [HttpGet]
-        public IList<ProyectoEntity> ListarProyecto()
+        public async Task<IEnumerable<ProyectoResource>> ListarProyecto()
         {
-            return _proyectoUseCase.ListarProyecto();
+            var proyectos = await _proyectoUseCase.ListarProyectos();
+            var resources = _mapper.Map<IEnumerable<Proyecto>, IEnumerable<ProyectoResource>>(proyectos);
+
+            return resources;
         }
 
+        [HttpGet("{id}")]
+        public async Task<ProyectoResource> ObtenerProyectoId(int id)
+        {
+            var proyecto = await _proyectoUseCase.BuscarProyectoPorId(id);
+            var resource =  _mapper.Map<Proyecto, ProyectoResource>(proyecto);
+            return resource;
+        }
+        
+       
         [HttpPost]
         [ProducesResponseType(typeof(ProyectoResource), 201)]
         [ProducesResponseType(typeof(ErrorResource), 400)]
@@ -92,6 +104,9 @@ namespace RespositorioREPIS.Api.Controllers
 
             return Ok();
         }
+        
+        
+        
         
         private void MappingData(Data data)
         {

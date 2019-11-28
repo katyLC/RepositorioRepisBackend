@@ -18,22 +18,22 @@ namespace RespositorioREPIS.Data.Repositorio
             _appContext = appContext;
         }
 
-        public List<ProyectoEntity> ListarProyecto()
+        public async Task<IEnumerable<Proyecto>> ListarProyectos()
         {
             var proyectos = (from pr in _appContext.Proyecto
                     join c in _appContext.Curso
                         on pr.IdCurso equals c.IdCurso
                     join pe in _appContext.Perfil
                         on c.IdPerfil equals pe.IdPerfil
-                    select new ProyectoEntity
+                    select new Proyecto
                     {
                         IdProyecto = pr.IdProyecto,
                         ProyectoNombre = pr.ProyectoNombre,
-                        Curso = new CursoEntity
+                        Curso = new Curso
                         {
                             IdCurso = c.IdCurso,
                             CursoNombre = c.CursoNombre,
-                            Perfil = new PerfilEntity
+                            Perfil = new Perfil
                             {
                                 IdPerfil = pe.IdPerfil,
                                 PerfilDescripcion = pe.PerfilDescripcion,
@@ -41,9 +41,9 @@ namespace RespositorioREPIS.Data.Repositorio
                             }
                         }
                     }
-                ).ToList();
+                ).ToListAsync();
 
-            return proyectos;
+            return await proyectos;
         }
 
         public async Task RegistrarProyecto(Proyecto proyecto)
@@ -66,7 +66,7 @@ namespace RespositorioREPIS.Data.Repositorio
         public async Task<Proyecto> BuscarProyectoPorId(int id)
         {
             return await _appContext.Proyecto
-                .FirstOrDefaultAsync(p => p.IdProyecto == id);
+                .FindAsync(id);
         }
     }
 }

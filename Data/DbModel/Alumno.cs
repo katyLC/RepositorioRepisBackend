@@ -11,8 +11,9 @@ namespace RespositorioREPIS.Data.DbModel
             Autor = new HashSet<Autor>();
         }
 
-        public Alumno(string alumnoNombre, string alumnoApellidos, string alumnoCodigoUniversitario, int idCiclo)
+        public Alumno(int idAlumno,string alumnoNombre, string alumnoApellidos, string alumnoCodigoUniversitario, int idCiclo)
         {
+            IdAlumno = idAlumno;
             AlumnoNombre = alumnoNombre;
             AlumnoApellidos = alumnoApellidos;
             AlumnoCodigoUniversitario = alumnoCodigoUniversitario;
@@ -25,7 +26,7 @@ namespace RespositorioREPIS.Data.DbModel
         public string AlumnoCodigoUniversitario { get; set; }
         public int IdCiclo { get; set; }
         
-        public virtual Ciclo IdCicloNavigation { get; set; }
+        public virtual Ciclo Ciclo { get; set; }
         public virtual ICollection<Autor> Autor { get; set; }
         
         public static Alumno FromAlumno(AlumnoEntity alumno)

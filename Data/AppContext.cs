@@ -102,7 +102,7 @@ namespace RespositorioREPIS.Data
 
                 entity.Property(e => e.IdCiclo).HasColumnName("id_ciclo");
 
-                entity.HasOne(d => d.IdCicloNavigation)
+                entity.HasOne(d => d.Ciclo)
                     .WithMany(p => p.Alumno)
                     .HasForeignKey(d => d.IdCiclo)
                     .OnDelete(DeleteBehavior.ClientSetNull)
@@ -255,13 +255,13 @@ namespace RespositorioREPIS.Data
 
                 entity.Property(e => e.IdPerfil).HasColumnName("id_perfil");
 
-                entity.HasOne(d => d.IdCicloNavigation)
+                entity.HasOne(d => d.Ciclo)
                     .WithMany(p => p.Curso)
                     .HasForeignKey(d => d.IdCiclo)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Curso__id_ciclo__75A278F5");
 
-                entity.HasOne(d => d.IdPerfilNavigation)
+                entity.HasOne(d => d.Perfil)
                     .WithMany(p => p.Curso)
                     .HasForeignKey(d => d.IdPerfil)
                     .OnDelete(DeleteBehavior.ClientSetNull)
@@ -337,7 +337,7 @@ namespace RespositorioREPIS.Data
                     .HasMaxLength(250)
                     .IsUnicode(false);
 
-//                entity.HasOne(d => d.IdPaperNavigation)
+//                entity.HasOne(d => d.Paper)
 //                    .WithMany(p => p.PaperAdicional)
 //                    .HasForeignKey(d => d.IdPaper)
 //                    .OnDelete(DeleteBehavior.ClientSetNull)
@@ -430,19 +430,19 @@ namespace RespositorioREPIS.Data
                     .HasMaxLength(250)
                     .IsUnicode(false);
 
-                entity.HasOne(d => d.IdCursoNavigation)
+                entity.HasOne(d => d.Curso)
                     .WithMany(p => p.Proyecto)
                     .HasForeignKey(d => d.IdCurso)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Proyecto__id_cur__797309D9");
 
-                entity.HasOne(d => d.IdEstadoNavigation)
+                entity.HasOne(d => d.Estado)
                     .WithMany(p => p.Proyecto)
                     .HasForeignKey(d => d.IdEstado)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Proyecto__id_est__7B5B524B");
 
-                entity.HasOne(d => d.IdPaperNavigation)
+                entity.HasOne(d => d.Paper)
                     .WithMany(p => p.Proyecto)
                     .HasForeignKey(d => d.IdPaper)
                     .OnDelete(DeleteBehavior.ClientSetNull)

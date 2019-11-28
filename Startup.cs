@@ -69,7 +69,7 @@ namespace RespositorioREPIS
             services.AddDbContext<AppContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddTransient<IRegistrarAlumno, RegistrarAlumno>();
+            services.AddTransient<IAlumnoUseCase, AlumnoUseCase>();
             services.AddTransient<IAlumnoRepositorio, AlumnoRepositorio>();
             services.AddTransient<ICicloUseCase, CicloUseCase>();
             services.AddTransient<ICicloRepositorio, CicloRepositorio>();

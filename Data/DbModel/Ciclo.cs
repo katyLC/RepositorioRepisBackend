@@ -15,7 +15,7 @@ namespace RespositorioREPIS.Data.DbModel
         {
             IdCiclo = idCiclo;
             CicloDescripcion = cicloDescripcion;
-//            Alumno = alumno;
+//            AlumnoUseCase = alumnoUseCase;
 //            Curso = curso;
         }
 
