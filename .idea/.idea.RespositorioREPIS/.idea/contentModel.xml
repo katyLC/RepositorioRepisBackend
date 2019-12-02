@@ -10,11 +10,13 @@
       <e p="Api" t="Include">
         <e p="Controllers" t="Include">
           <e p="AlumnoController.cs" t="Include" />
+          <e p="AuthController.cs" t="Include" />
           <e p="CicloController.cs" t="Include" />
           <e p="CursoController.cs" t="Include" />
           <e p="PalabrasClavesController.cs" t="Include" />
           <e p="PaperController.cs" t="Include" />
           <e p="PerfilController.cs" t="Include" />
+          <e p="ProfesorController.cs" t="Include" />
           <e p="ProyectoController.cs" t="Include" />
           <e p="ProyectoKeywordController.cs" t="Include" />
         </e>
@@ -71,6 +73,7 @@
           <e p="PalabarasClavesRepositorio.cs" t="Include" />
           <e p="PaperRepositorio.cs" t="Include" />
           <e p="PerfilRepositorio.cs" t="Include" />
+          <e p="ProfesorRepositorio.cs" t="Include" />
           <e p="ProyectoKeywordRepositorio.cs" t="Include" />
           <e p="ProyectoRepositorio.cs" t="Include" />
         </e>
@@ -90,11 +93,13 @@
           <e p="IAlumnoRepositorio.cs" t="Include" />
           <e p="ICicloRepositorio.cs" t="Include" />
           <e p="ICursoRepositorio.cs" t="Include" />
+          <e p="IDocenteRepositorio.cs" t="Include" />
           <e p="IPalabrasClavesRepositorio.cs" t="Include" />
           <e p="IPaperRepositorio.cs" t="Include" />
           <e p="IPerfilRepositorio.cs" t="Include" />
           <e p="IProyectoKeywordRepositorio.cs" t="Include" />
           <e p="IProyectoRepositorio.cs" t="Include" />
+          <e p="IUsuarioRepositorio.cs" t="Include" />
         </e>
         <e p="Responses" t="Include">
           <e p="BaseResponse.cs" t="Include" />
@@ -115,6 +120,10 @@
             <e p="CursoUseCase.cs" t="Include" />
             <e p="ICursoUseCase.cs" t="Include" />
           </e>
+          <e p="Docente" t="Include">
+            <e p="DocenteUseCase.cs" t="Include" />
+            <e p="IDocenteUseCase.cs" t="Include" />
+          </e>
           <e p="PalabrasClaves" t="Include">
             <e p="IPalabrasClaves.cs" t="Include" />
             <e p="PalabrasClaves.cs" t="Include" />
@@ -134,6 +143,10 @@
           <e p="ProyectoKeyword" t="Include">
             <e p="IProyectoKeywordUseCase.cs" t="Include" />
             <e p="ProyectoKeywordUseCase.cs" t="Include" />
+          </e>
+          <e p="Usuario" t="Include">
+            <e p="IUsuarioUsecase.cs" t="Include" />
+            <e p="UsuarioUseCase.cs" t="Include" />
           </e>
         </e>
         <e p="Validators" t="Include">

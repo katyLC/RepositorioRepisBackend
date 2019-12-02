@@ -28,6 +28,8 @@ namespace RespositorioREPIS.Domain.UseCases.Alumno
             var a = id;
             return await _alumnoRepositorio.ObtenerAlumnID(id);
         }
+        
+        
 
 //      
     }

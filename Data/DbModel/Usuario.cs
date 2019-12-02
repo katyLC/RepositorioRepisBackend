@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace RespositorioREPIS.Domain.Entities
+﻿namespace RespositorioREPIS.Data.DbModel
 {
     public partial class Usuario
     {

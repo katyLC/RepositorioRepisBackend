@@ -20,7 +20,6 @@ namespace RespositorioREPIS.Data.Repositorio
         public void Create(AlumnoEntity alumno)
         {
             _appContext.Alumno.Add(Alumno.FromAlumno(alumno));
-
             _appContext.SaveChanges();
         }
 
