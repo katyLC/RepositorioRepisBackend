@@ -1,10 +1,9 @@
-﻿using System;
+﻿﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using RespositorioREPIS.Data.DbModel;
-using RespositorioREPIS.Domain.Entities;
+ using RespositorioREPIS.Data.DbModel;
 
-namespace RespositorioREPIS.Data
+ namespace RespositorioREPIS.Data
 {
     public partial class AppContext : DbContext
     {
@@ -32,7 +31,7 @@ namespace RespositorioREPIS.Data
         public virtual DbSet<Estado> Estado { get; set; }
         public virtual DbSet<Keyword> Keyword { get; set; }
         public virtual DbSet<Paper> Paper { get; set; }
-//        public virtual DbSet<PaperAdicional> PaperAdicional { get; set; }
+        public virtual DbSet<PaperAdicional> PaperAdicional { get; set; }
         public virtual DbSet<Perfil> Perfil { get; set; }
         public virtual DbSet<Profesor> Profesor { get; set; }
         public virtual DbSet<Proyecto> Proyecto { get; set; }
@@ -46,8 +45,7 @@ namespace RespositorioREPIS.Data
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer(
-                    "Server=.\\SQLEXPRESS;Database=db_repositorio_upt;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=db_repositorio_upt;Trusted_Connection=True;");
             }
         }
 
@@ -58,7 +56,7 @@ namespace RespositorioREPIS.Data
             modelBuilder.Entity<Administrador>(entity =>
             {
                 entity.HasKey(e => e.IdAdministrador)
-                    .HasName("PK__Administ__0FE822AAE7392EFD");
+                    .HasName("PK__Administ__0FE822AA5C40B639");
 
                 entity.Property(e => e.IdAdministrador).HasColumnName("id_administrador");
 
@@ -78,7 +76,7 @@ namespace RespositorioREPIS.Data
             modelBuilder.Entity<Alumno>(entity =>
             {
                 entity.HasKey(e => e.IdAlumno)
-                    .HasName("PK__Alumno__6D77A7F113B770B2");
+                    .HasName("PK__Alumno__6D77A7F1D304BF13");
 
                 entity.Property(e => e.IdAlumno).HasColumnName("id_alumno");
 
@@ -106,7 +104,7 @@ namespace RespositorioREPIS.Data
                     .WithMany(p => p.Alumno)
                     .HasForeignKey(d => d.IdCiclo)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Alumno__id_ciclo__4D5F7D71");
+                    .HasConstraintName("FK__Alumno__id_ciclo__6E01572D");
             });
 
             modelBuilder.Entity<AspNetRoleClaims>(entity =>
@@ -147,7 +145,7 @@ namespace RespositorioREPIS.Data
 
             modelBuilder.Entity<AspNetUserLogins>(entity =>
             {
-                entity.HasKey(e => new {e.LoginProvider, e.ProviderKey});
+                entity.HasKey(e => new { e.LoginProvider, e.ProviderKey });
 
                 entity.HasIndex(e => e.UserId);
 
@@ -160,7 +158,7 @@ namespace RespositorioREPIS.Data
 
             modelBuilder.Entity<AspNetUserRoles>(entity =>
             {
-                entity.HasKey(e => new {e.UserId, e.RoleId});
+                entity.HasKey(e => new { e.UserId, e.RoleId });
 
                 entity.HasIndex(e => e.RoleId);
 
@@ -175,7 +173,7 @@ namespace RespositorioREPIS.Data
 
             modelBuilder.Entity<AspNetUserTokens>(entity =>
             {
-                entity.HasKey(e => new {e.UserId, e.LoginProvider, e.Name});
+                entity.HasKey(e => new { e.UserId, e.LoginProvider, e.Name });
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.AspNetUserTokens)
@@ -206,7 +204,7 @@ namespace RespositorioREPIS.Data
             modelBuilder.Entity<Autor>(entity =>
             {
                 entity.HasKey(e => e.IdAutor)
-                    .HasName("PK__Autor__5FC3872DD6D0110E");
+                    .HasName("PK__Autor__5FC3872DAAA6D781");
 
                 entity.Property(e => e.IdAutor).HasColumnName("id_autor");
 
@@ -215,19 +213,12 @@ namespace RespositorioREPIS.Data
                     .HasColumnName("autor_nombre_apellido")
                     .HasMaxLength(250)
                     .IsUnicode(false);
-
-                entity.Property(e => e.IdAlumno).HasColumnName("id_alumno");
-
-                entity.HasOne(d => d.IdAlumnoRepositorioNavigation)
-                    .WithMany(p => p.Autor)
-                    .HasForeignKey(d => d.IdAlumno)
-                    .HasConstraintName("FK__Autor__id_alumno__05D8E0BE");
             });
 
             modelBuilder.Entity<Ciclo>(entity =>
             {
                 entity.HasKey(e => e.IdCiclo)
-                    .HasName("PK__Ciclo__A78E2FA398F0406F");
+                    .HasName("PK__Ciclo__A78E2FA3EAE3AB8A");
 
                 entity.Property(e => e.IdCiclo).HasColumnName("id_ciclo");
 
@@ -241,7 +232,7 @@ namespace RespositorioREPIS.Data
             modelBuilder.Entity<Curso>(entity =>
             {
                 entity.HasKey(e => e.IdCurso)
-                    .HasName("PK__Curso__5D3F75028A7CAE4B");
+                    .HasName("PK__Curso__5D3F7502AD1226BB");
 
                 entity.Property(e => e.IdCurso).HasColumnName("id_curso");
 
@@ -255,23 +246,31 @@ namespace RespositorioREPIS.Data
 
                 entity.Property(e => e.IdPerfil).HasColumnName("id_perfil");
 
+                entity.Property(e => e.IdProfesor).HasColumnName("id_profesor");
+
                 entity.HasOne(d => d.Ciclo)
                     .WithMany(p => p.Curso)
                     .HasForeignKey(d => d.IdCiclo)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Curso__id_ciclo__75A278F5");
+                    .HasConstraintName("FK__Curso__id_ciclo__73BA3083");
 
                 entity.HasOne(d => d.Perfil)
                     .WithMany(p => p.Curso)
                     .HasForeignKey(d => d.IdPerfil)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Curso__id_perfil__76969D2E");
+                    .HasConstraintName("FK__Curso__id_perfil__74AE54BC");
+
+                entity.HasOne(d => d.IdProfesorNavigation)
+                    .WithMany(p => p.Curso)
+                    .HasForeignKey(d => d.IdProfesor)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__Curso__id_profes__76969D2E");
             });
 
             modelBuilder.Entity<Estado>(entity =>
             {
                 entity.HasKey(e => e.IdEstado)
-                    .HasName("PK__Estado__86989FB2E2AC3FCD");
+                    .HasName("PK__Estado__86989FB2E20E68CC");
 
                 entity.Property(e => e.IdEstado).HasColumnName("id_estado");
 
@@ -285,7 +284,7 @@ namespace RespositorioREPIS.Data
             modelBuilder.Entity<Keyword>(entity =>
             {
                 entity.HasKey(e => e.IdKeyword)
-                    .HasName("PK__Keyword__00A87CD6FCB8916E");
+                    .HasName("PK__Keyword__00A87CD662172579");
 
                 entity.Property(e => e.IdKeyword).HasColumnName("id_keyword");
 
@@ -299,27 +298,24 @@ namespace RespositorioREPIS.Data
             modelBuilder.Entity<Paper>(entity =>
             {
                 entity.HasKey(e => e.IdPaper)
-                    .HasName("PK__Paper__3D957617A397DDD1");
+                    .HasName("PK__Paper__3D9576175891EA75");
 
                 entity.Property(e => e.IdPaper).HasColumnName("id_paper");
+
+                entity.Property(e => e.PaperIntroduccion)
+                    .HasColumnName("paper_introduccion")
+                    .HasColumnType("text");
 
                 entity.Property(e => e.PaperResumen)
                     .IsRequired()
                     .HasColumnName("paper_resumen")
-                    .HasMaxLength(250)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.PaperIntroduccion)
-                    .IsRequired()
-                    .HasColumnName("paper_introduccion")
-                    .HasMaxLength(250)
-                    .IsUnicode(false);
+                    .HasColumnType("text");
             });
 
             modelBuilder.Entity<PaperAdicional>(entity =>
             {
                 entity.HasKey(e => e.IdPaperAdicional)
-                    .HasName("PK__PaperAdi__0CE54793712DD669");
+                    .HasName("PK__PaperAdi__0CE5479306BFA920");
 
                 entity.Property(e => e.IdPaperAdicional).HasColumnName("id_paper_adicional");
 
@@ -337,28 +333,28 @@ namespace RespositorioREPIS.Data
                     .HasMaxLength(250)
                     .IsUnicode(false);
 
-//                entity.HasOne(d => d.Paper)
-//                    .WithMany(p => p.PaperAdicional)
-//                    .HasForeignKey(d => d.IdPaper)
-//                    .OnDelete(DeleteBehavior.ClientSetNull)
-//                    .HasConstraintName("FK__PaperAdic__id_pa__0C85DE4D");
+                entity.HasOne(d => d.IdPaperNavigation)
+                    .WithMany(p => p.PaperAdicional)
+                    .HasForeignKey(d => d.IdPaper)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__PaperAdic__id_pa__70DDC3D8");
             });
 
             modelBuilder.Entity<Perfil>(entity =>
             {
                 entity.HasKey(e => e.IdPerfil)
-                    .HasName("PK__Perfil__1D1C87687B778215");
+                    .HasName("PK__Perfil__1D1C87680BC56803");
 
                 entity.Property(e => e.IdPerfil).HasColumnName("id_perfil");
+
+                entity.Property(e => e.PerfilColor)
+                    .HasColumnName("perfil_color")
+                    .HasMaxLength(250)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.PerfilDescripcion)
                     .IsRequired()
                     .HasColumnName("perfil_descripcion")
-                    .HasMaxLength(250)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.PerfilColor)
-                    .HasColumnName("perfil_color")
                     .HasMaxLength(250)
                     .IsUnicode(false);
             });
@@ -366,7 +362,7 @@ namespace RespositorioREPIS.Data
             modelBuilder.Entity<Profesor>(entity =>
             {
                 entity.HasKey(e => e.IdProfesor)
-                    .HasName("PK__Profesor__159ED61774209BA4");
+                    .HasName("PK__Profesor__159ED617D3D6A96C");
 
                 entity.Property(e => e.IdProfesor).HasColumnName("id_profesor");
 
@@ -392,9 +388,11 @@ namespace RespositorioREPIS.Data
             modelBuilder.Entity<Proyecto>(entity =>
             {
                 entity.HasKey(e => e.IdProyecto)
-                    .HasName("PK__Proyecto__F38AD81D40D9B2C5");
+                    .HasName("PK__Proyecto__F38AD81DABB1AF5C");
 
                 entity.Property(e => e.IdProyecto).HasColumnName("id_proyecto");
+
+                entity.Property(e => e.IdAlumno).HasColumnName("id_alumno");
 
                 entity.Property(e => e.IdCurso).HasColumnName("id_curso");
 
@@ -430,13 +428,19 @@ namespace RespositorioREPIS.Data
                     .HasMaxLength(250)
                     .IsUnicode(false);
 
+                entity.HasOne(d => d.IdAlumnoNavigation)
+                    .WithMany(p => p.Proyecto)
+                    .HasForeignKey(d => d.IdAlumno)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__Proyecto__id_alu__7C4F7684");
+
                 entity.HasOne(d => d.Curso)
                     .WithMany(p => p.Proyecto)
                     .HasForeignKey(d => d.IdCurso)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Proyecto__id_cur__797309D9");
 
-                entity.HasOne(d => d.Estado)
+                entity.HasOne(d => d.Curso)
                     .WithMany(p => p.Proyecto)
                     .HasForeignKey(d => d.IdEstado)
                     .OnDelete(DeleteBehavior.ClientSetNull)
@@ -452,7 +456,7 @@ namespace RespositorioREPIS.Data
             modelBuilder.Entity<ProyectoAutor>(entity =>
             {
                 entity.HasKey(e => e.IdProyectoAutor)
-                    .HasName("PK__Proyecto__525A78CB7FD663CC");
+                    .HasName("PK__Proyecto__525A78CBA90A948A");
 
                 entity.ToTable("Proyecto_Autor");
 
@@ -466,19 +470,19 @@ namespace RespositorioREPIS.Data
                     .WithMany(p => p.ProyectoAutor)
                     .HasForeignKey(d => d.IdAutor)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Proyecto___id_au__09A971A2");
+                    .HasConstraintName("FK__Proyecto___id_au__00200768");
 
                 entity.HasOne(d => d.IdProyectoNavigation)
                     .WithMany(p => p.ProyectoAutor)
                     .HasForeignKey(d => d.IdProyecto)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Proyecto___id_pr__08B54D69");
+                    .HasConstraintName("FK__Proyecto___id_pr__7F2BE32F");
             });
 
             modelBuilder.Entity<ProyectoKeyword>(entity =>
             {
                 entity.HasKey(e => e.IdProyectoKeyword)
-                    .HasName("PK__Proyecto__57C3B55756DDC534");
+                    .HasName("PK__Proyecto__57C3B557C3AB2DC1");
 
                 entity.ToTable("Proyecto_Keyword");
 
@@ -492,19 +496,19 @@ namespace RespositorioREPIS.Data
                     .WithMany(p => p.ProyectoKeyword)
                     .HasForeignKey(d => d.IdKeyword)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Proyecto___id_ke__7F2BE32F");
+                    .HasConstraintName("FK__Proyecto___id_ke__03F0984C");
 
                 entity.HasOne(d => d.IdProyectoNavigation)
                     .WithMany(p => p.ProyectoKeyword)
                     .HasForeignKey(d => d.IdProyecto)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Proyecto___id_pr__7E37BEF6");
+                    .HasConstraintName("FK__Proyecto___id_pr__02FC7413");
             });
 
             modelBuilder.Entity<Solicitud>(entity =>
             {
                 entity.HasKey(e => e.IdSolicitud)
-                    .HasName("PK__Solicitu__5C0C31F36E713714");
+                    .HasName("PK__Solicitu__5C0C31F3B3FF2679");
 
                 entity.Property(e => e.IdSolicitud).HasColumnName("id_solicitud");
 
@@ -519,13 +523,13 @@ namespace RespositorioREPIS.Data
                     .WithMany(p => p.Solicitud)
                     .HasForeignKey(d => d.IdProyecto)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Solicitud__id_pr__0F624AF8");
+                    .HasConstraintName("FK__Solicitud__id_pr__06CD04F7");
             });
 
             modelBuilder.Entity<Usuario>(entity =>
             {
                 entity.HasKey(e => e.IdUsuario)
-                    .HasName("PK__Usuario__4E3E04ADB016CC03");
+                    .HasName("PK__Usuario__4E3E04ADB577E57B");
 
                 entity.Property(e => e.IdUsuario).HasColumnName("id_usuario");
 

@@ -73,7 +73,7 @@
     </schema>
     <schema id="21" parent="3" name="dbo">
       <ObjectId>1</ObjectId>
-      <IntrospectionTimestamp>2019-11-12.01:16:29.487</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2019-11-28.09:04:02.553</IntrospectionTimestamp>
       <Current>1</Current>
     </schema>
     <schema id="22" parent="3" name="guest">
@@ -195,7 +195,7 @@
     <table id="51" parent="21" name="Paper">
       <ObjectId>1813581499</ObjectId>
       <CreatedTimestamp>2019-09-12.12:37:49.057</CreatedTimestamp>
-      <ModifiedTimestamp>2019-11-11.11:11:25.450</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-11-28.09:04:02.193</ModifiedTimestamp>
     </table>
     <table id="52" parent="21" name="PaperAdicional">
       <ObjectId>178099675</ObjectId>
@@ -959,12 +959,12 @@ Name</ColNames>
     </column>
     <column id="174" parent="51" name="paper_resumen">
       <Position>2</Position>
-      <DataType>varchar(250 char)|0s</DataType>
+      <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="175" parent="51" name="paper_introduccion">
       <Position>3</Position>
-      <DataType>varchar(255 char)|0s</DataType>
+      <DataType>text|0s</DataType>
     </column>
     <index id="176" parent="51" name="PK__Paper__3D957617A397DDD1">
       <Position>1</Position>

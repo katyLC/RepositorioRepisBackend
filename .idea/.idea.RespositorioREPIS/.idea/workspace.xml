@@ -2,27 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7419a13-ea0a-40d4-83bc-32797096f6d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Api/Resources/AlumnoResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/UseCases/Alumno/IAlumnoUseCase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Api/Controllers/AuthController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Api/Controllers/ProfesorController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Repositorio/ProfesorRepositorio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/Repositories/IDocenteRepositorio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/Repositories/IUsuarioRepositorio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/UseCases/Docente/DocenteUseCase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/UseCases/Docente/IDocenteUseCase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/UseCases/Usuario/IUsuarioUsecase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/UseCases/Usuario/UsuarioUseCase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources/ff388095-b3fe-4eb6-8782-31fc8add62a7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources/ff388095-b3fe-4eb6-8782-31fc8add62a7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources/ff388095-b3fe-4eb6-8782-31fc8add62a7/storage_v2/_src_/database/db_repositorio_upt.ruQwxQ/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources/ff388095-b3fe-4eb6-8782-31fc8add62a7/storage_v2/_src_/database/db_repositorio_upt.ruQwxQ/schema/dbo.sYMBAA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Controllers/AlumnoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Controllers/AlumnoController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Controllers/ProyectoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Controllers/ProyectoController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Mapping/ModelToResourceProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Mapping/ModelToResourceProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Resources/ProyectoResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Resources/ProyectoResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RespositorioREPIS/DesignTimeBuild/.dtbcache" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RespositorioREPIS/DesignTimeBuild/.dtbcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RespositorioREPIS/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RespositorioREPIS/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RespositorioREPIS/v16/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RespositorioREPIS/v16/Server/sqlite3/storage.ide" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/AppContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/AppContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/DbModel/Alumno.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Alumno.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/DbModel/Ciclo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Ciclo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/DbModel/Curso.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Curso.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/DbModel/Proyecto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Proyecto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/Administrador.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/Alumno.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/AspNetRoleClaims.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/AspNetRoles.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/AspNetUserClaims.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/AspNetUserLogins.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/AspNetUserRoles.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/AspNetUserTokens.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/AspNetUsers.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/Autor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/Ciclo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/Curso.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/Estado.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/Keyword.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/Paper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/PaperAdicional.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/Perfil.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/Profesor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/Proyecto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/ProyectoAutor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/ProyectoKeyword.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/Solicitud.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/DbModel/Usuario.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/Repositorio/AlumnoRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repositorio/AlumnoRepositorio.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/Repositorio/ProyectoRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repositorio/ProyectoRepositorio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Repositories/IAlumnoRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Repositories/IAlumnoRepositorio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Repositories/IProyectoRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Repositories/IProyectoRepositorio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Alumno/IRegistrarAlumno.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Alumno/RegistrarAlumno.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/Alumno/AlumnoUseCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Proyecto/IProyectoUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/Proyecto/IProyectoUseCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Proyecto/ProyectoUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/Proyecto/ProyectoUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Alumno/AlumnoUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/Alumno/AlumnoUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RespositorioREPIS.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/RespositorioREPIS.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/RespositorioREPIS.1.0.0.nupkg" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/RespositorioREPIS.1.0.0.nupkg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.dll" afterDir="false" />
@@ -90,15 +113,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Api/Controllers/ProfesorController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/Repositorio/ProfesorRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Responses/BaseResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Entities/ProyectoEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Responses/ProyectoResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Usuario/IUsuarioUsecase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Api/Resources/GuardarProyectoResource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Usuario/UsuarioUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/UseCases/Perfil/IPerfilUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/UseCases/Perfil/PerfilUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/708129CF-4E54-4A2E-810D-663C40E72AFB/99/06b36b1c/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Entities/PerfilEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Repositories/IProyectoRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Repositories/IUsuarioRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/UseCases/Proyecto/ProyectoUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/UseCases/Proyecto/IProyectoUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Api/Controllers/CursoController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -109,6 +137,8 @@
     <setting file="file://$PROJECT_DIR$/Api/Controllers/ProyectoController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Repositories/ICursoRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data/Repositorio/ProyectoRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Api/Controllers/AuthController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Docente/IDocenteUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0C38BDD3-5283-466A-A7A9-C25E92BDF157/79/f49c1c48/Task.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Entities/CursoEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Entities/AlumnoEntity.cs" root0="FORCE_HIGHLIGHTING" />
@@ -127,46 +157,48 @@
     <setting file="file://$PROJECT_DIR$/Api/Resources/GuardarProyectoKeywordResource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Responses/ProyectoKeywordResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files (x86)/NuGet/Config/Microsoft.VisualStudio.Offline.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/AppContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Api/Resources/ErrorResource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Api/Resources/AlumnoResource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2D506C52-CF4B-4BDB-B896-80B6E2C92982/32/f9a55a07/EntityTypeBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Api/Mapping/ResourceToModelProfile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Api/Resources/ProyectoResource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Api/Mapping/ModelToResourceProfile.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetUserRoles.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/Profesor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/Alumno.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/ProyectoAutor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetUsers.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Api/Controllers/ProyectokeywordController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetUserTokens.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/UseCases/ProyectoKeyword/ProyectoKeywordUseCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetUserLogins.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Domain/UseCases/ProyectoKeyword/IProyectoKeywordUseCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/Keyword.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Solicitud.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Proyecto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data/DbModel/Estado.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/ProyectoKeyword.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/Administrador.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetRoleClaims.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetUserLogins.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Ciclo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Api/Controllers/ProyectokeywordController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Perfil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/ProyectoKeyword/ProyectoKeywordUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/ProyectoAutor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/ProyectoKeyword/IProyectoKeywordUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Curso.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Usuario.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetUserTokens.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Keyword.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data/Repositorio/ProyectoKeywordRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/Paper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetUserClaims.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2D506C52-CF4B-4BDB-B896-80B6E2C92982/bf/7d40ab30/DbSet`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Repositories/IProyectoKeywordRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/ProyectoKeyword.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetRoles.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/Autor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/Perfil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data/DbModel/PaperAdicional.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Entities/ProyectoKeywordEntity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/Usuario.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/AppContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/Proyecto.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetRoleClaims.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/Solicitud.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/Curso.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetUserClaims.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/DbModel/Ciclo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetUsers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Administrador.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Paper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Autor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Alumno.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/Profesor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DbModel/AspNetUserRoles.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Repositories/IAlumnoRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/Repositories/IDocenteRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Domain/UseCases/Docente/DocenteUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Api/ValuesController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Api/Controllers/PaperController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/UseCases/Paper/PaperUseCase.cs" root0="FORCE_HIGHLIGHTING" />
@@ -176,7 +208,7 @@
     <setting file="file://$PROJECT_DIR$/Api/Resources/PaperResource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/UseCases/Alumno/IAlumnoUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data/Repositorio/PaperRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Api/Controllers/AlumnoController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Api/Controllers/AlumnoController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Responses/PaperResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Repositories/IPaperRepositorio.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Entities/PaperEntity.cs" root0="FORCE_HIGHLIGHTING" />
@@ -197,57 +229,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Api/ProyectoController.cs" />
-        <option value="$PROJECT_DIR$/Data/Mapping/GuardarProyectoMapper.cs" />
-        <option value="$PROJECT_DIR$/Api/Mapping/GuardarProyectoMapper.cs" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api_4.http" />
-        <option value="$PROJECT_DIR$/Api/Resources/GuardarProyectoResource.cs" />
-        <option value="$PROJECT_DIR$/Domain/Repositories/IProyectoKeywordRepositorio.cs" />
-        <option value="$PROJECT_DIR$/Data/Repositorio/ProyectoKeywordRepositorio.cs" />
-        <option value="$PROJECT_DIR$/Domain/Responses/ProyectoKeywordResponse.cs" />
-        <option value="$PROJECT_DIR$/Domain/Responses/ProyectoResponse.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/ProyectoKeyword/IProyectoKeywordUseCase.cs" />
-        <option value="$PROJECT_DIR$/Api/Resources/GuardarProyectoKeywordResource.cs" />
-        <option value="$PROJECT_DIR$/Api/Resources/ProyectoKeywordResource.cs" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ff388095-b3fe-4eb6-8782-31fc8add62a7/console_3.sql" />
-        <option value="$PROJECT_DIR$/Domain/Validators/ModelStateFilter.cs" />
-        <option value="$PROJECT_DIR$/Startup.cs" />
-        <option value="$PROJECT_DIR$/Domain/Validators/ProyectoKeywordValidation.cs" />
-        <option value="$PROJECT_DIR$/Domain/Repositories/IPaperRepositorio.cs" />
-        <option value="$PROJECT_DIR$/Data/Repositorio/PaperRepositorio.cs" />
-        <option value="$PROJECT_DIR$/Domain/Responses/PaperResponse.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Paper/IPaperUseCase.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Paper/PaperUseCase.cs" />
-        <option value="$PROJECT_DIR$/Api/Resources/PaperResource.cs" />
-        <option value="$PROJECT_DIR$/Api/Resources/GuardarPaperResource.cs" />
-        <option value="$PROJECT_DIR$/Data/DbModel/Paper.cs" />
-        <option value="$PROJECT_DIR$/Api/Resources/ErrorResource.cs" />
-        <option value="$PROJECT_DIR$/Api/Mapping/ResourceToModelProfile.cs" />
-        <option value="$PROJECT_DIR$/Api/Controllers/PaperController.cs" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ff388095-b3fe-4eb6-8782-31fc8add62a7/console.sql" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/ProyectoKeyword/ProyectoKeywordUseCase.cs" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/RepositorioREPIS.http" />
-        <option value="$PROJECT_DIR$/Api/Controllers/ProyectokeywordController.cs" />
-        <option value="$PROJECT_DIR$/Domain/Entities/AlumnoEntity.cs" />
-        <option value="$PROJECT_DIR$/Domain/Repositories/IProyectoRepositorio.cs" />
-        <option value="$PROJECT_DIR$/Data/DbModel/Curso.cs" />
-        <option value="$PROJECT_DIR$/Api/Resources/ProyectoResource.cs" />
-        <option value="$PROJECT_DIR$/Data/AppContext.cs" />
-        <option value="$PROJECT_DIR$/Data/DbModel/Proyecto.cs" />
-        <option value="$PROJECT_DIR$/Data/Repositorio/ProyectoRepositorio.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Proyecto/ProyectoUseCase.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Proyecto/IProyectoUseCase.cs" />
-        <option value="$PROJECT_DIR$/Api/Controllers/ProyectoController.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Alumno/Alumno.cs" />
-        <option value="$PROJECT_DIR$/Api/Mapping/ModelToResourceProfile.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Alumno/IAlumno.cs" />
-        <option value="$PROJECT_DIR$/Api/Controllers/AlumnoController.cs" />
         <option value="$PROJECT_DIR$/Domain/UseCases/Alumno/IAlumnoUseCase.cs" />
-        <option value="$PROJECT_DIR$/Domain/UseCases/Alumno/AlumnoUseCase.cs" />
         <option value="$PROJECT_DIR$/Domain/Repositories/IAlumnoRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Api/Resources/AlumnoResource.cs" />
+        <option value="$PROJECT_DIR$/Domain/Repositories/IUsuarioRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Api/Controllers/AuthController.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ff388095-b3fe-4eb6-8782-31fc8add62a7/console_4.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Usuario/Usuario.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Usuario/IUsuarioUsecase.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Usuario/UsuarioUseCase.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Docente/IDocente.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Docente/Docente.cs" />
+        <option value="$PROJECT_DIR$/Domain/Repositories/IDocenteRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Api/Controllers/AlumnoController.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Docente/IDocenteUseCase.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Docente/DocenteUseCase.cs" />
+        <option value="$PROJECT_DIR$/Startup.cs" />
+        <option value="$PROJECT_DIR$/Data/Repositorio/ProfesorRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Api/Controllers/ProfesorController.cs" />
+        <option value="$PROJECT_DIR$/Domain/UseCases/Alumno/AlumnoUseCase.cs" />
+        <option value="$PROJECT_DIR$/Data/Alumno.cs" />
+        <option value="$PROJECT_DIR$/Data/Ciclo.cs" />
+        <option value="$PROJECT_DIR$/RespositorioREPIS.csproj" />
+        <option value="$PROJECT_DIR$/Data/Profesor.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/Administrador.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/AspNetRoleClaims.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/AspNetUserClaims.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/AspNetRoles.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/AspNetUserLogins.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/AspNetUserRoles.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/AspNetUsers.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/AspNetUserTokens.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/Autor.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/Ciclo.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/Estado.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/Keyword.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/Paper.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/PaperAdicional.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/Perfil.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/Profesor.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/ProyectoAutor.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/ProyectoKeyword.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/Solicitud.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/Usuario.cs" />
+        <option value="$PROJECT_DIR$/Data/Repositorio/ProyectoKeywordRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Data/Repositorio/ProyectoRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/Proyecto.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/Curso.cs" />
         <option value="$PROJECT_DIR$/Data/Repositorio/AlumnoRepositorio.cs" />
         <option value="$PROJECT_DIR$/Data/DbModel/Alumno.cs" />
-        <option value="$PROJECT_DIR$/Api/Resources/AlumnoResource.cs" />
+        <option value="$PROJECT_DIR$/Data/AppContext.cs" />
       </list>
     </option>
   </component>
@@ -1117,22 +1149,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@245057a2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@245057a2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@33a32d04" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@245057a2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@17378ac0" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -1201,6 +1218,16 @@
       <workItem from="1574785360014" duration="10110000" />
       <workItem from="1574872501217" duration="4441000" />
       <workItem from="1574951164828" duration="83000" />
+      <workItem from="1574951850645" duration="12881000" />
+      <workItem from="1575087755981" duration="1816000" />
+      <workItem from="1575093049108" duration="9665000" />
+      <workItem from="1575238471787" duration="423000" />
+      <workItem from="1575239466655" duration="7240000" />
+      <workItem from="1575248940758" duration="4256000" />
+      <workItem from="1575256845167" duration="2138000" />
+      <workItem from="1575259093028" duration="213000" />
+      <workItem from="1575260845936" duration="4580000" />
+      <workItem from="1575269831004" duration="606000" />
     </task>
     <servers />
   </component>
@@ -1212,6 +1239,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/tzoph/RiderProjects/RespositorioREPIS/Data/DbModel" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -1220,6 +1272,11 @@
           </value>
         </entry>
       </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
     </option>
   </component>
   <component name="VcsManagerConfiguration">

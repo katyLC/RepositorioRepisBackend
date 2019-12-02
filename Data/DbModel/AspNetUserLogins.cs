@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace RespositorioREPIS.Data.DbModel
+﻿namespace RespositorioREPIS.Data.DbModel
 {
     public partial class AspNetUserLogins
     {
