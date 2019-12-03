@@ -20,6 +20,8 @@ using RespositorioREPIS.Data.DbModel;
 using RespositorioREPIS.Data.Repositorio;
 using RespositorioREPIS.Domain.Repositories;
 using RespositorioREPIS.Domain.UseCases.Alumno;
+using RespositorioREPIS.Domain.UseCases.Autenticacion;
+using RespositorioREPIS.Domain.UseCases.Autor;
 using RespositorioREPIS.Domain.UseCases.Ciclo;
 using RespositorioREPIS.Domain.UseCases.Curso;
 using RespositorioREPIS.Domain.UseCases.Docente;
@@ -27,6 +29,7 @@ using RespositorioREPIS.Domain.UseCases.PalabrasClaves;
 using RespositorioREPIS.Domain.UseCases.Paper;
 using RespositorioREPIS.Domain.UseCases.Perfil;
 using RespositorioREPIS.Domain.UseCases.Proyecto;
+using RespositorioREPIS.Domain.UseCases.ProyectoAutor;
 using RespositorioREPIS.Domain.UseCases.ProyectoKeyword;
 using RespositorioREPIS.Domain.Validators;
 using AppContext = RespositorioREPIS.Data.AppContext;
@@ -86,7 +89,7 @@ namespace RespositorioREPIS
             services.AddTransient<IPerfilRepositorio, PerfilRepositorio>();
             services.AddTransient<ICursoUseCase, CursoUseCaseUseCase>();
             services.AddTransient<ICursoRepositorio, CursoRepositorio>();
-            services.AddTransient<IPalabrasClaves, PalabrasClaves>();
+            services.AddTransient<IPalabrasClavesUseCase, PalabrasClavesUseCase>();
             services.AddTransient<IPalabrasClavesRepositorio, PalabarasClavesRepositorio>();
             services.AddTransient<IProyectoUseCase, ProyectoUseCase>();
             services.AddTransient<IProyectoRepositorio, ProyectoRepositortio>();
@@ -96,8 +99,42 @@ namespace RespositorioREPIS
             services.AddTransient<IPaperUseCase, PaperUseCase>();
             services.AddTransient<IDocenteUseCase, DocenteUseCase>();
             services.AddTransient<IDocenteRepositorio, ProfesorRepositorio>();
+            services.AddTransient<IAutenticacionRepositorio, AutenticationRepositorio>();
+            services.AddTransient<IAutenticacionUseCase, AutenticacionUseCase>();
+            services.AddTransient<IAutorRepositorio, AutorRepositorio>();
+            services.AddTransient<IAutorUseCase, AutorUseCase>();
+            services.AddTransient<IProyectoAutorRepositorio, ProyectoAutorRepositorio>();
+            services.AddTransient<IProyectoAutorUseCase, ProyectoAutorUseCase>();
 
             services.AddAutoMapper();
+
+            var key = Encoding.ASCII.GetBytes(Configuration.GetValue<string>("SecretKey"));
+            services.AddAuthentication(x => {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(x => {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
+//            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+//                .AddJwtBearer(options => {
+//                    options.TokenValidationParameters = new TokenValidationParameters() {
+//                        ValidateIssuer = true,
+//                        ValidateAudience = true,
+//                        ValidateLifetime = true,
+//                        ValidateIssuerSigningKey = true,
+//                        ValidIssuer = Configuration["JWT:Issuer"],
+//                        ValidAudience = Configuration["JWT:Audience"],
+//                        IssuerSigningKey = new SymmetricSecurityKey(
+//                            Encoding.UTF8.GetBytes(Configuration["JWT:ClaveSecreta"]))
+//                    };
+//                });
 
 
             /*services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppContext>()
@@ -122,8 +159,9 @@ namespace RespositorioREPIS
                     ClockSkew = TimeSpan.Zero
                 };
             });
+            */
 
-            services.AddMvc();*/
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

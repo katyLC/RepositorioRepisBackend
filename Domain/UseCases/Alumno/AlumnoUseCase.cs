@@ -25,7 +25,6 @@ namespace RespositorioREPIS.Domain.UseCases.Alumno
         }
 
         public async Task<Data.DbModel.Alumno> ObtenerAlumnoID(int id) {
-            var a = id;
             return await _alumnoRepositorio.ObtenerAlumnID(id);
         }
         

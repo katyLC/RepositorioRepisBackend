@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\tzoph\.Rider2019.2\config\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\tzoph\.Rider2019.2\config\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\tzoph\.Rider2019.2\config\scratches" t="IncludeRecursive" />
-    <e p="C:\Users\tzoph\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\tzoph\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RespositorioREPIS.2094678688.00" t="ExcludeRecursive" />
-    <e p="C:\Users\tzoph\RiderProjects\RespositorioREPIS" t="IncludeRecursive">
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_RespositorioREPIS.-354090177.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p=".git/info/exclude" t="IncludeRecursive" />
+      <e p=".gitignore" t="Include" />
       <e p="Api" t="Include">
         <e p="Controllers" t="Include">
           <e p="AlumnoController.cs" t="Include" />
+          <e p="AutenticacionController.cs" t="Include" />
           <e p="AuthController.cs" t="Include" />
           <e p="CicloController.cs" t="Include" />
           <e p="CursoController.cs" t="Include" />
+          <e p="KeywordController.cs" t="Include" />
           <e p="PalabrasClavesController.cs" t="Include" />
           <e p="PaperController.cs" t="Include" />
           <e p="PerfilController.cs" t="Include" />
@@ -26,13 +30,20 @@
         </e>
         <e p="Resources" t="Include">
           <e p="AlumnoResource.cs" t="Include" />
+          <e p="AuthResource.cs" t="Include" />
           <e p="ErrorResource.cs" t="Include" />
+          <e p="GuardarAutorResource.cs" t="Include" />
           <e p="GuardarPaperResource.cs" t="Include" />
           <e p="GuardarProyectoKeywordResource.cs" t="Include" />
           <e p="GuardarProyectoResource.cs" t="Include" />
+          <e p="Keyword" t="Include">
+            <e p="GuardarKeywordResource.cs" t="Include" />
+            <e p="KeywordResource.cs" t="Include" />
+          </e>
           <e p="PaperResource.cs" t="Include" />
           <e p="ProyectoKeywordResource.cs" t="Include" />
           <e p="ProyectoResource.cs" t="Include" />
+          <e p="UsuarioResource.cs" t="Include" />
         </e>
         <e p="ValuesController.cs" t="Include" />
       </e>
@@ -68,12 +79,15 @@
         </e>
         <e p="Repositorio" t="Include">
           <e p="AlumnoRepositorio.cs" t="Include" />
+          <e p="AutenticacionRepositorio.cs" t="Include" />
+          <e p="AutorRepositorio.cs" t="Include" />
           <e p="CicloRepositorio.cs" t="Include" />
           <e p="CursoRepositorio.cs" t="Include" />
           <e p="PalabarasClavesRepositorio.cs" t="Include" />
           <e p="PaperRepositorio.cs" t="Include" />
           <e p="PerfilRepositorio.cs" t="Include" />
           <e p="ProfesorRepositorio.cs" t="Include" />
+          <e p="ProyectoAutorRepositorio.cs" t="Include" />
           <e p="ProyectoKeywordRepositorio.cs" t="Include" />
           <e p="ProyectoRepositorio.cs" t="Include" />
         </e>
@@ -91,26 +105,43 @@
         </e>
         <e p="Repositories" t="Include">
           <e p="IAlumnoRepositorio.cs" t="Include" />
+          <e p="IAutenticacionRepositorio.cs" t="Include" />
+          <e p="IAutorRepositorio.cs" t="Include" />
           <e p="ICicloRepositorio.cs" t="Include" />
           <e p="ICursoRepositorio.cs" t="Include" />
           <e p="IDocenteRepositorio.cs" t="Include" />
+          <e p="IKeywordRepositorio.cs" t="Include" />
           <e p="IPalabrasClavesRepositorio.cs" t="Include" />
           <e p="IPaperRepositorio.cs" t="Include" />
           <e p="IPerfilRepositorio.cs" t="Include" />
+          <e p="IProyectoAutorRepositorio.cs" t="Include" />
           <e p="IProyectoKeywordRepositorio.cs" t="Include" />
           <e p="IProyectoRepositorio.cs" t="Include" />
           <e p="IUsuarioRepositorio.cs" t="Include" />
         </e>
         <e p="Responses" t="Include">
+          <e p="AlumnoResponse.cs" t="Include" />
+          <e p="AutorResponse.cs" t="Include" />
           <e p="BaseResponse.cs" t="Include" />
+          <e p="KeywordResponse.cs" t="Include" />
           <e p="PaperResponse.cs" t="Include" />
+          <e p="ProyectoAutorResponse.cs" t="Include" />
           <e p="ProyectoKeywordResponse.cs" t="Include" />
           <e p="ProyectoResponse.cs" t="Include" />
+          <e p="UsuarioResponse.cs" t="Include" />
         </e>
         <e p="UseCases" t="Include">
           <e p="Alumno" t="Include">
             <e p="AlumnoUseCase.cs" t="Include" />
             <e p="IAlumnoUseCase.cs" t="Include" />
+          </e>
+          <e p="Autenticacion" t="Include">
+            <e p="AutenticacionUseCase.cs" t="Include" />
+            <e p="IAutenticacionUseCase.cs" t="Include" />
+          </e>
+          <e p="Autor" t="Include">
+            <e p="AutorUseCase.cs" t="Include" />
+            <e p="IAutorUseCase.cs" t="Include" />
           </e>
           <e p="Ciclo" t="Include">
             <e p="CicloUseCase.cs" t="Include" />
@@ -125,8 +156,8 @@
             <e p="IDocenteUseCase.cs" t="Include" />
           </e>
           <e p="PalabrasClaves" t="Include">
-            <e p="IPalabrasClaves.cs" t="Include" />
-            <e p="PalabrasClaves.cs" t="Include" />
+            <e p="IPalabrasClavesUseCase.cs" t="Include" />
+            <e p="PalabrasClavesUseCase.cs" t="Include" />
           </e>
           <e p="Paper" t="Include">
             <e p="IPaperUseCase.cs" t="Include" />
@@ -139,6 +170,10 @@
           <e p="Proyecto" t="Include">
             <e p="IProyectoUseCase.cs" t="Include" />
             <e p="ProyectoUseCase.cs" t="Include" />
+          </e>
+          <e p="ProyectoAutor" t="Include">
+            <e p="IProyectoAutorUseCase.cs" t="Include" />
+            <e p="ProyectoAutorUseCase.cs" t="Include" />
           </e>
           <e p="ProyectoKeyword" t="Include">
             <e p="IProyectoKeywordUseCase.cs" t="Include" />

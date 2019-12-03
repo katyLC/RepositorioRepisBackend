@@ -71,7 +71,7 @@ namespace RespositorioREPIS.Data.Repositorio
         public async Task RegistrarProyecto(Proyecto proyecto)
         {
             await _appContext.Proyecto.AddAsync(proyecto);
-            _appContext.SaveChanges();
+            await _appContext.SaveChangesAsync();
         }
 
         public IList<ProyectoEntity> detalleProyecto()

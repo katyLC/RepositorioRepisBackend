@@ -14,6 +14,7 @@ namespace RespositorioREPIS.Data.DbModel
         public string AlumnoNombre { get; set; }
         public string AlumnoApellidos { get; set; }
         public string AlumnoCodigoUniversitario { get; set; }
+        public string AlumnoEmail { get; set; }
         public int IdCiclo { get; set; }
 
         public virtual Ciclo Ciclo { get; set; }

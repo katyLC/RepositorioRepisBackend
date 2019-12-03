@@ -1,30 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tzoph\\RiderProjects\\RespositorioREPIS\\RespositorioREPIS.csproj": {}
+    "/Users/chrstpher/RiderProjects/RepositorioRepisBackend/RespositorioREPIS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tzoph\\RiderProjects\\RespositorioREPIS\\RespositorioREPIS.csproj": {
+    "/Users/chrstpher/RiderProjects/RepositorioRepisBackend/RespositorioREPIS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tzoph\\RiderProjects\\RespositorioREPIS\\RespositorioREPIS.csproj",
+        "projectUniqueName": "/Users/chrstpher/RiderProjects/RepositorioRepisBackend/RespositorioREPIS.csproj",
         "projectName": "RespositorioREPIS",
-        "projectPath": "C:\\Users\\tzoph\\RiderProjects\\RespositorioREPIS\\RespositorioREPIS.csproj",
-        "packagesPath": "C:\\Users\\tzoph\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tzoph\\RiderProjects\\RespositorioREPIS\\obj\\",
+        "projectPath": "/Users/chrstpher/RiderProjects/RepositorioRepisBackend/RespositorioREPIS.csproj",
+        "packagesPath": "/Users/chrstpher/.nuget/packages/",
+        "outputPath": "/Users/chrstpher/RiderProjects/RepositorioRepisBackend/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\tzoph\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/chrstpher/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

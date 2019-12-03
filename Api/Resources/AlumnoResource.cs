@@ -8,6 +8,8 @@ namespace RespositorioREPIS.Api.Resources
         public string AlumnoNombre { get; set; }
         public string AlumnoApellidos { get; set; }
         public string AlumnoCodigoUniversitario { get; set; }
+        public string AlumnoEmail { get; set; }
+        public string Password { get; set; }
         public int  IdCiclo { get; set; }
         public Ciclo Ciclo { get; set; }
     }
