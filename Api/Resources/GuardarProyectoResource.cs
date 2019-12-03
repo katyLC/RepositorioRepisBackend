@@ -13,5 +13,6 @@ namespace RespositorioREPIS.Api.Resources
         public int IdCurso { get; set; }
         public int IdPaper { get; set; }
         public int IdEstado { get; set; }
+        public int IdAlumno { get; set; }
     }
 }

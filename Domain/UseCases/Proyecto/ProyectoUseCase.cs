@@ -73,5 +73,15 @@ namespace RespositorioREPIS.Domain.UseCases.Proyecto
             return await _proyectoRepositorio.BuscarProyectoPorId(id);
 //            return new ProyectoResponse(proyecto);
         }
+
+        public async Task<IEnumerable<Data.DbModel.Proyecto>> ObtenerProyectoPorAlumno(int id)
+        {
+            return await _proyectoRepositorio.ObtenerProyectoPorAlumno(id);
+        }
+
+        public async Task<IEnumerable<Data.DbModel.Proyecto>> ObtenerProyectoAdmintrador()
+        {
+            return await _proyectoRepositorio.ObtenerProyectoAdministrador();
+        }
     }
 }

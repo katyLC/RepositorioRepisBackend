@@ -1,4 +1,207 @@
-﻿GET http://localhost:5000/api/curso/1
+﻿POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "Proyecto": {
+    "ProyectoNombre": "Aplicaciones Móviles 14",
+    "ProyectoTema": "Aplicaciones Móviles 144",
+    "ProyectoGithubUrl": "Aplicaciones Móviles 14",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles 14",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles 14",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 1,
+    "IdAlumno": 1
+  },
+  "Paper": {
+    "PaperResumen": "Hola 2",
+    "PaperIntroduccion": "Hola 2"
+  },
+  "ProyectoKeywords": [
+    {
+      "IdKeyword": 4,
+      "IdProyecto": 0
+    },
+    {
+      "IdKeyword": 3,
+      "IdProyecto": 0
+    }
+  ]
+}
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "Proyecto": {
+    "ProyectoNombre": "Aplicaciones Móviles 14",
+    "ProyectoTema": "Aplicaciones Móviles 144",
+    "ProyectoGithubUrl": "Aplicaciones Móviles 14",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles 14",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles 14",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 1,
+    "IdAlumno": 1
+  },
+  "Paper": {
+    "PaperResumen": "Hola 2",
+    "PaperIntroduccion": "Hola 2"
+  },
+  "ProyectoKeywords": [
+    {
+      "IdKeyword": 4,
+      "IdProyecto": 0
+    },
+    {
+      "IdKeyword": 3,
+      "IdProyecto": 0
+    }
+  ]
+}
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "Proyecto": {
+    "ProyectoNombre": "Aplicaciones Móviles 14",
+    "ProyectoTema": "Aplicaciones Móviles 144",
+    "ProyectoGithubUrl": "Aplicaciones Móviles 14",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles 14",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles 14",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 1,
+    "IdAlumno": 1
+  },
+  "Paper": {
+    "PaperResumen": "Hola 2",
+    "PaperIntroduccion": "Hola 2"
+  },
+  "ProyectoKeywords": [
+    {
+      "IdKeyword": 4,
+      "IdProyecto": 0
+    },
+    {
+      "IdKeyword": 3,
+      "IdProyecto": 0
+    }
+  ]
+}
+
+<> 2019-12-02T041421.400.json
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "Proyecto": {
+    "ProyectoNombre": "Aplicaciones Móviles 14",
+    "ProyectoTema": "Aplicaciones Móviles 144",
+    "ProyectoGithubUrl": "Aplicaciones Móviles 14",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles 14",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles 14",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 1
+  },
+  "Paper": {
+    "PaperResumen": "Hola 2",
+    "PaperIntroduccion": "Hola 2"
+  },
+  "ProyectoKeywords": [
+    {
+      "IdKeyword": 4,
+      "IdProyecto": 0
+    },
+    {
+      "IdKeyword": 3,
+      "IdProyecto": 0
+    }
+  ]
+}
+
+<> 2019-12-02T041350.400.json
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "Proyecto": {
+    "ProyectoNombre": "Aplicaciones Móviles 14",
+    "ProyectoTema": "Aplicaciones Móviles 144",
+    "ProyectoGithubUrl": "Aplicaciones Móviles 14",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles 14",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles 14",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 1
+  },
+  "Paper": {
+    "PaperResumen": "Hola 2",
+    "PaperIntroduccion": "Hola 2"
+  },
+  "ProyectoKeywords": [
+    {
+      "IdKeyword": 4,
+      "IdProyecto": 0
+    },
+    {
+      "IdKeyword": 3,
+      "IdProyecto": 0
+    }
+  ]
+}
+
+<> 2019-12-02T040404.400.json
+
+###
+
+POST http://localhost:5000/api/proyecto/
+Content-Type: application/json
+
+{
+  "Proyecto": {
+    "ProyectoNombre": "Aplicaciones Móviles 14",
+    "ProyectoTema": "Aplicaciones Móviles 144",
+    "ProyectoGithubUrl": "Aplicaciones Móviles 14",
+    "ProyectoDocumentoUrl": "Aplicaciones Móviles 14",
+    "ProyectoPortadaUrl": "Aplicaciones Móviles 14",
+    "IdCurso": 4,
+    "IdPaper": 1,
+    "IdEstado": 1
+  },
+  "Paper": {
+    "PaperResumen": "Hola 2",
+    "PaperIntroduccion": "Hola 2"
+  },
+  "ProyectoKeywords": [
+    {
+      "IdKeyword": 4,
+      "IdProyecto": 0
+    },
+    {
+      "IdKeyword": 3,
+      "IdProyecto": 0
+    }
+  ]
+}
+
+<> 2019-12-02T035135.400.json
+
+###
+
+GET http://localhost:5000/api/curso/1
 Content-Type: application/json
 
 <> 2019-11-13T032951.200.json
@@ -914,80 +1117,6 @@ Content-Type: application/json
 }
 
 <> 2019-11-12T101550.200.json
-
-###
-
-POST http://localhost:5000/api/proyectoKeyword/
-Content-Type: application/json
-
-[
-  {
-    "IdKeyword": 5,
-    "IdProyecto": 21
-  }
-]
-
-<> 2019-11-12T101546.400.json
-
-###
-
-POST http://localhost:5000/api/paper/
-Content-Type: application/json
-
-{
-  "PaperResumen": "Hola",
-  "PaperIntroduccion": "Hola"
-}
-
-<> 2019-11-12T101502.200.json
-
-###
-
-POST http://localhost:5000/api/paper/
-Content-Type: application/json
-
-{
-  "PaperResumen": "Hola",
-  "PaperIntroduccion": "Hola"
-}
-
-<> 2019-11-12T095919.200.json
-
-###
-
-POST http://localhost:5000/api/paper/
-Content-Type: application/json
-
-{
-  "PaperResumen": "Hola",
-  "PaperIntroduccion": "Hola"
-}
-
-<> 2019-11-12T095905.200.json
-
-###
-
-POST http://localhost:5000/api/paper/
-Content-Type: application/json
-
-{
-  "PaperResumen": "Hola",
-  "PaperIntroduccion": "Hola"
-}
-
-<> 2019-11-12T095417.200.json
-
-###
-
-POST http://localhost:5000/api/paper/
-Content-Type: application/json
-
-{
-  "PaperResumen": null,
-  "PaperIntroduccion": null
-}
-
-<> 2019-11-12T095154.400.json
 
 ###
 

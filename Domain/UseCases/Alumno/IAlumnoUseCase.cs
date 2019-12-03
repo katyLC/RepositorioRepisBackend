@@ -12,6 +12,5 @@ namespace RespositorioREPIS.Domain.UseCases.Alumno
 
       Task<Data.DbModel.Alumno> ObtenerAlumnoID(int id);
 
-
     }
 }

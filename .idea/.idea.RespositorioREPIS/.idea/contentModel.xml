@@ -17,6 +17,7 @@
           <e p="PaperController.cs" t="Include" />
           <e p="PerfilController.cs" t="Include" />
           <e p="ProfesorController.cs" t="Include" />
+          <e p="ProyectoAlumnoController.cs" t="Include" />
           <e p="ProyectoController.cs" t="Include" />
           <e p="ProyectoKeywordController.cs" t="Include" />
         </e>

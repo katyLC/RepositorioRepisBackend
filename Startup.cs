@@ -37,13 +37,15 @@ namespace RespositorioREPIS
     {
         private readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         private const string SecretKey = "iNivDmHLpUA223sqsfhqGbMRdRj1PVkH";
-        private readonly SymmetricSecurityKey _signingKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(SecretKey));
 
+        private readonly SymmetricSecurityKey
+            _signingKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(SecretKey));
 
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -122,8 +124,8 @@ namespace RespositorioREPIS
                     ClockSkew = TimeSpan.Zero
                 };
             });
-
-            services.AddMvc();*/
+            */
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -137,8 +139,8 @@ namespace RespositorioREPIS
 
             app.UseAuthentication();
             app.UseMvc();
-            
-           // appContext.Database.Migrate();
+
+            // appContext.Database.Migrate();
 
             //app.UseHttpsRedirection();
             app.UseCors(MyAllowSpecificOrigins);

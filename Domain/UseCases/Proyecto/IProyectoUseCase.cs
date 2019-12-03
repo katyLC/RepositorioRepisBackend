@@ -17,5 +17,9 @@ namespace RespositorioREPIS.Domain.UseCases.Proyecto
         Task<ProyectoResponse> ActualizarProyecto(int id, Data.DbModel.Proyecto proyecto);
 
         Task<Data.DbModel.Proyecto> BuscarProyectoPorId(int id);
+        
+        Task<IEnumerable<Data.DbModel.Proyecto>>ObtenerProyectoPorAlumno(int id);
+        Task<IEnumerable<Data.DbModel.Proyecto>> ObtenerProyectoAdmintrador();
+
     }
 }

@@ -440,7 +440,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Proyecto__id_cur__797309D9");
 
-                entity.HasOne(d => d.Curso)
+                entity.HasOne(d => d.Estado)
                     .WithMany(p => p.Proyecto)
                     .HasForeignKey(d => d.IdEstado)
                     .OnDelete(DeleteBehavior.ClientSetNull)
