@@ -18,5 +18,6 @@ namespace RespositorioREPIS.Api.Resources
         public Curso Curso { get; set; }
         public Estado Estado { get; set; }
         public Paper Paper { get; set; }
+        public Alumno Alumno { get; set; }
     }
 }

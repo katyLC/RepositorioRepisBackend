@@ -11,7 +11,6 @@ namespace RespositorioREPIS.Domain.Repositories
     {
         void Create(AlumnoEntity alumno);
         Task<Alumno> ObtenerAlumnID(int id);
-
     }
 }
 

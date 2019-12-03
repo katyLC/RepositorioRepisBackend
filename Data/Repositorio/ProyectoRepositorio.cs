@@ -25,10 +25,13 @@ namespace RespositorioREPIS.Data.Repositorio
                         on pr.IdCurso equals c.IdCurso
                     join pe in _appContext.Perfil
                         on c.IdPerfil equals pe.IdPerfil
-                        join ci in _appContext.Ciclo on 
-                            c.IdCiclo equals ci.IdCiclo
-                    join p in _appContext.Paper on 
-                            pr.IdPaper equals p.IdPaper
+                    join ci in _appContext.Ciclo on
+                        c.IdCiclo equals ci.IdCiclo
+                    join p in _appContext.Paper on
+                        pr.IdPaper equals p.IdPaper
+                    join e in _appContext.Estado on pr.IdEstado equals
+                        e.IdEstado
+                    where e.IdEstado == 3
                     select new Proyecto
                     {
                         IdProyecto = pr.IdProyecto,
@@ -37,6 +40,7 @@ namespace RespositorioREPIS.Data.Repositorio
                         ProyectoGithubUrl = pr.ProyectoGithubUrl,
                         ProyectoDocumentoUrl = pr.ProyectoDocumentoUrl,
                         ProyectoPortadaUrl = pr.ProyectoPortadaUrl,
+                        IdEstado = pr.IdEstado,
                         Paper = new Paper
                         {
                             IdPaper = p.IdPaper,
@@ -50,7 +54,7 @@ namespace RespositorioREPIS.Data.Repositorio
                             Ciclo = new Ciclo()
                             {
                                 IdCiclo = ci.IdCiclo,
-                               CicloDescripcion = ci.CicloDescripcion
+                                CicloDescripcion = ci.CicloDescripcion
                             },
 
                             Perfil = new Perfil
@@ -58,9 +62,7 @@ namespace RespositorioREPIS.Data.Repositorio
                                 IdPerfil = pe.IdPerfil,
                                 PerfilDescripcion = pe.PerfilDescripcion,
                                 PerfilColor = pe.PerfilColor,
-                                
                             }
-                        
                         }
                     }
                 ).ToListAsync();
@@ -89,6 +91,121 @@ namespace RespositorioREPIS.Data.Repositorio
         {
             return await _appContext.Proyecto
                 .FindAsync(id);
+        }
+
+        public async Task<IEnumerable<Proyecto>> ObtenerProyectoPorAlumno(int id)
+        {
+            var proyectoAlumno = (from pr in _appContext.Proyecto
+                    join c in _appContext.Curso
+                        on pr.IdCurso equals c.IdCurso
+                    join e in _appContext.Estado on pr.IdEstado equals
+                        e.IdEstado
+                    join pe in _appContext.Perfil
+                        on c.IdPerfil equals pe.IdPerfil
+                    join ci in _appContext.Ciclo on
+                        c.IdCiclo equals ci.IdCiclo
+                    join p in _appContext.Paper on
+                        pr.IdPaper equals p.IdPaper
+                    join a in _appContext.Alumno on
+                        pr.IdAlumno equals a.IdAlumno
+                    where a.IdAlumno == id
+                    select new Proyecto
+                    {
+                        IdProyecto = pr.IdProyecto,
+                        ProyectoNombre = pr.ProyectoNombre,
+                        ProyectoTema = pr.ProyectoTema,
+                        ProyectoGithubUrl = pr.ProyectoGithubUrl,
+                        ProyectoDocumentoUrl = pr.ProyectoDocumentoUrl,
+                        ProyectoPortadaUrl = pr.ProyectoPortadaUrl,
+                        IdEstado = pr.IdEstado,
+                        Paper = new Paper
+                        {
+                            IdPaper = p.IdPaper,
+                            PaperResumen = p.PaperResumen,
+                            PaperIntroduccion = p.PaperIntroduccion
+                        },
+
+                        Estado = new Estado()
+                        {
+                            EstadoDescripcion = e.EstadoDescripcion
+                        },
+                        Curso = new Curso
+                        {
+                            IdCurso = c.IdCurso,
+                            CursoNombre = c.CursoNombre,
+                            Ciclo = new Ciclo()
+                            {
+                                IdCiclo = ci.IdCiclo,
+                                CicloDescripcion = ci.CicloDescripcion
+                            },
+
+                            Perfil = new Perfil
+                            {
+                                IdPerfil = pe.IdPerfil,
+                                PerfilDescripcion = pe.PerfilDescripcion,
+                                PerfilColor = pe.PerfilColor,
+                            }
+                        }
+                    }
+                ).ToListAsync();
+
+            return await proyectoAlumno;
+        }
+
+        public async Task<IEnumerable<Proyecto>> ObtenerProyectoAdministrador()
+        {
+            var proyectosAdministrador = (from pr in _appContext.Proyecto
+                    join c in _appContext.Curso
+                        on pr.IdCurso equals c.IdCurso
+                    join pe in _appContext.Perfil
+                        on c.IdPerfil equals pe.IdPerfil
+                    join ci in _appContext.Ciclo on
+                        c.IdCiclo equals ci.IdCiclo
+                    join p in _appContext.Paper on
+                        pr.IdPaper equals p.IdPaper
+                    join e in _appContext.Estado on pr.IdEstado equals
+                        e.IdEstado
+                    where e.IdEstado == 1
+                    select new Proyecto
+                    {
+                        IdProyecto = pr.IdProyecto,
+                        ProyectoNombre = pr.ProyectoNombre,
+                        ProyectoTema = pr.ProyectoTema,
+                        ProyectoGithubUrl = pr.ProyectoGithubUrl,
+                        ProyectoDocumentoUrl = pr.ProyectoDocumentoUrl,
+                        ProyectoPortadaUrl = pr.ProyectoPortadaUrl,
+                        IdEstado = pr.IdEstado,
+                        Paper = new Paper
+                        {
+                            IdPaper = p.IdPaper,
+                            PaperResumen = p.PaperResumen,
+                            PaperIntroduccion = p.PaperIntroduccion
+                        },
+                        Estado = new Estado()
+                        {
+                            EstadoDescripcion = e.EstadoDescripcion
+                        },
+                        Curso = new Curso
+                        {
+                            IdCurso = c.IdCurso,
+                            CursoNombre = c.CursoNombre,
+                            Ciclo = new Ciclo()
+                            {
+                                IdCiclo = ci.IdCiclo,
+                                CicloDescripcion = ci.CicloDescripcion
+                            },
+
+                            Perfil = new Perfil
+                            {
+                                IdPerfil = pe.IdPerfil,
+                                PerfilDescripcion = pe.PerfilDescripcion,
+                                PerfilColor = pe.PerfilColor,
+                            }
+                        }
+                    }
+                ).ToListAsync();
+
+            return await proyectosAdministrador;
         }
     }
 }

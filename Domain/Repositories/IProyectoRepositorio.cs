@@ -16,5 +16,7 @@ namespace RespositorioREPIS.Domain.Repositories
         void ActualizarProyecto(Proyecto proyecto);
 
         Task<Proyecto> BuscarProyectoPorId(int id);
+        Task<IEnumerable<Proyecto>> ObtenerProyectoPorAlumno(int id);
+        Task<IEnumerable<Proyecto>> ObtenerProyectoAdministrador();
     }
 }

@@ -37,6 +37,7 @@ namespace RespositorioREPIS.Api.Controllers
                 alumno.IdCiclo);
 
         }
+        
 
 
         public class AlumnoComand
