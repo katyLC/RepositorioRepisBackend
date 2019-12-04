@@ -79,14 +79,16 @@ namespace RespositorioREPIS.Api.Controllers {
             var createdToken = tokenHandler.CreateToken(tokenDescriptor);
 
             return Ok(new AuthResource {
-                Token = tokenHandler.WriteToken(createdToken),
                 Role = "admin",
-                IdAlumno = alumno.IdAlumno,
-                CicloDescripcion = alumno.Ciclo.CicloDescripcion,
-                AlumnoNombre = alumno.AlumnoNombre,
-                AlumnoApellidos = alumno.AlumnoApellidos,
-                AlumnoEmail = alumno.AlumnoEmail,
-                AlumnoCodigoUniversitario = alumno.AlumnoCodigoUniversitario
+                Data = new Resources.Data {
+                    Token = tokenHandler.WriteToken(createdToken),
+                    IdAlumno = alumno.IdAlumno,
+                    CicloDescripcion = alumno.Ciclo.CicloDescripcion,
+                    AlumnoNombre = alumno.AlumnoNombre,
+                    AlumnoApellidos = alumno.AlumnoApellidos,
+                    AlumnoEmail = alumno.AlumnoEmail,
+                    AlumnoCodigoUniversitario = alumno.AlumnoCodigoUniversitario
+                }
             });
         }
     }

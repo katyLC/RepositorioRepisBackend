@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="f7419a13-ea0a-40d4-83bc-32797096f6d4" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Api/Controllers/AutenticacionController.cs" afterDir="false" />
@@ -103,6 +104,9 @@
       <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
     </list>
+=======
+    <list default="true" id="f7419a13-ea0a-40d4-83bc-32797096f6d4" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1259,6 +1263,7 @@
       <workItem from="1574785360014" duration="10110000" />
       <workItem from="1574872501217" duration="4441000" />
       <workItem from="1574951164828" duration="83000" />
+<<<<<<< Updated upstream
       <workItem from="1574951850645" duration="12881000" />
       <workItem from="1575087755981" duration="1816000" />
       <workItem from="1575093049108" duration="9665000" />
@@ -1274,6 +1279,25 @@
       <workItem from="1575319885319" duration="5250000" />
       <workItem from="1575384527170" duration="2670000" />
       <workItem from="1575449639481" duration="8324000" />
+=======
+      <workItem from="1575193627691" duration="548000" />
+      <workItem from="1575194180459" duration="853000" />
+      <workItem from="1575195362397" duration="154000" />
+      <workItem from="1575195545394" duration="145000" />
+      <workItem from="1575198321886" duration="3177000" />
+      <workItem from="1575225029399" duration="285000" />
+      <workItem from="1575225345987" duration="37000" />
+      <workItem from="1575225407761" duration="737000" />
+      <workItem from="1575226207315" duration="1042000" />
+      <workItem from="1575248557072" duration="138000" />
+      <workItem from="1575249283685" duration="24162000" />
+      <workItem from="1575293585954" duration="1568000" />
+      <workItem from="1575298049179" duration="2848000" />
+      <workItem from="1575301105747" duration="11009000" />
+      <workItem from="1575359540546" duration="11520000" />
+      <workItem from="1575375933425" duration="17047000" />
+      <workItem from="1575435105175" duration="13012000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>

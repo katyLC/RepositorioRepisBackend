@@ -19,7 +19,8 @@ namespace RespositorioREPIS.Data.DbModel
 
         public virtual Ciclo Ciclo { get; set; }
         public virtual ICollection<Proyecto> Proyecto { get; set; }
-        
+        public virtual ICollection<Descargas> Descargas { get; set; }
+
         
         public static Alumno FromAlumno(AlumnoEntity alumno)
         {

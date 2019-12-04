@@ -3,8 +3,11 @@ using RespositorioREPIS.Data.DbModel;
 
 namespace RespositorioREPIS.Api.Resources {
     public class AuthResource {
-        public string Token;
         public string Role;
+        public Data Data;
+    }
+    public class Data {
+        public string Token;
         public int IdAlumno;
         public string CicloDescripcion;
         public string AlumnoNombre;

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\tzoph\.Rider2019.2\config\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\tzoph\.Rider2019.2\config\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\tzoph\.Rider2019.2\config\scratches" t="IncludeRecursive" />
-    <e p="C:\Users\tzoph\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\tzoph\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RespositorioREPIS.2094678688.00" t="ExcludeRecursive" />
-    <e p="C:\Users\tzoph\RiderProjects\RespositorioREPIS" t="IncludeRecursive">
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_RespositorioREPIS.-354090177.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p=".git/info/exclude" t="IncludeRecursive" />
       <e p=".gitignore" t="Include" />
       <e p="Api" t="Include">
         <e p="Controllers" t="Include">
@@ -65,6 +66,7 @@
           <e p="Autor.cs" t="Include" />
           <e p="Ciclo.cs" t="Include" />
           <e p="Curso.cs" t="Include" />
+          <e p="Descargas.cs" t="Include" />
           <e p="Estado.cs" t="Include" />
           <e p="Keyword.cs" t="Include" />
           <e p="Paper.cs" t="Include" />
@@ -83,6 +85,8 @@
           <e p="AutorRepositorio.cs" t="Include" />
           <e p="CicloRepositorio.cs" t="Include" />
           <e p="CursoRepositorio.cs" t="Include" />
+          <e p="DescargaController.cs" t="Include" />
+          <e p="DescargaRepositorio.cs" t="Include" />
           <e p="PalabarasClavesRepositorio.cs" t="Include" />
           <e p="PaperRepositorio.cs" t="Include" />
           <e p="PerfilRepositorio.cs" t="Include" />
@@ -110,6 +114,7 @@
           <e p="IAutorRepositorio.cs" t="Include" />
           <e p="ICicloRepositorio.cs" t="Include" />
           <e p="ICursoRepositorio.cs" t="Include" />
+          <e p="IDescargaRepositorio.cs" t="Include" />
           <e p="IDocenteRepositorio.cs" t="Include" />
           <e p="IKeywordRepositorio.cs" t="Include" />
           <e p="IPalabrasClavesRepositorio.cs" t="Include" />
@@ -125,6 +130,7 @@
           <e p="AutorResponse.cs" t="Include" />
           <e p="BaseResponse.cs" t="Include" />
           <e p="CursoResponse.cs" t="Include" />
+          <e p="DescargasResponses.cs" t="Include" />
           <e p="KeywordResponse.cs" t="Include" />
           <e p="PaperResponse.cs" t="Include" />
           <e p="ProyectoAutorResponse.cs" t="Include" />
@@ -152,6 +158,10 @@
           <e p="Curso" t="Include">
             <e p="CursoUseCase.cs" t="Include" />
             <e p="ICursoUseCase.cs" t="Include" />
+          </e>
+          <e p="Descargas" t="Include">
+            <e p="DescargaUseCase.cs" t="Include" />
+            <e p="IDescargaUseCase.cs" t="Include" />
           </e>
           <e p="Docente" t="Include">
             <e p="DocenteUseCase.cs" t="Include" />

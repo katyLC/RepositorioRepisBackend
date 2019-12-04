@@ -31,6 +31,7 @@ namespace RespositorioREPIS.Data {
         public virtual DbSet<Perfil> Perfil { get; set; }
         public virtual DbSet<Profesor> Profesor { get; set; }
         public virtual DbSet<Proyecto> Proyecto { get; set; }
+        public  virtual DbSet<Descargas> Descargas { get; set; }
         public virtual DbSet<ProyectoAutor> ProyectoAutor { get; set; }
         public virtual DbSet<ProyectoKeyword> ProyectoKeyword { get; set; }
         public virtual DbSet<Solicitud> Solicitud { get; set; }
@@ -286,6 +287,11 @@ namespace RespositorioREPIS.Data {
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Curso__id_profes__76969D2E");
             });
+
+
+
+
+
 
             modelBuilder.Entity<Curso>().HasData(
                 new Curso {
@@ -689,6 +695,30 @@ namespace RespositorioREPIS.Data {
                     .IsRequired()
                     .HasColumnName("paper_resumen")
                     .HasColumnType("text");
+            });
+
+
+            modelBuilder.Entity<Descargas>(entity => {
+                entity.HasKey(e => e.IdDescarga)
+                    .HasName("PK__Descarga__E25D3DC93900D855");
+
+                entity.Property(e => e.IdDescarga).HasColumnName("id_descarga");
+
+                entity.Property(e => e.IdProyecto).HasColumnName("id_proyecto");
+
+                entity.Property(e => e.IdAlumno).HasColumnName("id_alumno");
+
+                entity.HasOne(d => d.Proyecto)
+                    .WithMany(p => p.Descargas)
+                    .HasForeignKey(d => d.IdProyecto)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__Descargas__id_pr__6FE99F9F");
+
+                entity.HasOne(d => d.Alumno)
+                    .WithMany(p => p.Descargas)
+                    .HasForeignKey(d => d.IdAlumno)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__Descargas__id_al__70DDC3D8");
             });
 
             modelBuilder.Entity<PaperAdicional>(entity => {
