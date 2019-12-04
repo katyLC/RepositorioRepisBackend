@@ -43,7 +43,6 @@ namespace RespositorioREPIS.Api.Controllers
             return resources;
         }
 
-        
         [HttpGet("proyectos/admin")]
         public async Task<IEnumerable<ProyectoResource>> ObtenerProyectoAdministrador()
         {

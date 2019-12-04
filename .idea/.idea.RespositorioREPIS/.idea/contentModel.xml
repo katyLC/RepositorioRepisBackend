@@ -84,6 +84,7 @@
           <e p="AlumnoEntity.cs" t="Include" />
           <e p="CicloEntity.cs" t="Include" />
           <e p="CursoEntity.cs" t="Include" />
+          <e p="CursosEntity.cs" t="Include" />
           <e p="KeywordEntity.cs" t="Include" />
           <e p="PaperEntity.cs" t="Include" />
           <e p="PerfilEntity.cs" t="Include" />
@@ -104,6 +105,7 @@
         </e>
         <e p="Responses" t="Include">
           <e p="BaseResponse.cs" t="Include" />
+          <e p="CursoResponse.cs" t="Include" />
           <e p="PaperResponse.cs" t="Include" />
           <e p="ProyectoKeywordResponse.cs" t="Include" />
           <e p="ProyectoResponse.cs" t="Include" />

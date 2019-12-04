@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using RespositorioREPIS.Data.DbModel;
 using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.Repositories;
 
@@ -33,6 +35,23 @@ namespace RespositorioREPIS.Data.Repositorio
                     }
                 ).ToList();
             return cursos;
+        }
+
+        public async Task<IEnumerable<CursosEntity>> ListarCursos()
+        {
+            var cursosEntities = (from c in _appContext.Curso
+                    join pro in _appContext.Profesor on c.IdProfesor equals pro.IdProfesor
+                    select new CursosEntity()
+                    {
+                        IdCurso = c.IdCiclo,
+                        CursoNombre = c.CursoNombre,
+                        Profesor = new Profesor()
+                        {
+                            IdProfesor = pro.IdProfesor
+                        }
+                    }
+                ).ToList();
+            return  cursosEntities;
         }
     }
 }
