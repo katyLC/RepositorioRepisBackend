@@ -21,19 +21,46 @@
       </group>
     </dependencies>
     <contentFiles>
+      <files include="any/netcoreapp2.2/wwwroot/docs/Articulos tesis.docx" buildAction="Content" />
+      <files include="any/netcoreapp2.2/wwwroot/docs/DNI.pdf" buildAction="Content" />
+      <files include="any/netcoreapp2.2/wwwroot/docs/DOCUMENTO SAD.docx" buildAction="Content" />
+      <files include="any/netcoreapp2.2/wwwroot/docs/DOCUMENTO SRS.docx" buildAction="Content" />
+      <files include="any/netcoreapp2.2/wwwroot/docs/Ejemplo en clase.xlsx" buildAction="Content" />
+      <files include="any/netcoreapp2.2/wwwroot/docs/recibo (1).pdf" buildAction="Content" />
+      <files include="any/netcoreapp2.2/wwwroot/docs/recibo (2).pdf" buildAction="Content" />
+      <files include="any/netcoreapp2.2/wwwroot/docs/recibo.pdf" buildAction="Content" />
+      <files include="any/netcoreapp2.2/wwwroot/docs/test.png" buildAction="Content" />
       <files include="any/netcoreapp2.2/appsettings.Development.json" buildAction="Content" />
       <files include="any/netcoreapp2.2/appsettings.json" buildAction="Content" />
       <files include="any/netcoreapp2.2/Properties/launchSettings.json" buildAction="Content" />
     </contentFiles>
   </metadata>
   <files>
-    <file src="/Users/chrstpher/RiderProjects/RepositorioRepisBackend/bin/Debug/netcoreapp2.2/RespositorioREPIS.runtimeconfig.json" target="lib/netcoreapp2.2/RespositorioREPIS.runtimeconfig.json" />
-    <file src="/Users/chrstpher/RiderProjects/RepositorioRepisBackend/bin/Debug/netcoreapp2.2/RespositorioREPIS.dll" target="lib/netcoreapp2.2/RespositorioREPIS.dll" />
-    <file src="/Users/chrstpher/RiderProjects/RepositorioRepisBackend/appsettings.Development.json" target="content/appsettings.Development.json" />
-    <file src="/Users/chrstpher/RiderProjects/RepositorioRepisBackend/appsettings.Development.json" target="contentFiles/any/netcoreapp2.2/appsettings.Development.json" />
-    <file src="/Users/chrstpher/RiderProjects/RepositorioRepisBackend/appsettings.json" target="content/appsettings.json" />
-    <file src="/Users/chrstpher/RiderProjects/RepositorioRepisBackend/appsettings.json" target="contentFiles/any/netcoreapp2.2/appsettings.json" />
-    <file src="/Users/chrstpher/RiderProjects/RepositorioRepisBackend/Properties/launchSettings.json" target="content/Properties/launchSettings.json" />
-    <file src="/Users/chrstpher/RiderProjects/RepositorioRepisBackend/Properties/launchSettings.json" target="contentFiles/any/netcoreapp2.2/Properties/launchSettings.json" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\bin\Debug\netcoreapp2.2\RespositorioREPIS.runtimeconfig.json" target="lib\netcoreapp2.2\RespositorioREPIS.runtimeconfig.json" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\bin\Debug\netcoreapp2.2\RespositorioREPIS.dll" target="lib\netcoreapp2.2\RespositorioREPIS.dll" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\Articulos tesis.docx" target="content\wwwroot\docs\Articulos tesis.docx" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\Articulos tesis.docx" target="contentFiles\any\netcoreapp2.2\wwwroot\docs\Articulos tesis.docx" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\DNI.pdf" target="content\wwwroot\docs\DNI.pdf" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\DNI.pdf" target="contentFiles\any\netcoreapp2.2\wwwroot\docs\DNI.pdf" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\DOCUMENTO SAD.docx" target="content\wwwroot\docs\DOCUMENTO SAD.docx" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\DOCUMENTO SAD.docx" target="contentFiles\any\netcoreapp2.2\wwwroot\docs\DOCUMENTO SAD.docx" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\DOCUMENTO SRS.docx" target="content\wwwroot\docs\DOCUMENTO SRS.docx" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\DOCUMENTO SRS.docx" target="contentFiles\any\netcoreapp2.2\wwwroot\docs\DOCUMENTO SRS.docx" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\Ejemplo en clase.xlsx" target="content\wwwroot\docs\Ejemplo en clase.xlsx" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\Ejemplo en clase.xlsx" target="contentFiles\any\netcoreapp2.2\wwwroot\docs\Ejemplo en clase.xlsx" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\recibo (1).pdf" target="content\wwwroot\docs\recibo (1).pdf" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\recibo (1).pdf" target="contentFiles\any\netcoreapp2.2\wwwroot\docs\recibo (1).pdf" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\recibo (2).pdf" target="content\wwwroot\docs\recibo (2).pdf" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\recibo (2).pdf" target="contentFiles\any\netcoreapp2.2\wwwroot\docs\recibo (2).pdf" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\recibo.pdf" target="content\wwwroot\docs\recibo.pdf" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\recibo.pdf" target="contentFiles\any\netcoreapp2.2\wwwroot\docs\recibo.pdf" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\test.png" target="content\wwwroot\docs\test.png" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\wwwroot\docs\test.png" target="contentFiles\any\netcoreapp2.2\wwwroot\docs\test.png" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\appsettings.Development.json" target="content\appsettings.Development.json" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\appsettings.Development.json" target="contentFiles\any\netcoreapp2.2\appsettings.Development.json" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\appsettings.json" target="content\appsettings.json" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\appsettings.json" target="contentFiles\any\netcoreapp2.2\appsettings.json" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\Properties\launchSettings.json" target="content\Properties\launchSettings.json" />
+    <file src="C:\Users\tzoph\RiderProjects\RespositorioREPIS\Properties\launchSettings.json" target="contentFiles\any\netcoreapp2.2\Properties\launchSettings.json" />
   </files>
 </package>
