@@ -2,120 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7419a13-ea0a-40d4-83bc-32797096f6d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Api/Controllers/AutenticacionController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api/Controllers/KeywordController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api/Resources/AuthResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api/Resources/GuardarAutorResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api/Resources/Keyword/GuardarKeywordResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api/Resources/Keyword/KeywordResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api/Resources/UsuarioResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Repositorio/AutenticacionRepositorio.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Repositorio/AutorRepositorio.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Repositorio/ProyectoAutorRepositorio.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Repositories/IAutenticacionRepositorio.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Repositories/IAutorRepositorio.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Repositories/IKeywordRepositorio.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Repositories/IProyectoAutorRepositorio.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Responses/AlumnoResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Responses/AutorResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Responses/KeywordResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Responses/ProyectoAutorResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Responses/UsuarioResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/UseCases/Autenticacion/AutenticacionUseCase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/UseCases/Autenticacion/IAutenticacionUseCase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/UseCases/Autor/AutorUseCase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/UseCases/Autor/IAutorUseCase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/UseCases/ProyectoAutor/IProyectoAutorUseCase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/UseCases/ProyectoAutor/ProyectoAutorUseCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources/ff388095-b3fe-4eb6-8782-31fc8add62a7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources/ff388095-b3fe-4eb6-8782-31fc8add62a7/storage_v2/_src_/database/db_repositorio_upt.ruQwxQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources/ff388095-b3fe-4eb6-8782-31fc8add62a7/storage_v2/_src_/database/db_repositorio_upt.ruQwxQ/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources/ff388095-b3fe-4eb6-8782-31fc8add62a7/storage_v2/_src_/database/db_repositorio_upt.ruQwxQ/schema/dbo.sYMBAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources/ff388095-b3fe-4eb6-8782-31fc8add62a7/storage_v2/_src_/database/db_repositorio_upt.ruQwxQ/schema/dbo.sYMBAA.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources/ff388095-b3fe-4eb6-8782-31fc8add62a7/storage_v2/_src_/database/db_repositorio_upt.ruQwxQ/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources/ff388095-b3fe-4eb6-8782-31fc8add62a7/storage_v2/_src_/database/master.YiqNvw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources/ff388095-b3fe-4eb6-8782-31fc8add62a7/storage_v2/_src_/database/master.YiqNvw/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources/ff388095-b3fe-4eb6-8782-31fc8add62a7/storage_v2/_src_/database/master.YiqNvw/schema/sys.zb4BAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-12T095154.400.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-12T095417.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-12T095905.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-12T095919.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-12T101502.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-12T101546.400.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-12T101550.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-12T101936.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T010027.400.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T010444.400.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T010456.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T010743.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T011128.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T012536.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T012620.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T013235.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T013251.400.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T015237.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T015437.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T015654.400.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T015922.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T022233.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T022245.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T022922.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T023357.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T121347.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T121729.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T122418.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T123313.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T125111.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-13T125344.400.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Controllers/PalabrasClavesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Controllers/PalabrasClavesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/Controllers/AutenticacionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Controllers/AutenticacionController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/Controllers/PerfilController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Controllers/PerfilController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Controllers/ProyectoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Controllers/ProyectoController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Mapping/ModelToResourceProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Mapping/ModelToResourceProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Mapping/ResourceToModelProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Mapping/ResourceToModelProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Resources/AlumnoResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Resources/AlumnoResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Resources/GuardarProyectoResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Resources/GuardarProyectoResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/Resources/AuthResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Resources/AuthResource.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/Resources/ProyectoResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Resources/ProyectoResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/AppContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/AppContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/DbModel/Alumno.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Alumno.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/DbModel/Proyecto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Proyecto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/DbModel/ProyectoKeyword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/ProyectoKeyword.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Repositorio/PalabarasClavesRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repositorio/PalabarasClavesRepositorio.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/Repositorio/ProyectoRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Repositorio/ProyectoRepositorio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Repositories/IPalabrasClavesRepositorio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Repositories/IPalabrasClavesRepositorio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Alumno/AlumnoUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/Alumno/AlumnoUseCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/UseCases/PalabrasClaves/IPalabrasClaves.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/PalabrasClaves/IPalabrasClavesUseCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/UseCases/PalabrasClaves/PalabrasClaves.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/PalabrasClaves/PalabrasClavesUseCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RespositorioREPIS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RespositorioREPIS.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RespositorioREPIS.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/RespositorioREPIS.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/RespositorioREPIS.1.0.0.nupkg" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/RespositorioREPIS.1.0.0.nupkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.runtimeconfig.dev.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/RespositorioREPIS.1.0.0.nuspec" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/RespositorioREPIS.1.0.0.nuspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.EntityFrameworkCore.targets" beforeDir="false" afterPath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.EntityFrameworkCore.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -293,19 +193,12 @@
         <option value="$PROJECT_DIR$/Api/Resources/AlumnoResource.cs" />
         <option value="$PROJECT_DIR$/appsettings.json" />
         <option value="$PROJECT_DIR$/Api/Resources/UsuarioResource.cs" />
-        <option value="$PROJECT_DIR$/Domain/Repositories/IAutenticacionRepositorio.cs" />
         <option value="$PROJECT_DIR$/Domain/UseCases/Autenticacion/IAutenticacionUseCase.cs" />
         <option value="$PROJECT_DIR$/Domain/UseCases/Autenticacion/AutenticacionUseCase.cs" />
-        <option value="$PROJECT_DIR$/Api/Resources/AuthResource.cs" />
-        <option value="$PROJECT_DIR$/Api/Controllers/AutenticacionController.cs" />
         <option value="$PROJECT_DIR$/Data/Repositorio/AutenticacionRepositorio.cs" />
-        <option value="$PROJECT_DIR$/Api/Controllers/PerfilController.cs" />
         <option value="$PROJECT_DIR$/Domain/UseCases/Proyecto/ProyectoUseCase.cs" />
         <option value="$PROJECT_DIR$/Api/Resources/GuardarProyectoResource.cs" />
-        <option value="$PROJECT_DIR$/Api/Resources/ProyectoResource.cs" />
-        <option value="$PROJECT_DIR$/Data/Repositorio/ProyectoRepositorio.cs" />
         <option value="$PROJECT_DIR$/Data/AppContext.cs" />
-        <option value="$PROJECT_DIR$/Data/DbModel/Proyecto.cs" />
         <option value="$PROJECT_DIR$/Data/DbModel/ProyectoKeyword.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/Domain/Repositories/IKeywordRepositorio.cs" />
@@ -335,10 +228,17 @@
         <option value="$PROJECT_DIR$/Domain/Responses/ProyectoAutorResponse.cs" />
         <option value="$PROJECT_DIR$/Domain/UseCases/ProyectoAutor/IProyectoAutorUseCase.cs" />
         <option value="$PROJECT_DIR$/Domain/UseCases/ProyectoAutor/ProyectoAutorUseCase.cs" />
-        <option value="$PROJECT_DIR$/Startup.cs" />
         <option value="$PROJECT_DIR$/Api/Controllers/ProyectoController.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/737e4aba-470b-4848-84ca-6235382a6c47/console.sql" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Api/Controllers/PerfilController.cs" />
+        <option value="$PROJECT_DIR$/Api/Resources/ProyectoResource.cs" />
+        <option value="$PROJECT_DIR$/Data/DbModel/Proyecto.cs" />
+        <option value="$PROJECT_DIR$/Data/Repositorio/ProyectoRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Startup.cs" />
+        <option value="$PROJECT_DIR$/Api/Resources/AuthResource.cs" />
+        <option value="$PROJECT_DIR$/Domain/Repositories/IAutenticacionRepositorio.cs" />
+        <option value="$PROJECT_DIR$/Api/Controllers/AutenticacionController.cs" />
       </list>
     </option>
   </component>
@@ -1247,12 +1147,17 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@7b01920a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@48ee2628" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@7b01920a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@6656285" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@48ee2628" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@642958ab" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@48ee2628" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@9d19c59" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -1338,7 +1243,8 @@
       <workItem from="1575298049179" duration="2848000" />
       <workItem from="1575301105747" duration="11009000" />
       <workItem from="1575359540546" duration="11520000" />
-      <workItem from="1575375933425" duration="8772000" />
+      <workItem from="1575375933425" duration="17047000" />
+      <workItem from="1575435105175" duration="12375000" />
     </task>
     <servers />
   </component>
@@ -1397,17 +1303,17 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Api/Controllers/ProyectoController.cs</url>
-          <line>72</line>
-          <properties documentPath="$PROJECT_DIR$/Api/Controllers/ProyectoController.cs" initialLine="65">
+          <url>file://$PROJECT_DIR$/Api/Controllers/AutenticacionController.cs</url>
+          <line>55</line>
+          <properties documentPath="$PROJECT_DIR$/Api/Controllers/AutenticacionController.cs" initialLine="55">
             <startOffsets>
-              <option value="3284" />
+              <option value="2273" />
             </startOffsets>
             <endOffsets>
-              <option value="3302" />
+              <option value="2315" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

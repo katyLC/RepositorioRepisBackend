@@ -49,16 +49,16 @@ namespace RespositorioREPIS.Api.Controllers {
         }
 
         [HttpPost]
-        [Route("[action]")]
+        [Route("api/[action]")]
         [ProducesResponseType(typeof(AuthResource), 201)]
         [ProducesResponseType(typeof(ErrorResource), 400)]
-        public async Task<AuthResource> Login([FromBody] UsuarioResource usuarioResource) {
-            if (usuarioResource == null) return null;
+        public async Task<IActionResult> Login([FromBody] UsuarioResource usuarioResource) {
+            if (usuarioResource.UsuarioCorreo == null) return BadRequest();
             var usuario = await _autenticacionUseCase.BuscarUsuarioPorCorreo(usuarioResource.UsuarioCorreo);
-            if (usuario == null) return null;
+            if (usuario == null) return BadRequest("El usuario no existe");
             var validarPassword = await _autenticacionUseCase.VerificarPassword(usuario);
 
-            if (!validarPassword) return null;
+            if (!validarPassword) return BadRequest("El usuario no existe");
             var alumno = await _autenticacionUseCase.BuscarAlumno(usuario.UsuarioCorreo);
 
             if (alumno == null) return null;
@@ -78,15 +78,16 @@ namespace RespositorioREPIS.Api.Controllers {
             var tokenHandler = new JwtSecurityTokenHandler();
             var createdToken = tokenHandler.CreateToken(tokenDescriptor);
 
-            return new AuthResource {
+            return Ok(new AuthResource {
                 Token = tokenHandler.WriteToken(createdToken),
+                Role = "admin",
                 IdAlumno = alumno.IdAlumno,
                 CicloDescripcion = alumno.Ciclo.CicloDescripcion,
                 AlumnoNombre = alumno.AlumnoNombre,
                 AlumnoApellidos = alumno.AlumnoApellidos,
                 AlumnoEmail = alumno.AlumnoEmail,
                 AlumnoCodigoUniversitario = alumno.AlumnoCodigoUniversitario
-            };
+            });
         }
     }
 }

@@ -8,7 +8,6 @@ namespace RespositorioREPIS.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class PerfilController : Controller
     {
         // GET

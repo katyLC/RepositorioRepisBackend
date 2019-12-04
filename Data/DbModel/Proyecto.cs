@@ -21,7 +21,6 @@ namespace RespositorioREPIS.Data.DbModel
         public int IdPaper { get; set; }
         public int IdEstado { get; set; }
         public int IdAlumno { get; set; }
-
         public virtual Alumno Alumno { get; set; }
         public virtual Curso Curso { get; set; }
         public virtual Estado Estado { get; set; }

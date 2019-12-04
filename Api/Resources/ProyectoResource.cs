@@ -19,5 +19,6 @@ namespace RespositorioREPIS.Api.Resources
         public Estado Estado { get; set; }
         public Paper Paper { get; set; }
         public Alumno Alumno { get; set; }
+        // public List<ProyectoKeyword> ProyectoKeyword { get; set; }
     }
 }
