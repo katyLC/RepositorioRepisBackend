@@ -24,6 +24,9 @@
           <e p="ProyectoAlumnoController.cs" t="Include" />
           <e p="ProyectoController.cs" t="Include" />
           <e p="ProyectoKeywordController.cs" t="Include" />
+          <e p="TestController.cs" t="Include" />
+          <e p="TestMod.cs" t="Include" />
+          <e p="TestMOdel.cs" t="Include" />
         </e>
         <e p="Mapping" t="Include">
           <e p="ModelToResourceProfile.cs" t="Include" />
@@ -216,6 +219,22 @@
       <e p="RespositorioREPIS.csproj" t="IncludeRecursive" />
       <e p="RespositorioREPIS.sln" t="IncludeFlat" />
       <e p="Startup.cs" t="Include" />
+      <e p="wwwroot" t="Include">
+        <e p="docs" t="Include">
+          <e p="Articulos tesis.docx" t="Include" />
+          <e p="DNI.pdf" t="Include" />
+          <e p="DOCUMENTO SAD.docx" t="Include" />
+          <e p="DOCUMENTO SRS.docx" t="Include" />
+          <e p="Ejemplo en clase.xlsx" t="Include" />
+          <e p="Informe Aplicación de Pesaje - General.pdf" t="Include" />
+          <e p="Informe de Actividades _ Katherine Licla.pdf" t="Include" />
+          <e p="INFORME Nº 002 - Applicación de Pesaje.pdf" t="Include" />
+          <e p="recibo (1).pdf" t="Include" />
+          <e p="recibo (2).pdf" t="Include" />
+          <e p="recibo.pdf" t="Include" />
+          <e p="test.png" t="Include" />
+        </e>
+      </e>
     </e>
   </component>
 </project>

@@ -147,6 +147,7 @@ namespace RespositorioREPIS {
             });
             */
 
+            
             services.AddCors(options => {
                 options.AddPolicy(MyAllowSpecificOrigins,
                     builder => {
@@ -171,10 +172,13 @@ namespace RespositorioREPIS {
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
 
+            
+            
             app.UseCors(MyAllowSpecificOrigins);
-            app.UseAuthentication();
+            app.UseStaticFiles();
+            //app.UseAuthentication();
             app.UseMvc();
-
+            
             // appContext.Database.Migrate();
 
             //app.UseHttpsRedirection();

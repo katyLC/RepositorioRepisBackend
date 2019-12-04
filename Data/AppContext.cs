@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using RespositorioREPIS.Api.Controllers;
 using RespositorioREPIS.Data.DbModel;
 
 namespace RespositorioREPIS.Data {
@@ -36,6 +37,7 @@ namespace RespositorioREPIS.Data {
         public virtual DbSet<ProyectoKeyword> ProyectoKeyword { get; set; }
         public virtual DbSet<Solicitud> Solicitud { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
+        public virtual DbSet<TestMod> TestMod { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             if (!optionsBuilder.IsConfigured) {
@@ -762,6 +764,18 @@ namespace RespositorioREPIS.Data {
                 entity.Property(e => e.PerfilDescripcion)
                     .IsRequired()
                     .HasColumnName("perfil_descripcion")
+                    .HasMaxLength(250)
+                    .IsUnicode(false);
+            });
+
+            modelBuilder.Entity<TestMod>(entity =>
+            {
+                entity.HasKey(e => e.Id).HasName("Test_pk");
+                entity.Property(e => e.Name).HasColumnName("Name")
+                    .HasMaxLength(250)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Image).HasColumnName("Image")
                     .HasMaxLength(250)
                     .IsUnicode(false);
             });

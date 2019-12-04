@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Resources;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -88,8 +90,7 @@ namespace RespositorioREPIS.Api.Controllers {
         [ProducesResponseType(typeof(ProyectoResource), 201)]
         [ProducesResponseType(typeof(ErrorResource), 400)]
         public async Task<IActionResult> RegistrarProyecto([FromBody] Data data) {
-            if (data.Proyecto != null && data.Paper != null &&
-                data.ProyectoKeywords != null) {
+            if (data.Proyecto != null && data.Paper != null) {
                 MappingData(data);
 
                 PaperResponse resultPaper = await _paperUseCase.RegistrarPaper(_paper);
@@ -104,7 +105,11 @@ namespace RespositorioREPIS.Api.Controllers {
                     if (!resultProyecto.Success) {
                         return BadRequest(new ErrorResource(resultProyecto.Message));
                     }
-                    else {
+                    else
+                    {
+
+                        GuardarDocumento(data.Proyecto, data.Doc);
+                        
                         if (data.Keywords != null) {
                             foreach (var keyword in _keywords) {
                                 var result = await _palabrasClavesUseCase.RegistrarKeyword(keyword);
@@ -157,6 +162,27 @@ namespace RespositorioREPIS.Api.Controllers {
             return Ok();
         }
 
+        private void GuardarDocumento(GuardarProyectoResource dataProyecto, string dataDoc)
+        {
+            string name = dataProyecto.ProyectoDocumentoUrl;
+            var image = dataDoc;
+            if (image != null) {
+                
+                var imageDataByteArray = Convert.FromBase64String(image);
+
+                var imageDataStream = new MemoryStream(imageDataByteArray);
+                imageDataStream.Position = 0;
+
+                var filePath = Path.Combine("wwwroot/docs", name);
+                using (FileStream file = new FileStream(filePath, FileMode.Create, System.IO.FileAccess.Write)) {
+                    byte[] bytes = new byte[imageDataStream.Length];
+                    imageDataStream.Read(bytes, 0, (int)imageDataStream.Length);
+                    file.Write(bytes, 0, bytes.Length);
+                    imageDataStream.Close();
+                }
+            }
+        }
+
         private void MappingData(Data data) {
             _proyecto = _mapper.Map<GuardarProyectoResource, Proyecto>(data.Proyecto);
             _paper = _mapper.Map<PaperResource, Paper>(data.Paper);
@@ -166,11 +192,11 @@ namespace RespositorioREPIS.Api.Controllers {
                 _keywords.Add(_mapper.Map<GuardarKeywordResource, Keyword>(keywordResource));
             }
 
-            if (data.ProyectoKeywords.Count == 0) return;
-            foreach (var proyectoKeywordResource in data.ProyectoKeywords) {
-                _proyectoKeywords.Add(
-                    _mapper.Map<GuardarProyectoKeywordResource, ProyectoKeyword>(proyectoKeywordResource));
-            }
+//            if (data.ProyectoKeywords.Count == 0) return;
+//            foreach (var proyectoKeywordResource in data.ProyectoKeywords) {
+//                _proyectoKeywords.Add(
+//                    _mapper.Map<GuardarProyectoKeywordResource, ProyectoKeyword>(proyectoKeywordResource));
+//            }
 
             if (data.Autores.Count == 0) return;
             foreach (var autorResource in data.Autores) {
@@ -185,5 +211,6 @@ namespace RespositorioREPIS.Api.Controllers {
         public List<GuardarProyectoKeywordResource> ProyectoKeywords { get; set; }
         public List<GuardarKeywordResource> Keywords { get; set; }
         public List<GuardarAutorResource> Autores { get; set; }
+        public string Doc { get; set; }
     }
 }
