@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.UseCases.Perfil;

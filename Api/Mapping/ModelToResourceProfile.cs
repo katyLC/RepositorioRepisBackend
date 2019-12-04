@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using RespositorioREPIS.Api.Resources;
+using RespositorioREPIS.Api.Resources.Keyword;
 using RespositorioREPIS.Data.DbModel;
 
 namespace RespositorioREPIS.Api.Mapping
@@ -12,6 +13,8 @@ namespace RespositorioREPIS.Api.Mapping
             CreateMap<ProyectoKeyword, ProyectoKeywordResource>();
             CreateMap<Paper, PaperResource>();
             CreateMap<Alumno, AlumnoResource>();
+            CreateMap<Usuario, UsuarioResource>();
+            CreateMap<Keyword, KeywordResource>();
         }
     }
 }

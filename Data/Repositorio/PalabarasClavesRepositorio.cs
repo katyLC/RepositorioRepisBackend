@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using RespositorioREPIS.Data.DbModel;
 using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.Repositories;
 
@@ -25,6 +27,11 @@ namespace RespositorioREPIS.Data.Repositorio
 
                 ).ToList();
             return palabrasClaves;
+        }
+
+        public async Task RegistrarKeyword(Keyword keyword) {
+            await _appContext.Keyword.AddAsync(keyword);
+            await _appContext.SaveChangesAsync();
         }
     }
 }
