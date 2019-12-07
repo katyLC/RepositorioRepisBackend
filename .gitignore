@@ -432,7 +432,7 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 wwwroot/*
-obj/*
-bin/
+obj
+bin
 .idea/
 appsettings.json
