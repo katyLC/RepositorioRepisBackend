@@ -88,8 +88,6 @@
           <e p="AutorRepositorio.cs" t="Include" />
           <e p="CicloRepositorio.cs" t="Include" />
           <e p="CursoRepositorio.cs" t="Include" />
-          <e p="DescargaController.cs" t="Include" />
-          <e p="DescargaRepositorio.cs" t="Include" />
           <e p="PalabarasClavesRepositorio.cs" t="Include" />
           <e p="PaperRepositorio.cs" t="Include" />
           <e p="PerfilRepositorio.cs" t="Include" />
@@ -117,7 +115,6 @@
           <e p="IAutorRepositorio.cs" t="Include" />
           <e p="ICicloRepositorio.cs" t="Include" />
           <e p="ICursoRepositorio.cs" t="Include" />
-          <e p="IDescargaRepositorio.cs" t="Include" />
           <e p="IDocenteRepositorio.cs" t="Include" />
           <e p="IKeywordRepositorio.cs" t="Include" />
           <e p="IPalabrasClavesRepositorio.cs" t="Include" />
@@ -161,10 +158,6 @@
           <e p="Curso" t="Include">
             <e p="CursoUseCase.cs" t="Include" />
             <e p="ICursoUseCase.cs" t="Include" />
-          </e>
-          <e p="Descargas" t="Include">
-            <e p="DescargaUseCase.cs" t="Include" />
-            <e p="IDescargaUseCase.cs" t="Include" />
           </e>
           <e p="Docente" t="Include">
             <e p="DocenteUseCase.cs" t="Include" />
@@ -226,6 +219,7 @@
           <e p="DOCUMENTO SAD.docx" t="Include" />
           <e p="DOCUMENTO SRS.docx" t="Include" />
           <e p="Ejemplo en clase.xlsx" t="Include" />
+          <e p="Estructura Para RealizaciÃ³n De MonografÃ­a.pdf" t="Include" />
           <e p="Informe Aplicación de Pesaje - General.pdf" t="Include" />
           <e p="Informe de Actividades _ Katherine Licla.pdf" t="Include" />
           <e p="INFORME Nº 002 - Applicación de Pesaje.pdf" t="Include" />
@@ -233,6 +227,7 @@
           <e p="recibo (2).pdf" t="Include" />
           <e p="recibo.pdf" t="Include" />
           <e p="test.png" t="Include" />
+          <e p="TRIPTICO.pdf" t="Include" />
         </e>
       </e>
     </e>
