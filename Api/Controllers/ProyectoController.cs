@@ -51,9 +51,9 @@ namespace RespositorioREPIS.Api.Controllers {
 
         // GET
         [HttpGet]
-        public async Task<IEnumerable<ProyectoResource>> ListarProyecto() {
-            var proyectos = await _proyectoUseCase.ListarProyectos();
-            var resources = _mapper.Map<IEnumerable<Proyecto>, IEnumerable<ProyectoResource>>(proyectos);
+        public async Task<IEnumerable<ProyectoResource2>> ListarProyecto(int idEstado) {
+            var proyectos = await _proyectoUseCase.ListarProyectos(idEstado);
+            var resources = _mapper.Map<IEnumerable<ProyectoResource2>, IEnumerable<ProyectoResource2>>(proyectos);
 
             return resources;
         }

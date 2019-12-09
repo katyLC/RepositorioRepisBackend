@@ -17,9 +17,9 @@ namespace RespositorioREPIS.Domain.UseCases.Proyecto
             _proyectoRepositorio = proyectoRepositorio;
         }
 
-        public async Task<IEnumerable<Data.DbModel.Proyecto>> ListarProyectos()
+        public async Task<IEnumerable<ProyectoResource2>> ListarProyectos(int idEstado)
         {
-            return await _proyectoRepositorio.ListarProyectos();
+            return await _proyectoRepositorio.ListarProyectos(idEstado);
         }
 
         public async Task<ProyectoResponse> RegistrarProyecto(Data.DbModel.Proyecto proyecto)

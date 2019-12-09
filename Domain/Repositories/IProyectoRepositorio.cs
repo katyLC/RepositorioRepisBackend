@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using RespositorioREPIS.Api.Resources;
 using RespositorioREPIS.Data.DbModel;
 using RespositorioREPIS.Domain.Entities;
 
@@ -7,7 +8,7 @@ namespace RespositorioREPIS.Domain.Repositories
 {
     public interface IProyectoRepositorio
     {
-        Task<IEnumerable<Proyecto>> ListarProyectos();
+        Task<IEnumerable<ProyectoResource2>> ListarProyectos(int idEstado);
 
         Task RegistrarProyecto(Proyecto proyecto);
 

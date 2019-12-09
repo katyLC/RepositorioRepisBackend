@@ -9,7 +9,7 @@ namespace RespositorioREPIS.Domain.UseCases.Proyecto
 {
     public interface IProyectoUseCase
     {
-        Task<IEnumerable<Data.DbModel.Proyecto>> ListarProyectos();
+        Task<IEnumerable<ProyectoResource2>> ListarProyectos(int idEstado);
 
         Task<ProyectoResponse> RegistrarProyecto(Data.DbModel.Proyecto proyecto);
 
