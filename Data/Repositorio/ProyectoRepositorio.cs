@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using RespositorioREPIS.Api.Resources;
 using RespositorioREPIS.Data.DbModel;
 using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.Repositories;
@@ -15,24 +16,22 @@ namespace RespositorioREPIS.Data.Repositorio {
             _appContext = appContext;
         }
 
-        public async Task<IEnumerable<Proyecto>> ListarProyectos() {
-            var proyectos = (from pr in _appContext.Proyecto.Include("ProyectoKeyword")
-                    join c in _appContext.Curso
-                        on pr.IdCurso equals c.IdCurso
-                    join pe in _appContext.Perfil
-                        on c.IdPerfil equals pe.IdPerfil
-                    join ci in _appContext.Ciclo on
-                        c.IdCiclo equals ci.IdCiclo
-                    join p in _appContext.Paper on
-                        pr.IdPaper equals p.IdPaper
-                    join e in _appContext.Estado on pr.IdEstado equals
-                        e.IdEstado
-//                    join pk in _appContext.ProyectoKeyword on pr.IdProyecto
-//                        equals pk.IdProyecto
-//                    join k in _appContext.Keyword on pk.IdKeyword
-//                        equals k.IdKeyword
-                    where e.IdEstado == 3
-                    select new Proyecto {
+        public async Task<IEnumerable<ProyectoResource2>> ListarProyectos(int idEstado) {
+            var proyectos = (from pr in _appContext.Proyecto
+                join c in _appContext.Curso
+                    on pr.IdCurso equals c.IdCurso
+                join pe in _appContext.Perfil
+                    on c.IdPerfil equals pe.IdPerfil
+                join ci in _appContext.Ciclo on
+                    c.IdCiclo equals ci.IdCiclo
+                join p in _appContext.Paper on
+                    pr.IdPaper equals p.IdPaper
+                    join e in _appContext.Estado on
+                        pr.IdEstado equals e.IdEstado
+                        join a in _appContext.Alumno on
+                            pr.IdAlumno equals a.IdAlumno
+                where pr.IdEstado == idEstado
+                    select new ProyectoResource2() {
                         IdProyecto = pr.IdProyecto,
                         ProyectoNombre = pr.ProyectoNombre,
                         ProyectoTema = pr.ProyectoTema,
@@ -40,31 +39,13 @@ namespace RespositorioREPIS.Data.Repositorio {
                         ProyectoDocumentoUrl = pr.ProyectoDocumentoUrl,
                         ProyectoPortadaUrl = pr.ProyectoPortadaUrl,
                         IdEstado = pr.IdEstado,
-                        Paper = new Paper {
-                            IdPaper = p.IdPaper,
-                            PaperResumen = p.PaperResumen,
-                            PaperIntroduccion = p.PaperIntroduccion
-                        },
-                        Curso = new Curso {
-                            IdCurso = c.IdCurso,
-                            CursoNombre = c.CursoNombre,
-                            Ciclo = new Ciclo() {
-                                IdCiclo = ci.IdCiclo,
-                                CicloDescripcion = ci.CicloDescripcion
-                            },
-
-                            Perfil = new Perfil {
-                                IdPerfil = pe.IdPerfil,
-                                PerfilDescripcion = pe.PerfilDescripcion,
-                                PerfilColor = pe.PerfilColor,
-                            }
-                        },
-//                        ProyectoKeyword = [
-//                            new ProyectoKeyword {
-//                                Keyword = new Keyword {
-//                                KeywordDescripcion = k.KeywordDescripcion
-//                            }
-//                        ]
+                        CursoNombre = c.CursoNombre,
+                        CicloDescripcion = ci.CicloDescripcion,
+                        PaperIntroduccion = p.PaperIntroduccion,
+                        PaperResumen = p.PaperResumen,
+                        EstadoDescripcion = e.EstadoDescripcion,
+                        IdPerfil = pe.IdPerfil,
+                        AlumnoNombre = string.Format("{0} {1}", a.AlumnoNombre, a.AlumnoApellidos)
                     }
                 ).ToListAsync();
             return await proyectos;
