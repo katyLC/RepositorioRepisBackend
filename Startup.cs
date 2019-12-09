@@ -25,6 +25,7 @@ using RespositorioREPIS.Domain.UseCases.Autenticacion;
 using RespositorioREPIS.Domain.UseCases.Autor;
 using RespositorioREPIS.Domain.UseCases.Ciclo;
 using RespositorioREPIS.Domain.UseCases.Curso;
+using RespositorioREPIS.Domain.UseCases.Descargas;
 using RespositorioREPIS.Domain.UseCases.Docente;
 using RespositorioREPIS.Domain.UseCases.PalabrasClaves;
 using RespositorioREPIS.Domain.UseCases.Paper;
@@ -91,9 +92,10 @@ namespace RespositorioREPIS {
             services.AddTransient<IAutorUseCase, AutorUseCase>();
             services.AddTransient<IProyectoAutorRepositorio, ProyectoAutorRepositorio>();
             services.AddTransient<IProyectoAutorUseCase, ProyectoAutorUseCase>();
+            services.AddTransient<IDescargaUseCase,DescargasUseCase>();
+            services.AddTransient<IDescargasRepositorio, DescargasRepositorio>();
 
             services.AddAutoMapper();
-
             var key = Encoding.ASCII.GetBytes(Configuration.GetValue<string>("SecretKey"));
             services.AddAuthentication(x => {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

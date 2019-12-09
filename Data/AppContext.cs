@@ -32,7 +32,7 @@ namespace RespositorioREPIS.Data {
         public virtual DbSet<Perfil> Perfil { get; set; }
         public virtual DbSet<Profesor> Profesor { get; set; }
         public virtual DbSet<Proyecto> Proyecto { get; set; }
-        public  virtual DbSet<Descargas> Descargas { get; set; }
+        public  virtual DbSet<Descarga> Descargas { get; set; }
         public virtual DbSet<ProyectoAutor> ProyectoAutor { get; set; }
         public virtual DbSet<ProyectoKeyword> ProyectoKeyword { get; set; }
         public virtual DbSet<Solicitud> Solicitud { get; set; }
@@ -700,7 +700,7 @@ namespace RespositorioREPIS.Data {
             });
 
 
-            modelBuilder.Entity<Descargas>(entity => {
+            modelBuilder.Entity<Descarga>(entity => {
                 entity.HasKey(e => e.IdDescarga)
                     .HasName("PK__Descarga__E25D3DC93900D855");
 

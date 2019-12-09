@@ -29,6 +29,6 @@ namespace RespositorioREPIS.Data.DbModel
         public virtual ICollection<ProyectoKeyword> ProyectoKeyword { get; set; }
         public virtual ICollection<Solicitud> Solicitud { get; set; }
 
-        public virtual ICollection<Descargas> Descargas { get; set; }
+        public virtual ICollection<Descarga> Descargas { get; set; }
     }
 }

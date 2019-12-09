@@ -15,7 +15,7 @@ namespace RespositorioREPIS.Domain.UseCases.Proyecto
 
         IList<ProyectoEntity> detalleProyecto();
 
-        Task<ProyectoResponse> ActualizarProyecto(int id, Data.DbModel.Proyecto proyecto);
+        Task<ProyectoResponse> ActualizarProyecto(ActualizarProyectoEstado actualizarProyectoEstado);
 
         Task<Data.DbModel.Proyecto> BuscarProyectoPorId(int id);
         
