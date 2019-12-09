@@ -1,9 +1,9 @@
 using RespositorioREPIS.Data.DbModel;
 
 namespace RespositorioREPIS.Domain.Responses {
-    public class DescargasResponses : BaseResponse<Descargas> {
+    public class DescargasResponses : BaseResponse<Descarga> {
 
-        public DescargasResponses(Descargas resource) : base(resource) {
+        public DescargasResponses(Descarga resource) : base(resource) {
         }
 
         public DescargasResponses(string message) : base(message) {

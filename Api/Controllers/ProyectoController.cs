@@ -75,8 +75,6 @@ namespace RespositorioREPIS.Api.Controllers {
             var resource = _mapper.Map<Proyecto, ProyectoResource>(proyecto);
             return resource;
         }
-        
-
         [HttpGet("proyectos/{id}")]
         public async Task<IEnumerable<ProyectoResource>> ObtenerProyectoPorAlumno(int id)
         {
@@ -84,8 +82,22 @@ namespace RespositorioREPIS.Api.Controllers {
             var resource =  _mapper.Map<IEnumerable<Proyecto>, IEnumerable<ProyectoResource>>(proyectoPorAlumno);
             return resource;
         }
+        
+        
+        [HttpPut("actualizar")]
+        public async Task<IActionResult> ActualizarProyectoEstado([FromBody] ActualizarProyectoEstado aaActualizarProyectoEstado)
+        {
+            var resultEstado = await _proyectoUseCase.ActualizarProyecto(aaActualizarProyectoEstado);
 
 
+            if (!resultEstado.Success)
+            {
+                return BadRequest(new ErrorResource(resultEstado.Message));
+            }
+            return Ok(new { mensaje ="Actualizado"});
+            
+        }
+        
         [HttpPost]
         [ProducesResponseType(typeof(ProyectoResource), 201)]
         [ProducesResponseType(typeof(ErrorResource), 400)]
@@ -206,6 +218,8 @@ namespace RespositorioREPIS.Api.Controllers {
     }
 
     public class Data {
+        
+        public ActualizarProyectoEstado ProyectoEstado { get; set; }
         public GuardarProyectoResource Proyecto { get; set; }
         public PaperResource Paper { get; set; }
         public List<GuardarProyectoKeywordResource> ProyectoKeywords { get; set; }

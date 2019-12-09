@@ -1,6 +1,7 @@
 ﻿
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using RespositorioREPIS.Api.Resources;
 using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.Responses;
 
@@ -14,7 +15,7 @@ namespace RespositorioREPIS.Domain.UseCases.Proyecto
 
         IList<ProyectoEntity> detalleProyecto();
 
-        Task<ProyectoResponse> ActualizarProyecto(int id, Data.DbModel.Proyecto proyecto);
+        Task<ProyectoResponse> ActualizarProyecto(ActualizarProyectoEstado actualizarProyectoEstado);
 
         Task<Data.DbModel.Proyecto> BuscarProyectoPorId(int id);
         

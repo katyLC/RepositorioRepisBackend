@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using RespositorioREPIS.Api.Resources;
 using RespositorioREPIS.Domain.Entities;
 using RespositorioREPIS.Domain.Repositories;
 using RespositorioREPIS.Domain.Responses;
@@ -39,23 +40,23 @@ namespace RespositorioREPIS.Domain.UseCases.Proyecto
             throw new NotImplementedException();
         }
 
-        public async Task<ProyectoResponse> ActualizarProyecto(int id, Data.DbModel.Proyecto proyecto)
+        public async Task<ProyectoResponse> ActualizarProyecto(ActualizarProyectoEstado actualizarProyectoEstado)
         {
-            var proyectoActual = await _proyectoRepositorio.BuscarProyectoPorId(id);
+            var proyectoActual = await _proyectoRepositorio.BuscarProyectoPorId(actualizarProyectoEstado.idProyecto);
 
             if (proyectoActual == null)
             {
                 return new ProyectoResponse("No existe el proyecto.");
             }
 
-            proyectoActual.ProyectoNombre = proyecto.ProyectoNombre;
+            /*proyectoActual.ProyectoNombre = proyecto.ProyectoNombre;
             proyectoActual.ProyectoTema = proyecto.ProyectoTema;
             proyectoActual.ProyectoGithubUrl = proyecto.ProyectoGithubUrl;
             proyectoActual.ProyectoDocumentoUrl = proyecto.ProyectoDocumentoUrl;
             proyectoActual.ProyectoPortadaUrl = proyecto.ProyectoPortadaUrl;
             proyectoActual.IdCurso = proyecto.IdCurso;
-            proyectoActual.IdPaper = proyecto.IdPaper;
-            proyectoActual.IdEstado = proyecto.IdEstado;
+            proyectoActual.IdPaper = proyecto.IdPaper;*/
+            proyectoActual.IdEstado = actualizarProyectoEstado.idEstado;
             
             try
             {

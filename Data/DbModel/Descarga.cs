@@ -1,6 +1,6 @@
 namespace RespositorioREPIS.Data.DbModel {
-    public partial class Descargas {
-        
+    public partial class Descarga {
+
         public int IdDescarga { get; set; }
         public int IdProyecto { get; set; }
         public int IdAlumno { get; set; }
