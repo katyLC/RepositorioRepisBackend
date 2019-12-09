@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using RespositorioREPIS.Api.Resources;
@@ -20,7 +21,15 @@ namespace RespositorioREPIS.Api.Controllers
             _descargaUseCase = descargaUseCase;
             _mapper = mapper;
         }  
-       
+
+       [HttpGet]
+       public async Task<IEnumerable<DescargaResource2>> ListarDescargas()
+       {
+           var descargas = await _descargaUseCase.ListarDescargas();
+           //var resources = _mapper.Map<IEnumerable<Proyecto>, IEnumerable<ProyectoResource>>(proyectosAdministrador);
+           return descargas;
+       }
+
         [HttpPost]
         public async Task<IActionResult> RegistroDescarga([FromBody] DescargaResource resource)
         {

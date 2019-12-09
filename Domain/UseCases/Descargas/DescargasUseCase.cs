@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Security.AccessControl;
 using System.Threading.Tasks;
+using RespositorioREPIS.Api.Resources;
 using RespositorioREPIS.Domain.Repositories;
 using RespositorioREPIS.Domain.Responses;
 
@@ -25,6 +28,10 @@ namespace RespositorioREPIS.Domain.UseCases.Descargas
             {
                 return new DescargasResponses($"Erro al guardar: {e.Message}");
             }
+        }
+
+        public async Task<IEnumerable<DescargaResource2>> ListarDescargas() {
+            return await _descargasRepositorio.ListarDescargas();
         }
     }
 }

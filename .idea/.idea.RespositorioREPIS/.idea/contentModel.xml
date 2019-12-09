@@ -16,6 +16,7 @@
           <e p="AuthController.cs" t="Include" />
           <e p="CicloController.cs" t="Include" />
           <e p="CursoController.cs" t="Include" />
+          <e p="DescargasController.cs" t="Include" />
           <e p="KeywordController.cs" t="Include" />
           <e p="PalabrasClavesController.cs" t="Include" />
           <e p="PaperController.cs" t="Include" />
@@ -33,9 +34,12 @@
           <e p="ResourceToModelProfile.cs" t="Include" />
         </e>
         <e p="Resources" t="Include">
+          <e p="ActualizarProyectoEstado.cs" t="Include" />
           <e p="AlumnoResource.cs" t="Include" />
           <e p="AuthResource.cs" t="Include" />
           <e p="CursoResource.cs" t="Include" />
+          <e p="DescargaResource.cs" t="Include" />
+          <e p="DescargaResource2.cs" t="Include" />
           <e p="ErrorResource.cs" t="Include" />
           <e p="GuardarAutorResource.cs" t="Include" />
           <e p="GuardarPaperResource.cs" t="Include" />
@@ -72,7 +76,7 @@
           <e p="Autor.cs" t="Include" />
           <e p="Ciclo.cs" t="Include" />
           <e p="Curso.cs" t="Include" />
-          <e p="Descargas.cs" t="Include" />
+          <e p="Descarga.cs" t="Include" />
           <e p="Estado.cs" t="Include" />
           <e p="Keyword.cs" t="Include" />
           <e p="Paper.cs" t="Include" />
@@ -91,6 +95,7 @@
           <e p="AutorRepositorio.cs" t="Include" />
           <e p="CicloRepositorio.cs" t="Include" />
           <e p="CursoRepositorio.cs" t="Include" />
+          <e p="DescargasRepositorio.cs" t="Include" />
           <e p="PalabarasClavesRepositorio.cs" t="Include" />
           <e p="PaperRepositorio.cs" t="Include" />
           <e p="PerfilRepositorio.cs" t="Include" />
@@ -118,6 +123,7 @@
           <e p="IAutorRepositorio.cs" t="Include" />
           <e p="ICicloRepositorio.cs" t="Include" />
           <e p="ICursoRepositorio.cs" t="Include" />
+          <e p="IDescargasRepositorio.cs" t="Include" />
           <e p="IDocenteRepositorio.cs" t="Include" />
           <e p="IKeywordRepositorio.cs" t="Include" />
           <e p="IPalabrasClavesRepositorio.cs" t="Include" />
@@ -162,6 +168,10 @@
           <e p="Curso" t="Include">
             <e p="CursoUseCase.cs" t="Include" />
             <e p="ICursoUseCase.cs" t="Include" />
+          </e>
+          <e p="Descargas" t="Include">
+            <e p="DescargasUseCase.cs" t="Include" />
+            <e p="IDescargaUseCase.cs" t="Include" />
           </e>
           <e p="Docente" t="Include">
             <e p="DocenteUseCase.cs" t="Include" />
