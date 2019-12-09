@@ -17,6 +17,8 @@ namespace RespositorioREPIS.Api.Mapping
             CreateMap<UsuarioResource, Usuario>();
             CreateMap<GuardarKeywordResource, Keyword>();
             CreateMap<GuardarAutorResource, Autor>();
+            CreateMap<CursoResource, Curso>();
+            CreateMap<ProfesorResource, Profesor>();
         }
     }
 }

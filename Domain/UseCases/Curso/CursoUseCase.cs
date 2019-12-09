@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using RespositorioREPIS.Data;
 using RespositorioREPIS.Domain.Entities;
@@ -26,9 +27,24 @@ namespace RespositorioREPIS.Domain.UseCases.Curso
             return await _cursoRepositorio.ListarCursos();
         }
 
-        public Task<CursoResponse> ActualizarCurso(int id, Data.DbModel.Curso curso)
-        {
-            throw new System.NotImplementedException();
+        public async Task<Data.DbModel.Curso> BuscarCursoPorId(int id) {
+            return await _cursoRepositorio.BuscarCursoPorId(id);
+        }
+
+        public async Task<CursoResponse> ActualizarCurso(int id, Data.DbModel.Curso curso) {
+            var cursoActual = await _cursoRepositorio.BuscarCursoPorId(id);
+            if (cursoActual == null) {
+                return new CursoResponse("No existe el curso.");
+            }
+            cursoActual.IdProfesor = curso.IdProfesor;
+
+            try {
+                _cursoRepositorio.ActualizarCurso(cursoActual);
+                return new CursoResponse(cursoActual);
+            }
+            catch (Exception e) {
+                return new CursoResponse($"Error actualizando el curso: {e.Message}");
+            }
         }
     }
 }

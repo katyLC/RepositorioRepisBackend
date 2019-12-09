@@ -35,6 +35,7 @@
         <e p="Resources" t="Include">
           <e p="AlumnoResource.cs" t="Include" />
           <e p="AuthResource.cs" t="Include" />
+          <e p="CursoResource.cs" t="Include" />
           <e p="ErrorResource.cs" t="Include" />
           <e p="GuardarAutorResource.cs" t="Include" />
           <e p="GuardarPaperResource.cs" t="Include" />
@@ -45,6 +46,7 @@
             <e p="KeywordResource.cs" t="Include" />
           </e>
           <e p="PaperResource.cs" t="Include" />
+          <e p="ProfesorResource.cs" t="Include" />
           <e p="ProyectoKeywordResource.cs" t="Include" />
           <e p="ProyectoResource.cs" t="Include" />
           <e p="ProyectoResource2.cs" t="Include" />
@@ -134,6 +136,7 @@
           <e p="DescargasResponses.cs" t="Include" />
           <e p="KeywordResponse.cs" t="Include" />
           <e p="PaperResponse.cs" t="Include" />
+          <e p="ProfesorResponse.cs" t="Include" />
           <e p="ProyectoAutorResponse.cs" t="Include" />
           <e p="ProyectoKeywordResponse.cs" t="Include" />
           <e p="ProyectoResponse.cs" t="Include" />

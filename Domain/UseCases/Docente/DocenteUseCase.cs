@@ -1,5 +1,8 @@
-﻿using RespositorioREPIS.Data.DbModel;
+﻿using System;
+using System.Threading.Tasks;
+using RespositorioREPIS.Data.DbModel;
 using RespositorioREPIS.Domain.Repositories;
+using RespositorioREPIS.Domain.Responses;
 
 namespace RespositorioREPIS.Domain.UseCases.Docente
 
@@ -13,10 +16,15 @@ namespace RespositorioREPIS.Domain.UseCases.Docente
             _docenteRepositorio = docenteRepositorio;
         }
         
-        public void RegistrarDocente(string profesorNombre, string profesorApellido, string profesorEmail)
+        public async Task<ProfesorResponse> RegistrarDocente(Profesor profesor)
         {
-           _docenteRepositorio.RegistrarDocente(new Profesor( profesorNombre, profesorApellido, profesorEmail)); 
-            
+            try {
+                await _docenteRepositorio.RegistrarDocente(profesor);
+                return new ProfesorResponse(profesor);
+            }
+            catch (Exception e) {
+                return new ProfesorResponse($"Error al guardar el profesor: {e.Message}");
+            }
         }
     }
 }

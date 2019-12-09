@@ -2,6 +2,7 @@
 using RespositorioREPIS.Api.Resources;
 using RespositorioREPIS.Api.Resources.Keyword;
 using RespositorioREPIS.Data.DbModel;
+using RespositorioREPIS.Domain.Responses;
 
 namespace RespositorioREPIS.Api.Mapping
 {
@@ -15,6 +16,8 @@ namespace RespositorioREPIS.Api.Mapping
             CreateMap<Alumno, AlumnoResource>();
             CreateMap<Usuario, UsuarioResource>();
             CreateMap<Keyword, KeywordResource>();
+            CreateMap<Curso, CursoResource>();
+            CreateMap<Profesor, ProfesorResponse>();
         }
     }
 }

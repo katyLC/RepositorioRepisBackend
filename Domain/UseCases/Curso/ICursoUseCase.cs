@@ -11,6 +11,7 @@ namespace RespositorioREPIS.Domain.UseCases.Curso
     {
         IList<CursoEntity> ListarCurso(int id);
       Task<IEnumerable<CursosEntity>> ListarCursos();
+      Task<Data.DbModel.Curso> BuscarCursoPorId(int id);
       Task<CursoResponse> ActualizarCurso(int id, Data.DbModel.Curso curso);
 
     }

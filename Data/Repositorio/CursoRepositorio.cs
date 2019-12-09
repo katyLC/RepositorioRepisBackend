@@ -41,9 +41,10 @@ namespace RespositorioREPIS.Data.Repositorio
         {
             var cursosEntities = (from c in _appContext.Curso
                     join pro in _appContext.Profesor on c.IdProfesor equals pro.IdProfesor
+                    where c.IdProfesor == 0
                     select new CursosEntity()
                     {
-                        IdCurso = c.IdCiclo,
+                        IdCurso = c.IdCurso,
                         CursoNombre = c.CursoNombre,
                         Profesor = new Profesor()
                         {
@@ -52,6 +53,15 @@ namespace RespositorioREPIS.Data.Repositorio
                     }
                 ).ToList();
             return  cursosEntities;
+        }
+
+        public async Task<Curso> BuscarCursoPorId(int id) {
+            return await _appContext.Curso.FindAsync(id);
+        }
+
+        public void ActualizarCurso(Curso curso) {
+            _appContext.Curso.Update(curso);
+            _appContext.SaveChanges();
         }
     }
 }

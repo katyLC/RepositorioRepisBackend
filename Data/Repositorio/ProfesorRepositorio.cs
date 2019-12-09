@@ -1,4 +1,5 @@
-﻿using RespositorioREPIS.Data.DbModel;
+﻿using System.Threading.Tasks;
+using RespositorioREPIS.Data.DbModel;
 using RespositorioREPIS.Domain.Repositories;
 
 namespace RespositorioREPIS.Data.Repositorio
@@ -7,15 +8,14 @@ namespace RespositorioREPIS.Data.Repositorio
 
     {
         private readonly AppContext _appContext;
-        private IDocenteRepositorio _docenteRepositorioImplementation;
 
         public ProfesorRepositorio(AppContext appContext)
         {
             _appContext =appContext;
         }
-        public void RegistrarDocente(Profesor profesor)
+        public async Task RegistrarDocente(Profesor profesor)
         {
-            _appContext.Profesor.Add(Profesor.FromProfesor(profesor));
+            _appContext.Profesor.Add(profesor);
             _appContext.SaveChanges();
         }
     }

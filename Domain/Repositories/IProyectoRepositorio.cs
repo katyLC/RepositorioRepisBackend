@@ -15,7 +15,6 @@ namespace RespositorioREPIS.Domain.Repositories
         IList<ProyectoEntity> detalleProyecto();
 
         void ActualizarProyecto(Proyecto proyecto);
-
         Task<Proyecto> BuscarProyectoPorId(int id);
         Task<IEnumerable<Proyecto>> ObtenerProyectoPorAlumno(int id);
         Task<IEnumerable<Proyecto>> ObtenerProyectoAdministrador();

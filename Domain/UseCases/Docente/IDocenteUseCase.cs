@@ -1,7 +1,11 @@
-﻿namespace RespositorioREPIS.Domain.UseCases.Docente
+﻿using System.Threading.Tasks;
+using RespositorioREPIS.Data.DbModel;
+using RespositorioREPIS.Domain.Responses;
+
+namespace RespositorioREPIS.Domain.UseCases.Docente
 {
     public interface IDocenteUseCase
     {
-        void RegistrarDocente(string profesorNombre, string profesorApellido, string profesorEmail);
+        Task<ProfesorResponse> RegistrarDocente(Profesor profesor);
     }
 }
