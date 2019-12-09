@@ -2,44 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7419a13-ea0a-40d4-83bc-32797096f6d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Api/Controllers/DescargasController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api/Resources/ActualizarProyectoEstado.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api/Resources/DescargaResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Repositorio/DescargasRepositorio.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/Repositories/IDescargasRepositorio.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/UseCases/Descargas/DescargasUseCase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/UseCases/Descargas/IDescargaUseCase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RespositorioREPIS/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/Controllers/ProyectoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Controllers/ProyectoController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Mapping/ModelToResourceProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Mapping/ModelToResourceProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/Mapping/ResourceToModelProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Mapping/ResourceToModelProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/AppContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/AppContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/DbModel/Alumno.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Alumno.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/DbModel/Descargas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Descarga.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/DbModel/Proyecto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/DbModel/Proyecto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Responses/DescargasResponses.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Responses/DescargasResponses.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Proyecto/IProyectoUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/Proyecto/IProyectoUseCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/UseCases/Proyecto/ProyectoUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/UseCases/Proyecto/ProyectoUseCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/Resources/ProyectoResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Api/Resources/ProyectoResource.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/RespositorioREPIS.1.0.0.nupkg" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/RespositorioREPIS.1.0.0.nupkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/RespositorioREPIS.runtimeconfig.dev.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/RespositorioREPIS.1.0.0.nuspec" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/RespositorioREPIS.1.0.0.nuspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/RespositorioREPIS.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/obj/RespositorioREPIS.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,6 +111,7 @@
     <setting file="file://$PROJECT_DIR$/Domain/UseCases/Curso/CursoUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/UseCases/Curso/ICursoUseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Validators/ModelStateFilter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Api/Resources/ProyectoResource2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Validators/ProyectoKeywordValidation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Entities/CicloEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Api/Resources/ProyectoKeywordResource.cs" root0="FORCE_HIGHLIGHTING" />
@@ -235,7 +209,6 @@
         <option value="$PROJECT_DIR$/Data/DbModel/Proyecto.cs" />
         <option value="$PROJECT_DIR$/Data/DbModel/Curso.cs" />
         <option value="$PROJECT_DIR$/Data/DbModel/Alumno.cs" />
-        <option value="$PROJECT_DIR$/Api/Resources/ProyectoResource.cs" />
         <option value="$PROJECT_DIR$/Domain/Responses/ProyectoResponse.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api_3.http" />
@@ -278,6 +251,7 @@
         <option value="$PROJECT_DIR$/Api/Controllers/DescargasController.cs" />
         <option value="$PROJECT_DIR$/Domain/UseCases/Descargas/DescargasUseCase.cs" />
         <option value="$PROJECT_DIR$/Api/Resources/DescargaResource.cs" />
+        <option value="$PROJECT_DIR$/Api/Resources/ProyectoResource.cs" />
         <option value="$PROJECT_DIR$/Api/Controllers/ProyectoController.cs" />
       </list>
     </option>
@@ -1284,7 +1258,7 @@
       <workItem from="1575755156935" duration="2629000" />
       <workItem from="1575763671748" duration="5232000" />
       <workItem from="1575786326278" duration="1220000" />
-      <workItem from="1575840607592" duration="4280000" />
+      <workItem from="1575840607592" duration="11231000" />
     </task>
     <servers />
   </component>

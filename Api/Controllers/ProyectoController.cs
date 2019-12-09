@@ -121,7 +121,6 @@ namespace RespositorioREPIS.Api.Controllers {
                     {
 
                         GuardarDocumento(data.Proyecto, data.Doc);
-                        
                         if (data.Keywords != null) {
                             foreach (var keyword in _keywords) {
                                 var result = await _palabrasClavesUseCase.RegistrarKeyword(keyword);
